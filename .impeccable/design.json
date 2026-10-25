@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T20:28:47Z",
+  "generatedAt": "2026-10-25T20:51:05Z",
   "title": "Design System: Lyster",
   "extensions": {
     "colorMeta": {
@@ -304,16 +304,16 @@
         "purpose": "Clip-path mask reveal for large objects and the hero wordmark."
       },
       {
-        "name": "plate-entry",
-        "value": "1.4s / 1.2s",
-        "purpose": "The single hero plate draws its ring (1.4s) and settles its food (1.2s), once."
+        "name": "lustre-entry",
+        "value": "1.5s / 1.2s / 1.4s",
+        "purpose": "The single hero lens focuses once: its halves close (1.5s), its core settles (1.2s), and its rim draws (1.4s)."
       }
     ],
     "breakpoints": [
       {
         "name": "wide",
         "value": "1100px",
-        "purpose": "Hero and proof proportions loosen; the plate stage begins to shrink."
+        "purpose": "Hero and proof proportions loosen; the lens stage begins to shrink."
       },
       {
         "name": "stack",
@@ -375,15 +375,15 @@
     }
   ],
   "narrative": {
-    "northStar": "The Printed Plate",
-    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. Familiar Swedish food is drawn once as a few flat ingredient planes with no outlines, so the plate can be read before it can be named. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with a true italic for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: the single plate draws its ring and settles once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
+    "northStar": "The Printed Lens",
+    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The food is never illustrated. Instead the page holds one abstract object — a monumental lustre lens built from the house mark's own split circle: paper and pale brass halves, a cobalt seam, and a protruding deep cobalt core. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with a true italic for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: the single lens focuses into place once — its halves close, its core rises, its rim draws — section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
     "keyCharacteristics": [
       "Warm beige paper ground with a subtle 128px noise texture.",
-      "Cobalt is a room you walk into (hero plate stage, proof band, booking band), not a global theme.",
+      "Cobalt is a room you walk into (hero lens stage, proof band, booking band), not a global theme.",
       "Brass appears as 1px rules, small dots, underlines, and one large disc.",
-      "Square corners everywhere; the only curves are circles (the plate, the photo crop, the discs, the mark).",
+      "Square corners everywhere; the only curves are circles (the lens, the photo crop, the discs, the mark).",
       "One typeface, used from 0.68rem captions to a 12.5rem wordmark, with a real italic cut.",
-      "Exactly two authored glyphs: the brand Mark and one meatball Plate, used once.",
+      "Exactly two authored glyphs: the brand Mark and the single lustre lens, used once.",
       "Flat at rest: no box-shadows, no gradients, no glass, no rounded cards."
     ],
     "rules": [
@@ -399,7 +399,7 @@
       },
       {
         "name": "The Ingredient Only Rule",
-        "body": "Lingon, dill, and crust colors are confined to the food glyph and dietary tags. If a color could be eaten, it does not style chrome.",
+        "body": "Lingon, dill, and crust are ingredient accents, not brand chrome. Dill marks dietary tags; the others stay available for ingredient detail. If a color could be eaten, it does not style buttons, fields, or section backgrounds.",
         "section": "colors"
       },
       {
@@ -414,7 +414,7 @@
       },
       {
         "name": "The One Object Rule",
-        "body": "Each composition has one dominant object — the plate, the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.",
+        "body": "Each composition has one dominant object — the lens, the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.",
         "section": "layout"
       },
       {
@@ -429,7 +429,7 @@
       },
       {
         "name": "The Printed Overlap Rule",
-        "body": "Objects may overlap like misregistered print, but they stay flat. The plate sits on the disc; the photo sits inside the ring; neither casts anything.",
+        "body": "Objects may overlap like misregistered print, but they stay flat. The lens sits on the disc; the photo sits inside the ring; neither casts anything.",
         "section": "elevation"
       },
       {
@@ -449,7 +449,7 @@
       },
       {
         "name": "The Two Glyphs Rule",
-        "body": "The site authors exactly two glyphs: the brand Mark and the meatball Plate. The Plate appears once, in the homepage hero. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.",
+        "body": "The site authors exactly two glyphs: the brand Mark and the lustre lens. The lens appears once, in the homepage hero. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.",
         "section": "layout"
       }
     ],
@@ -458,21 +458,21 @@
       "Do use cobalt as a full-width band or a contained stage, and pair it with Chalk Paper text.",
       "Do draw brass as a 1px rule, a dot, an underline, a small inset panel, or the single booking disc.",
       "Do keep corners square and separation flat; change tone or add a hairline instead of a shadow.",
-      "Do use the circular plate and circular photo crop as the only curved containers.",
+      "Do use the circular lens and circular photo crop as the only curved containers.",
       "Do set headings without eyebrow labels, and let the copy beneath them carry the explanation.",
       "Do use the real italic cut for emphasis inside headings, in cobalt on paper or pale brass on cobalt.",
-      "Do keep the glyph count at two: the Mark and the single hero Plate. Let type, photography, rules, and the map do the rest.",
+      "Do keep the glyph count at two: the Mark and the single hero lens. Let type, photography, rules, and the map do the rest.",
       "Do give the mobile viewport the same hierarchy: one idea, one object, one primary action per screen."
     ],
     "donts": [
       "Don’t use a dark, moody food-photo hero or dim the paper ground to signal premium.",
       "Don’t add box-shadow, blur, glass, gradient fills, or rounded cards.",
       "Don’t use thick one-sided accent borders (side tabs) on notes, cards, or callouts.",
-      "Don’t let ingredient colors (lingon, dill, crust) escape the food glyph and dietary tags into buttons, fields, or section backgrounds.",
+      "Don’t let ingredient colors (lingon, dill, crust) escape menu language and dietary tags into buttons, fields, or section backgrounds.",
       "Don’t fill large areas with brass; it loses its function as a rule.",
       "Don’t add a kicker or uppercase eyebrow above a heading.",
       "Don’t invent testimonials, awards, press logos, or a booking form that pretends to submit.",
-      "Don’t add another plate variant, decorative food glyph, or hand-drawn map.",
+      "Don’t add another lens variant, decorative food glyph, or hand-drawn map.",
       "Don’t remove the demo disclosure or the photo credit until real content replaces them."
     ]
   }

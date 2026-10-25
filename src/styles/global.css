@@ -691,20 +691,20 @@ ol {
   background: var(--ink-faint);
 }
 
-.hero__plate-wrap {
+.hero__object-wrap {
   grid-column: 7 / 13;
   position: relative;
   align-self: end;
 }
 
-.hero__plate-stage {
+.hero__object-stage {
   position: relative;
   width: min(100%, 560px);
   margin-left: auto;
   aspect-ratio: 1;
 }
 
-.hero__plate-stage::before {
+.hero__object-stage::before {
   content: '';
   position: absolute;
   inset: 7% -4% -4% 8%;
@@ -713,7 +713,7 @@ ol {
   background: var(--cobalt);
 }
 
-.hero__plate-stage::after {
+.hero__object-stage::after {
   content: '';
   position: absolute;
   inset: -1.5%;
@@ -723,7 +723,7 @@ ol {
   pointer-events: none;
 }
 
-.hero__plate {
+.hero__object {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -1842,7 +1842,7 @@ ol {
     grid-column: 1 / 6;
   }
 
-  .hero__plate-wrap {
+  .hero__object-wrap {
     grid-column: 7 / 13;
   }
 
@@ -1892,12 +1892,12 @@ ol {
     grid-column: 1 / 12;
   }
 
-  .hero__plate-wrap {
+  .hero__object-wrap {
     grid-column: 1 / 12;
     margin-top: 2.5rem;
   }
 
-  .hero__plate-stage {
+  .hero__object-stage {
     margin-inline: auto;
     width: min(100%, 460px);
   }

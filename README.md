@@ -110,7 +110,7 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 Övriga bilder är gjorda för projektet:
 
 - `public/images/paper-noise.webp` — subtil papperstextur, 128×128 px, används som bakgrund.
-- `src/components/Mark.astro` och `src/components/Plate.astro` är de enda handritade SVG-formerna. Mark används i header, mobilmeny och footer; den enda tallriken används en gång i startsidans hero. Faviconen är samma Mark.
+- `src/components/Mark.astro` och `src/components/Lustre.astro` är de enda handritade SVG-formerna. Mark används i header, mobilmeny och footer; den enda linsen används en gång i startsidans hero. Faviconen är samma Mark.
 - `src/components/Map.astro` är en lazy-laddad OpenStreetMap-iframe med synlig kartcreditering och en Google Maps-länk för vägbeskrivning. Ingen handritad karta.
 - Pilarna i knappar och länkar är typografiska `→`, inte SVG-ikoner.
 - Typsnittet **Familjen Grotesk** är self-hosted via `@fontsource-variable/familjen-grotesk`, inklusive den äkta kursiva skärningen (SIL Open Font License 1.1).
@@ -119,7 +119,7 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 
 ```
 src/
-  components/    Header, Footer, Booking, Plate, Map, Mark, Arrow
+  components/    Header, Footer, Booking, Lustre, Map, Mark, Arrow
   layouts/       Base.astro (metadata, kontrakt, skal, mobil bokningsrad)
   pages/         index.astro, meny.astro
   scripts/       site.js (mobilnav, reveals, öppettider, menyns kategorisynk)
@@ -137,7 +137,7 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 - Responsivt från 390 px till breda skärmar, med 72 px header och mobil bokningsrad.
 - Fullskärmig mobilnavigation som `<dialog>` med fokusfångst och Escape-stängning.
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.
-- Scroll-reveals och en tallrik vars ring ritas och mat settle:ar en gång på startsidan.
+- Scroll-reveals och en lins vars halvor sluter sig, kärna och glint tonar in, och ring ritas en gång på startsidan.
 - Menyns kategorinav synkas vid scroll; kategorierna kan också klickas. Den sticky menyn är typografisk, utan illustration.
 - Karta i form av ett lazy-laddat OpenStreetMap-embed med vägbeskrivning till Google Maps.
 - `prefers-reduced-motion` stänger av rörelse och visar allt innehåll direkt.

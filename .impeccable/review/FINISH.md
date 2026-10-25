@@ -21,16 +21,16 @@ No approved comp; judged against the contract's OWN-WORLD and the built material
 | Salient element | Judgment | Evidence |
 | --- | --- | --- |
 | Giant LYSTER wordmark with brass Y and dot | match | H1 renders at `clamp(4.4rem, 15.4vw, 12.5rem)`, 700, −0.065em. |
-| One flat meatball plate, used once | match | `Plate.astro` is a single 600×600 glyph in the homepage hero; the menu page contains no plate. |
-| Two authored glyphs in total | match | Home has 4 SVGs: the Mark in header, dialog, and footer, plus the one Plate. Menu has 3 (Mark only). Favicon is the Mark. |
+| One monumental lustre lens, used once | match | `Lustre.astro` is a single 600×600 glyph in the homepage hero; the menu page contains no lens. |
+| Two authored glyphs in total | match | Home has 4 SVGs: the Mark in header, dialog, and footer, plus the one Lustre. Menu has 3 (Mark only). Favicon is the Mark. |
 | Warm beige paper ground | match | `--paper #f4eddf` plus the 128px `paper-noise.webp`; no white body. |
 | Cobalt fields, not a cobalt theme | match | Cobalt stays in the hero stage, proof band, booking band, and mobile bar. |
 | Brass as rules, dots, underlines, one disc | match | 1px rules and underlines throughout; the large brass disc exists only in booking. |
 | One grotesk in monumental and whisper sizes | match | Familjen Grotesk Variable self-hosted, including the true italic cut used on `.intro__statement em` and the proof heading. |
-| Asymmetric editorial grid | match | Statement at 1–12, body at 4–12, facts across the full base; hero type against a 560px plate stage. |
+| Asymmetric editorial grid | match | Statement at 1–12, body at 4–12, facts across the full base; hero type against a 560px lens stage. |
 | Bright, physical photography | match | One real photograph, circular crop inside a brass ring, lazy-loaded with srcset. Credit preserved verbatim. |
 | A real map | match | Lazy OpenStreetMap iframe at `59.3391975, 18.0618873`; frame loads with `hasMap: true`; visible OSM credit and Google Maps directions fallback. |
-| Authored motion | match | The plate ring draws (1.4s) and the food settles (1.2s) once; reveals and nav state are the only other motion. |
+| Authored motion | match | The lens halves close (1.5s), the core settles (1.2s), the glint fades in (1s), and the rim draws (1.4s) once; reveals and nav state are the only other motion. |
 | Fake material (bevels, embossing, faux metal) | none | Flat fills, paper tone, and hairlines only. |
 | Kickers or eyebrows | none | Category counts sit below headings; headings stand alone. |
 
@@ -38,9 +38,9 @@ TYPE: one family, two registers, true italics. MATERIAL: flat planes, one photog
 
 ## ceiling
 
-Reached for the chosen world, and deliberately reduced from the earlier pass. The signature devices left are the single hero plate, the brass rules, the circular photo crop, the typographic menu rail, the live open/closed line, the live map, and the full-screen mobile dialog. Nothing was replaced by a weaker device; everything removed was repetition.
+Reached for the chosen world, and deliberately reduced from the earlier pass. The signature devices left are the single hero lens, the brass rules, the circular photo crop, the typographic menu rail, the live open/closed line, the live map, and the full-screen mobile dialog. Nothing was replaced by a weaker device; everything removed was repetition.
 
-The glyph budget is now explicit and enforced in `DESIGN.md`: the Mark and one Plate. Arrows are characters, not drawn icons. The map is an embed, not an illustration. This is the ceiling the user asked for — intentional, and much less.
+The glyph budget is now explicit and enforced in `DESIGN.md`: the Mark and one Lustre lens. Arrows are characters, not drawn icons. The map is an embed, not an illustration. This is the ceiling the user asked for — intentional, and much less.
 
 ## material_fixes
 
@@ -61,7 +61,7 @@ The final detector run reports 50 advisories, all `design-system-font-size`: com
 - Sticky menu nav sits at `top: 72px`, the rail at `136px`; an anchored category lands at `141.9px`, clear of the nav bottom at `126.2px`.
 - Mobile dialog opens at 390×844, focuses the close button, restores focus to the toggle on Escape, and toggles `aria-expanded`.
 - Booking placeholder keeps its `href` inert, shows the demo note, and focuses it; nothing pretends to submit.
-- Reduced motion: plate opacity 1, ring animation `none`, food opacity 1.
+- Reduced motion: lens present, glint at 0.55, halves/core animation `none`, rim fully drawn.
 - Print: 5 A4 pages, with header, menu nav, rail, booking, footer, and map hidden.
 
 ## keep
