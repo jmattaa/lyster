@@ -11,18 +11,19 @@ Allt innehåll är på svenska. Meny, priser, öppettider, adress och kontaktupp
 
 ## Kom igång
 
-Krav: Node.js 20.3 eller senare.
+Krav: Node.js 20.3 eller senare och pnpm 11. Aktivera gärna pnpm via Corepack:
 
 ```bash
-npm install
-npm run dev       # http://localhost:4321
+corepack enable
+pnpm install
+pnpm dev        # http://localhost:4321
 ```
 
 ## Bygg och publicera
 
 ```bash
-npm run build     # bygger till dist/
-npm run preview   # förhandsgranskar den byggda sajten
+pnpm build      # bygger till dist/
+pnpm preview    # förhandsgranskar den byggda sajten
 ```
 
 `dist/` innehåller bara statiska filer och kan läggas på valfri statisk host (Netlify, Vercel, Cloudflare Pages, S3, Nginx, Go-server med mera). `build.format: 'directory'` innebär att menysidan blir `dist/meny/index.html` och nås på `/meny/`.

@@ -1,15 +1,16 @@
 # Dependencies
 node_modules/
 
+# Single package manager
+package-lock.json
+yarn.lock
+
 # Build output
 dist/
 .astro/
 
 # Logs
-npm-debug.log*
 pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # Environment
 .env
