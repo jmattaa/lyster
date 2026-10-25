@@ -1,0 +1,670 @@
+{
+  "results": [
+    {
+      "name": "home-desktop",
+      "status": {
+        "attr": "false",
+        "text": "Stängt nu · öppnar tis 11.30"
+      },
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 5846,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [
+        {
+          "src": "kottbullar-720.webp",
+          "complete": true,
+          "w": 604,
+          "h": 555
+        }
+      ],
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 11,
+          "w": 1440,
+          "h": 73
+        },
+        "heroTitle": {
+          "x": 60,
+          "y": 137,
+          "w": 1319,
+          "h": 161
+        },
+        "heroPlate": {
+          "x": 820,
+          "y": 370,
+          "w": 560,
+          "h": 560
+        },
+        "menuNav": null,
+        "menuAside": null,
+        "menuContent": null,
+        "booking": {
+          "x": 0,
+          "y": 5106,
+          "w": 1440,
+          "h": 336
+        },
+        "footer": {
+          "x": 0,
+          "y": 5442,
+          "w": 1440,
+          "h": 404
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 11,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "headings": [
+        "H1: Lyster — modern husmanskost i StockholmLYSTER",
+        "H2: Husmanskost, skärpt.",
+        "H2: Recepten känner du igen. Handlaget är vårt.",
+        "H3: Nära håll",
+        "H3: Från grunden",
+        "H3: Till bordet",
+        "H2: Det vi är kända för",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ugnsbakad rotselleri",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: Öppettider",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 22
+    },
+    {
+      "name": "home-mobile",
+      "status": {
+        "attr": "false",
+        "text": "Stängt nu · öppnar tis 11.30"
+      },
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 6888,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [
+        {
+          "src": "kottbullar-720.webp",
+          "complete": true,
+          "w": 351,
+          "h": 322
+        }
+      ],
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 44,
+          "w": 390,
+          "h": 65
+        },
+        "heroTitle": {
+          "x": 20,
+          "y": 89,
+          "w": 350,
+          "h": 58
+        },
+        "heroPlate": {
+          "x": 20,
+          "y": 578,
+          "w": 319,
+          "h": 319
+        },
+        "menuNav": null,
+        "menuAside": null,
+        "menuContent": null,
+        "booking": {
+          "x": 0,
+          "y": 5518,
+          "w": 390,
+          "h": 498
+        },
+        "footer": {
+          "x": 0,
+          "y": 6016,
+          "w": 390,
+          "h": 801
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 826,
+          "w": 390,
+          "h": 62
+        }
+      },
+      "headings": [
+        "H1: Lyster — modern husmanskost i StockholmLYSTER",
+        "H2: Husmanskost, skärpt.",
+        "H2: Recepten känner du igen. Handlaget är vårt.",
+        "H3: Nära håll",
+        "H3: Från grunden",
+        "H3: Till bordet",
+        "H2: Det vi är kända för",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ugnsbakad rotselleri",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: Öppettider",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 19
+    },
+    {
+      "name": "home-tablet",
+      "status": {
+        "attr": "false",
+        "text": "Stängt nu · öppnar tis 11.30"
+      },
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "scrollWidth": 834,
+      "clientWidth": 834,
+      "scrollHeight": 7448,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [
+        {
+          "src": "kottbullar-1280.webp",
+          "complete": true,
+          "w": 750,
+          "h": 688
+        }
+      ],
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 3,
+          "w": 834,
+          "h": 65
+        },
+        "heroTitle": {
+          "x": 35,
+          "y": 103,
+          "w": 764,
+          "h": 104
+        },
+        "heroPlate": {
+          "x": 154,
+          "y": 592,
+          "w": 460,
+          "h": 460
+        },
+        "menuNav": null,
+        "menuAside": null,
+        "menuContent": null,
+        "booking": {
+          "x": 0,
+          "y": 6224,
+          "w": 834,
+          "h": 516
+        },
+        "footer": {
+          "x": 0,
+          "y": 6739,
+          "w": 834,
+          "h": 638
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 1053,
+          "w": 834,
+          "h": 62
+        }
+      },
+      "headings": [
+        "H1: Lyster — modern husmanskost i StockholmLYSTER",
+        "H2: Husmanskost, skärpt.",
+        "H2: Recepten känner du igen. Handlaget är vårt.",
+        "H3: Nära håll",
+        "H3: Från grunden",
+        "H3: Till bordet",
+        "H2: Det vi är kända för",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ugnsbakad rotselleri",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: Öppettider",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 19
+    },
+    {
+      "name": "menu-desktop",
+      "status": {},
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "scrollHeight": 5588,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [],
+      "menuPlate": "tilltugg",
+      "activeNav": "Tilltugg",
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 73
+        },
+        "heroTitle": null,
+        "heroPlate": null,
+        "menuNav": {
+          "x": 0,
+          "y": 637,
+          "w": 1440,
+          "h": 56
+        },
+        "menuAside": {
+          "x": 60,
+          "y": 773,
+          "w": 512,
+          "h": 495
+        },
+        "menuContent": {
+          "x": 752,
+          "y": 773,
+          "w": 627,
+          "h": 3163
+        },
+        "booking": {
+          "x": 0,
+          "y": 4848,
+          "w": 1440,
+          "h": 336
+        },
+        "footer": {
+          "x": 0,
+          "y": 5183,
+          "w": 1440,
+          "h": 404
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurkavegetarisk",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotsellerivegetarisk",
+        "H3: Böngrytavegansk",
+        "H3: Rödbetor med getostvegetarisk",
+        "H2: Efterrätt",
+        "H3: Ostkakaglutenfri",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Blåbärssoppaglutenfri",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläderalkoholfri",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 13
+    },
+    {
+      "name": "menu-mobile",
+      "status": {},
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "scrollHeight": 6343,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [],
+      "menuPlate": "tilltugg",
+      "activeNav": "Tilltugg",
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 65
+        },
+        "heroTitle": null,
+        "heroPlate": null,
+        "menuNav": {
+          "x": 0,
+          "y": 801,
+          "w": 390,
+          "h": 56
+        },
+        "menuAside": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "menuContent": {
+          "x": 20,
+          "y": 858,
+          "w": 352,
+          "h": 3141
+        },
+        "booking": {
+          "x": 0,
+          "y": 4973,
+          "w": 390,
+          "h": 498
+        },
+        "footer": {
+          "x": 0,
+          "y": 5472,
+          "w": 390,
+          "h": 801
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 782,
+          "w": 390,
+          "h": 62
+        }
+      },
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurkavegetarisk",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotsellerivegetarisk",
+        "H3: Böngrytavegansk",
+        "H3: Rödbetor med getostvegetarisk",
+        "H2: Efterrätt",
+        "H3: Ostkakaglutenfri",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Blåbärssoppaglutenfri",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläderalkoholfri",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 10
+    },
+    {
+      "name": "menu-tablet",
+      "status": {},
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "scrollWidth": 834,
+      "clientWidth": 834,
+      "scrollHeight": 6273,
+      "overflowing": [],
+      "revealHidden": [],
+      "imgs": [],
+      "menuPlate": "tilltugg",
+      "activeNav": "Tilltugg",
+      "boxes": {
+        "header": {
+          "x": 0,
+          "y": 16,
+          "w": 834,
+          "h": 65
+        },
+        "heroTitle": null,
+        "heroPlate": null,
+        "menuNav": {
+          "x": 0,
+          "y": 796,
+          "w": 834,
+          "h": 56
+        },
+        "menuAside": {
+          "x": 0,
+          "y": 16,
+          "w": 0,
+          "h": 0
+        },
+        "menuContent": {
+          "x": 35,
+          "y": 853,
+          "w": 764,
+          "h": 3183
+        },
+        "booking": {
+          "x": 0,
+          "y": 5049,
+          "w": 834,
+          "h": 516
+        },
+        "footer": {
+          "x": 0,
+          "y": 5565,
+          "w": 834,
+          "h": 638
+        },
+        "mobileBook": {
+          "x": 0,
+          "y": 1066,
+          "w": 834,
+          "h": 62
+        }
+      },
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurkavegetarisk",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotsellerivegetarisk",
+        "H3: Böngrytavegansk",
+        "H3: Rödbetor med getostvegetarisk",
+        "H2: Efterrätt",
+        "H3: Ostkakaglutenfri",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Blåbärssoppaglutenfri",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläderalkoholfri",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: Kontakt",
+        "H3: Öppettider",
+        "H3: Följ"
+      ],
+      "emptyLinks": 0,
+      "smallTap": 10
+    },
+    {
+      "interactions": {
+        "scrollChecks": [
+          {
+            "target": "husmanskost",
+            "active": "Husmanskost",
+            "plate": "husmanskost",
+            "caption": "Husmanskost",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          },
+          {
+            "target": "havet",
+            "active": "Från havet",
+            "plate": "havet",
+            "caption": "Från havet",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          },
+          {
+            "target": "gront",
+            "active": "Grönt",
+            "plate": "gront",
+            "caption": "Grönt",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          },
+          {
+            "target": "efterratt",
+            "active": "Efterrätt",
+            "plate": "efterratt",
+            "caption": "Efterrätt",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          },
+          {
+            "target": "dryck",
+            "active": "Dryck",
+            "plate": "dryck",
+            "caption": "Dryck",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          },
+          {
+            "target": "lunch",
+            "active": "Lunch",
+            "caption": "Lunch",
+            "navTop": 72,
+            "navBottom": 128,
+            "sectionTop": 142
+          }
+        ],
+        "navAtBottom": {
+          "navTop": 72,
+          "navBottom": 128,
+          "bookingTop": 260,
+          "scrollY": 4588
+        },
+        "booking": {
+          "noteVisible": true,
+          "noteText": "Bokningslänken är inte kopplad i demon än. Ring 08–123 45 678, så hjälper vi dig.",
+          "noteFocused": true,
+          "scrollY": 4846
+        }
+      }
+    },
+    {
+      "mobileNav": {
+        "opened": {
+          "open": true,
+          "expanded": "true",
+          "bodyLocked": true,
+          "activeText": "Stäng",
+          "scrollWidth": 390
+        },
+        "closed": {
+          "open": false,
+          "expanded": "false",
+          "bodyLocked": false,
+          "focused": true
+        }
+      }
+    },
+    {
+      "reduced": {
+        "hiddenReveals": 0,
+        "heroOpacity": "1",
+        "plateActive": true
+      }
+    }
+  ],
+  "errors": []
+}

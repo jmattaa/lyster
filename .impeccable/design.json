@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T12:08:18Z",
+  "title": "Design System: Lyster",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f4eddf",
+        "tonalRamp": [
+          "#312a1b",
+          "#594a2e",
+          "#826c3f",
+          "#ad8d4f",
+          "#c3a872",
+          "#d7c299",
+          "#e9dcc2",
+          "#f8f4ec"
+        ]
+      },
+      "paper-shade": {
+        "role": "neutral",
+        "displayName": "Sun-Bleached Paper",
+        "canonical": "#eadfcb",
+        "tonalRamp": [
+          "#30291c",
+          "#574930",
+          "#7f6942",
+          "#a88a53",
+          "#c0a576",
+          "#d4c09c",
+          "#e7dac4",
+          "#f7f4ed"
+        ]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Chalk Paper",
+        "canonical": "#fbf7ee",
+        "tonalRamp": [
+          "#332b19",
+          "#5d4d2a",
+          "#897038",
+          "#b89444",
+          "#cdae69",
+          "#dec792",
+          "#eddebd",
+          "#faf5ea"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink Black",
+        "canonical": "#1b1a17",
+        "tonalRamp": [
+          "#292823",
+          "#48463e",
+          "#67645a",
+          "#868276",
+          "#a19e95",
+          "#bcbab4",
+          "#d7d6d3",
+          "#f3f3f2"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#4d483f",
+        "tonalRamp": [
+          "#2a2723",
+          "#4a453d",
+          "#6a6357",
+          "#898173",
+          "#a39d93",
+          "#bdb9b3",
+          "#d8d6d2",
+          "#f3f2f1"
+        ]
+      },
+      "ink-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "#726b5f",
+        "tonalRamp": [
+          "#292723",
+          "#49453e",
+          "#696358",
+          "#898173",
+          "#a39d93",
+          "#bdb9b3",
+          "#d8d6d2",
+          "#f3f2f1"
+        ]
+      },
+      "cobalt": {
+        "role": "primary",
+        "displayName": "Cobalt Field",
+        "canonical": "#1e3a5f",
+        "tonalRamp": [
+          "#132439",
+          "#213f66",
+          "#325a8f",
+          "#4576b6",
+          "#7195c5",
+          "#9db4d3",
+          "#c6d3e4",
+          "#eef2f6"
+        ]
+      },
+      "cobalt-deep": {
+        "role": "primary",
+        "displayName": "Late Cobalt",
+        "canonical": "#142a45",
+        "tonalRamp": [
+          "#11243b",
+          "#204067",
+          "#315c90",
+          "#4578b7",
+          "#7197c5",
+          "#9db5d3",
+          "#c6d4e4",
+          "#eef2f6"
+        ]
+      },
+      "brass": {
+        "role": "accent",
+        "displayName": "Brass Rule",
+        "canonical": "#a97e34",
+        "tonalRamp": [
+          "#372b15",
+          "#644c23",
+          "#926e2f",
+          "#be8f3d",
+          "#cba86b",
+          "#d8c098",
+          "#e6dac4",
+          "#f7f4ed"
+        ]
+      },
+      "brass-ink": {
+        "role": "accent",
+        "displayName": "Deep Brass Ink",
+        "canonical": "#7d5a1e",
+        "tonalRamp": [
+          "#3c2c11",
+          "#6c4e1b",
+          "#996f28",
+          "#c39039",
+          "#cea868",
+          "#dac196",
+          "#e7dac3",
+          "#f7f4ed"
+        ]
+      },
+      "brass-bright": {
+        "role": "accent",
+        "displayName": "Polished Brass",
+        "canonical": "#c49a4a",
+        "tonalRamp": [
+          "#362b17",
+          "#614d26",
+          "#8e6f34",
+          "#bc913f",
+          "#ccaa6a",
+          "#d8c298",
+          "#e7dbc3",
+          "#f7f4ed"
+        ]
+      },
+      "brass-pale": {
+        "role": "accent",
+        "displayName": "Pale Brass",
+        "canonical": "#eed8a7",
+        "tonalRamp": [
+          "#372d16",
+          "#645023",
+          "#93742e",
+          "#c59937",
+          "#d8b25e",
+          "#e6ca8a",
+          "#f1e0b9",
+          "#faf5ea"
+        ]
+      },
+      "brass-wash": {
+        "role": "accent",
+        "displayName": "Brass Wash",
+        "canonical": "#e7d3a8",
+        "tonalRamp": [
+          "#342b18",
+          "#5f4d28",
+          "#8b7036",
+          "#ba9442",
+          "#ceae67",
+          "#dfc691",
+          "#ecdebe",
+          "#f9f5ec"
+        ]
+      },
+      "lingon": {
+        "role": "ingredient",
+        "displayName": "Lingon",
+        "canonical": "#8c3a36",
+        "tonalRamp": [
+          "#351917",
+          "#5f2a27",
+          "#8b3a36",
+          "#b24e49",
+          "#c27874",
+          "#d2a19e",
+          "#e3c8c7",
+          "#f6efee"
+        ]
+      },
+      "dill": {
+        "role": "ingredient",
+        "displayName": "Dill",
+        "canonical": "#3f5f49",
+        "tonalRamp": [
+          "#1f2d24",
+          "#36513e",
+          "#4e7359",
+          "#679575",
+          "#8aac94",
+          "#adc3b4",
+          "#cfdbd3",
+          "#f1f4f2"
+        ]
+      },
+      "crust": {
+        "role": "ingredient",
+        "displayName": "Crust",
+        "canonical": "#8a5a3b",
+        "tonalRamp": [
+          "#342319",
+          "#5d3e2a",
+          "#87583a",
+          "#ad734e",
+          "#be9378",
+          "#cfb3a1",
+          "#e2d2c8",
+          "#f6f1ef"
+        ]
+      },
+      "crust-light": {
+        "role": "ingredient",
+        "displayName": "Light Crust",
+        "canonical": "#a9744c",
+        "tonalRamp": [
+          "#32251a",
+          "#5a402d",
+          "#835c3e",
+          "#ad774e",
+          "#be9677",
+          "#cfb5a1",
+          "#e2d3c8",
+          "#f6f2ef"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The LYSTER logotype only, uppercase, with a brass Y and trailing dot."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page-defining statements and the largest menu headings."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings across both pages."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Dish names, card titles, footer column headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy, capped at 38-46ch in side-by-side blocks."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase meta rows, category counts, hours, captions."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing for reveals, wipes, and state changes."
+      },
+      {
+        "name": "fast",
+        "value": "180ms",
+        "purpose": "Skip-link and tiny focus transitions."
+      },
+      {
+        "name": "state",
+        "value": "260ms",
+        "purpose": "Button label color and nav underline state."
+      },
+      {
+        "name": "wipe",
+        "value": "380ms",
+        "purpose": "Brass plane wipe inside buttons."
+      },
+      {
+        "name": "reveal",
+        "value": "720ms",
+        "purpose": "Text and block reveal: opacity plus 1.4rem rise."
+      },
+      {
+        "name": "mask",
+        "value": "1000ms",
+        "purpose": "Clip-path mask reveal for large objects and the hero wordmark."
+      },
+      {
+        "name": "plate-swap",
+        "value": "500ms / 700ms",
+        "purpose": "Menu aside plate cross-fade: opacity 500ms, transform 700ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1100px",
+        "purpose": "Hero and proof proportions loosen; plate imagery begins to shrink."
+      },
+      {
+        "name": "stack",
+        "value": "900px",
+        "purpose": "12-column grid stacks; menu aside leaves; mobile booking bar appears."
+      },
+      {
+        "name": "narrow",
+        "value": "640px",
+        "purpose": "Type steps down; full-screen mobile nav; meta rows wrap."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cobalt action with a brass plane that wipes in from the left on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#boka\">Boka bord <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
+      "css": ".ds-btn-primary{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--cobalt,#1e3a5f);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--gold-bright,#c49a4a);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-primary:hover::before{transform:scaleX(1)}.ds-btn-primary:hover svg{transform:translateX(3px)}.ds-btn-primary svg{width:18px;height:18px;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+    },
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Brass-filled booking action used only inside the cobalt booking band.",
+      "html": "<a class=\"ds-btn-gold\" href=\"https://example.com/boka-lyster\">Boka bord <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
+      "css": ".ds-btn-gold{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--gold,#a97e34);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--paper-3,#fbf7ee);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-gold:hover::before{transform:scaleX(1)}.ds-btn-gold svg{width:18px;height:18px}.ds-btn-gold:focus-visible{outline:2px solid var(--paper-3,#fbf7ee);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet secondary action beside the primary booking button.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"/meny\">Läs menyn</a>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.7rem 1.5rem;border:1px solid color-mix(in srgb,var(--ink,#1b1a17) 28%,transparent);background:transparent;color:var(--ink,#1b1a17);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;transition:background 260ms cubic-bezier(.16,1,.3,1),color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-ghost:hover{background:var(--ink,#1b1a17);color:var(--paper-3,#fbf7ee);text-decoration:none}.ds-btn-ghost:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "description": "Section-level link with an underline and a travelling arrow.",
+      "html": "<a class=\"ds-link-arrow\" href=\"/meny\">Hela menyn <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
+      "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.6rem;padding-block:.5rem;color:var(--ink,#1b1a17);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.9rem;font-weight:600;letter-spacing:.01em;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 26%,transparent);transition:border-color 260ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow svg{width:22px;height:22px;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover{border-color:var(--gold,#a97e34)}.ds-link-arrow:hover svg{transform:translateX(4px)}.ds-link-arrow:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+    },
+    {
+      "name": "Dish Row",
+      "kind": "custom",
+      "description": "Menu dish line: name, dietary tags, dotted leader, price, description beneath.",
+      "html": "<div class=\"ds-dish\"><div class=\"ds-dish__line\"><h3 class=\"ds-dish__name\">Köttbullar <span class=\"ds-dish__tags\"><span>vegetarisk</span></span></h3><span class=\"ds-dish__leader\" aria-hidden=\"true\"></span><span class=\"ds-dish__price\">265 kr</span></div><p class=\"ds-dish__desc\">Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka.</p></div>",
+      "css": ".ds-dish{padding-block:1.15rem;border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);color:var(--ink,#1b1a17)}.ds-dish__line{display:flex;align-items:baseline;gap:.75rem}.ds-dish__name{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .7rem;margin:0;font-size:1.12rem;font-weight:600;line-height:1.15;letter-spacing:-.015em}.ds-dish__tags{display:inline-flex;gap:.4rem}.ds-dish__tags span{padding:.18rem .42rem;background:color-mix(in srgb,var(--dill,#3f5f49) 12%,transparent);color:var(--dill,#3f5f49);font-size:.68rem;font-weight:600;letter-spacing:.04em;line-height:1.2;text-transform:uppercase}.ds-dish__leader{flex:1 1 auto;min-width:1.5rem;border-bottom:1px dotted color-mix(in srgb,var(--ink,#1b1a17) 34%,transparent);transform:translateY(-.22em)}.ds-dish__price{flex:none;font-size:.95rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-dish__desc{max-width:52ch;margin:.35rem 0 0;color:var(--ink-soft,#4d483f);font-size:.95rem;line-height:1.5}"
+    },
+    {
+      "name": "Menu Category Nav",
+      "kind": "nav",
+      "description": "Sticky category strip with a brass underline on the active item.",
+      "html": "<nav class=\"ds-menu-nav\" aria-label=\"Menyns avsnitt\"><a class=\"ds-menu-nav__link is-active\" href=\"#husmanskost\" aria-current=\"location\">Husmanskost</a><a class=\"ds-menu-nav__link\" href=\"#havet\">Från havet</a><a class=\"ds-menu-nav__link\" href=\"#gront\">Grönt</a></nav>",
+      "css": ".ds-menu-nav{display:flex;gap:1.5rem;overflow-x:auto;padding-block:.9rem;background:var(--paper,#f4eddf);border-top:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);scrollbar-width:none}.ds-menu-nav__link{flex:none;padding-block:.35rem;color:var(--ink-soft,#4d483f);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.9rem;font-weight:500;letter-spacing:.01em;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 220ms cubic-bezier(.16,1,.3,1),border-color 220ms cubic-bezier(.16,1,.3,1)}.ds-menu-nav__link:hover{color:var(--ink,#1b1a17)}.ds-menu-nav__link.is-active{color:var(--ink,#1b1a17);border-color:var(--gold,#a97e34)}.ds-menu-nav__link:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Printed Plate",
+    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. Familiar Swedish food is drawn as a few flat ingredient planes with no outlines, so a plate can be read before it can be named. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with tight negative tracking on the large end and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: a plate assembles once, a brass line draws, a category plate swaps with a short cross-fade. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
+    "keyCharacteristics": [
+      "Warm beige paper ground with a subtle 128px noise texture.",
+      "Cobalt is a room you walk into (hero plate stage, proof band, booking band), not a global theme.",
+      "Brass appears as 1px rules, small dots, underlines, and one large disc.",
+      "Square corners everywhere; the only curves are circles (plates, photo crop, discs, mark).",
+      "One typeface, used from 0.6875rem labels to a 12.5rem wordmark.",
+      "Flat at rest: no box-shadows, no gradients, no glass, no rounded cards."
+    ],
+    "rules": [
+      {
+        "name": "The Paper Ground Rule",
+        "body": "Pages rest on Warm Paper. Cobalt is entered as a distinct band or stage; it never becomes the global page background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Brass Line Rule",
+        "body": "Brass is a rule, a dot, an underline, a small inset panel, or one disc. It is not a body-copy color and not a page background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ingredient Only Rule",
+        "body": "Lingon, dill, and crust colors are confined to food illustrations and dietary tags. If a color could be eaten, it does not style chrome.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Registers Rule",
+        "body": "Type is either monumental (display and headline) or a printed whisper (label). Mid-sized decorative type is not part of the system.",
+        "section": "typography"
+      },
+      {
+        "name": "The No-Kicker Rule",
+        "body": "A heading stands alone. No uppercase eyebrow label sits above an h1 or h2 to explain it; the heading and the surrounding copy do that work.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Object Rule",
+        "body": "Each composition has one dominant object — a plate, a photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration.",
+        "section": "layout"
+      },
+      {
+        "name": "The Clear The Header Rule",
+        "body": "Anything sticky or anchored must account for the 72px header plus the 64px menu nav; content never lands underneath them.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Plane Rule",
+        "body": "No box-shadow, no blur, no glass, no gradient fills. If a surface needs separation, change its paper tone or put a 1px rule next to it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Printed Overlap Rule",
+        "body": "Objects may overlap like misregistered print, but they stay flat. The plate sits on the disc; the photo sits inside the ring; neither casts anything.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Card Rule",
+        "body": "Cards are rectangles with no radius. If a shape needs to feel softer, use more space, not a corner radius.",
+        "section": "shapes"
+      },
+      {
+        "name": "The No Side Tab Rule",
+        "body": "Never mark a card or note with a thick colored border on one side. Use a full-width hairline rule above it instead.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep the page on Warm Paper (#f4eddf) with the 128px paper-noise texture; the ground should feel physical, not flat white.",
+      "Do use cobalt as a full-width band or a contained stage, and pair it with Chalk Paper text.",
+      "Do draw brass as a 1px rule, a dot, an underline, a small inset panel, or the single booking disc.",
+      "Do keep corners square and separation flat; change tone or add a hairline instead of a shadow.",
+      "Do use the circular plate and circular photo crop as the only curved containers.",
+      "Do set headings without eyebrow labels, and let the copy beneath them carry the explanation.",
+      "Do give the mobile viewport the same hierarchy: one idea, one object, one primary action per screen."
+    ],
+    "donts": [
+      "Don't use a dark, moody food-photo hero or dim the paper ground to signal premium.",
+      "Don't add box-shadow, blur, glass, gradient fills, or rounded cards.",
+      "Don't use thick one-sided accent borders (side tabs) on notes, cards, or callouts.",
+      "Don't let ingredient colors (lingon, dill, crust) escape illustrations and dietary tags into buttons, fields, or section backgrounds.",
+      "Don't fill large areas with brass; it loses its function as a rule.",
+      "Don't add a kicker or uppercase eyebrow above a heading.",
+      "Don't invent testimonials, awards, press logos, or a booking form that pretends to submit.",
+      "Don't remove the demo disclosure or the photo credit until real content replaces them."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+---
+import Arrow from './Arrow.astro';
+
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<section class:list={['booking', compact && 'booking--compact']} id="boka" data-booking-section>
+  <div class="booking__disc" aria-hidden="true"></div>
+  <div class="shell booking__inner">
+    <div class="booking__copy">
+      <h2>Boka ett bord.</h2>
+      <p>
+        Lunch, middag eller bara ett glas. Vi håller bordet, du tar hand om sällskapet.
+      </p>
+      <div class="booking__actions">
+        <a
+          class="btn btn--gold"
+          href="https://example.com/boka-lyster"
+          data-booking-link
+          data-booking-placeholder
+        >
+          Boka bord
+          <Arrow class="btn__arrow" />
+        </a>
+        <a class="booking__phone" href="tel:+46812345678">Eller ring 08–123 45 678</a>
+      </div>
+      <p class="booking__note" data-booking-note hidden role="status" tabindex="-1">
+        Bokningslänken är inte kopplad i demon än. Ring <a href="tel:+46812345678">08–123 45 678</a>,
+        så hjälper vi dig.
+      </p>
+    </div>
+
+    <aside class="booking__aside">
+      <h3>Sällskap över åtta?</h3>
+      <p>Ring oss, så sätter vi ihop en kväll som passar er. Vi tar också emot förfrågningar om
+        allergier och önskemål i god tid.</p>
+      <a class="link-underline" href="mailto:hej@lyster.se">hej@lyster.se</a>
+    </aside>
+  </div>
+</section>

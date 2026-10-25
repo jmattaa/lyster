@@ -1,0 +1,359 @@
+---
+import Base from '../layouts/Base.astro';
+import Plate from '../components/Plate.astro';
+import Arrow from '../components/Arrow.astro';
+import Booking from '../components/Booking.astro';
+
+type Variant = 'kottbullar' | 'stromming' | 'rotselleri' | 'ostkaka' | 'dryck' | 'tilltugg' | 'artsoppa';
+
+interface Dish {
+  name: string;
+  description: string;
+  price: number;
+  tags?: string[];
+}
+
+interface Course {
+  id: string;
+  title: string;
+  note: string;
+  variant: Variant;
+  dishes: Dish[];
+}
+
+const courses: Course[] = [
+  {
+    id: 'tilltugg',
+    title: 'Tilltugg',
+    note: 'Att börja med, eller bara till ett glas',
+    variant: 'tilltugg',
+    dishes: [
+      {
+        name: 'Toast med räkor',
+        description: 'Rostat bröd, räkor, löjrom, dill och brynt smör.',
+        price: 145,
+      },
+      {
+        name: 'Löjrom med gräddfil',
+        description: 'Rödlök, dill och knaprig potatis.',
+        price: 165,
+      },
+      {
+        name: 'Krondillsinlagd gurka',
+        description: 'Senap, dill och smörstekt knäcke.',
+        price: 75,
+        tags: ['vegetarisk'],
+      },
+    ],
+  },
+  {
+    id: 'husmanskost',
+    title: 'Husmanskost',
+    note: 'Serveras med potatispuré och pressgurka där inget annat anges',
+    variant: 'kottbullar',
+    dishes: [
+      {
+        name: 'Köttbullar',
+        description: 'Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka.',
+        price: 265,
+      },
+      {
+        name: 'Wallenbergare',
+        description: 'Kalvfärs, gräddsås, gröna ärtor och potatispuré.',
+        price: 285,
+      },
+      {
+        name: 'Kalops',
+        description: 'Nötkött, kryddpeppar, lök, rödbetor och pressad potatis.',
+        price: 255,
+      },
+      {
+        name: 'Stekt fläsk med löksås',
+        description: 'Sidfläsk, löksås, potatispuré och lingon.',
+        price: 245,
+      },
+      {
+        name: 'Isterband',
+        description: 'Dillstuvad potatis, rödbetor och senap.',
+        price: 235,
+      },
+    ],
+  },
+  {
+    id: 'havet',
+    title: 'Från havet',
+    note: 'Fisk och skaldjur, fileat i köket',
+    variant: 'stromming',
+    dishes: [
+      {
+        name: 'Stekt strömming',
+        description: 'Potatispuré, brynt smör, dill och citron.',
+        price: 245,
+      },
+      {
+        name: 'Gravad lax',
+        description: 'Senapssås, dillstuvad potatis och knäcke.',
+        price: 245,
+      },
+      {
+        name: 'Fiskgryta',
+        description: 'Saffran, aioli, tomat och rostat bröd.',
+        price: 275,
+      },
+    ],
+  },
+  {
+    id: 'gront',
+    title: 'Grönt',
+    note: 'Lika mycket mat, inte ett tillval',
+    variant: 'rotselleri',
+    dishes: [
+      {
+        name: 'Ugnsbakad rotselleri',
+        description: 'Svamp, hasselnöt, brynt smör och persilja.',
+        price: 225,
+        tags: ['vegetarisk'],
+      },
+      {
+        name: 'Böngryta',
+        description: 'Vita bönor, tomat, dill och rostat bröd.',
+        price: 215,
+        tags: ['vegansk'],
+      },
+      {
+        name: 'Rödbetor med getost',
+        description: 'Hasselnöt, honung och grönkål.',
+        price: 155,
+        tags: ['vegetarisk'],
+      },
+    ],
+  },
+  {
+    id: 'efterratt',
+    title: 'Efterrätt',
+    note: 'Skeden tar inte slut förrän du säger till',
+    variant: 'ostkaka',
+    dishes: [
+      {
+        name: 'Ostkaka',
+        description: 'Hjortronsylt och vispad grädde.',
+        price: 115,
+        tags: ['glutenfri'],
+      },
+      {
+        name: 'Varm äppelkaka',
+        description: 'Vaniljsås och kanel.',
+        price: 105,
+      },
+      {
+        name: 'Kanelbulle med glass',
+        description: 'Värmd kanelbulle, vaniljglass och salt karamell.',
+        price: 95,
+      },
+      {
+        name: 'Blåbärssoppa',
+        description: 'Varm eller kall, med vispad grädde.',
+        price: 85,
+        tags: ['glutenfri'],
+      },
+    ],
+  },
+  {
+    id: 'dryck',
+    title: 'Dryck',
+    note: 'Öl, snaps och alkoholfritt. Fråga efter vinlistan.',
+    variant: 'dryck',
+    dishes: [
+      {
+        name: 'Lyster lager',
+        description: 'Svensk ljus lager på fat, 40 cl.',
+        price: 75,
+      },
+      {
+        name: 'Gammeldags snaps',
+        description: 'Kryddad, kall, till husmanskosten.',
+        price: 65,
+      },
+      {
+        name: 'Äpple och fläder',
+        description: 'Alkoholfri, med mynta och is.',
+        price: 55,
+        tags: ['alkoholfri'],
+      },
+      {
+        name: 'Kaffe',
+        description: 'Bryggt, med påtår.',
+        price: 35,
+      },
+    ],
+  },
+];
+
+const lunch = [
+  {
+    day: 'Tisdag',
+    name: 'Köttbullar',
+    description: 'Gräddsås, lingon och pressgurka.',
+  },
+  {
+    day: 'Onsdag',
+    name: 'Stekt strömming',
+    description: 'Potatispuré, brynt smör och dill.',
+  },
+  {
+    day: 'Torsdag',
+    name: 'Ärtsoppa med fläsk',
+    description: 'Senap, knäcke och pannkaka med sylt.',
+  },
+  {
+    day: 'Fredag',
+    name: 'Kalops',
+    description: 'Rödbetor, lök och pressad potatis.',
+  },
+];
+---
+
+<Base
+  title="Menyn — Lyster"
+  description="Lysters meny: köttbullar, stekt strömming, ugnsbakad rotselleri och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm."
+>
+  <section class="menu-hero" aria-labelledby="meny-title">
+    <div class="shell menu-hero__grid">
+      <div class="menu-hero__copy">
+        <h1 id="meny-title" data-reveal>Menyn</h1>
+        <p class="menu-hero__intro" data-reveal>
+          Husmanskost, skärpt. Recepten känner du igen. Handlaget är vårt. Vi lagar maten
+          från grunden och byter rätter när råvarorna gör det — inte när någon ber oss.
+        </p>
+        <div class="menu-hero__meta meta" data-reveal>
+          <span>Höstmeny 2026</span>
+          <span>Lunch tis–fre</span>
+          <span>Middag tis–lör</span>
+        </div>
+      </div>
+      <div class="menu-hero__plate">
+        <Plate variant="stromming" animate />
+      </div>
+    </div>
+  </section>
+
+  <div class="menu-body">
+    <nav class="menu-nav" aria-label="Menyns avsnitt" data-menu-nav>
+      <div class="shell">
+        <div class="menu-nav__track">
+          {courses.map((course) => (
+            <a class="menu-nav__link" href={`#${course.id}`} data-menu-link>{course.title}</a>
+          ))}
+          <a class="menu-nav__link" href="#lunch" data-menu-link>Lunch</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="shell menu-layout">
+      <aside class="menu-aside" aria-hidden="true" data-menu-aside>
+        <div class="menu-aside__stage">
+          {courses.map((course) => (
+            <div data-menu-plate={course.id}>
+              <Plate variant={course.variant} decorative class={course.id === 'tilltugg' ? 'is-active' : undefined} />
+            </div>
+          ))}
+        </div>
+        <div class="menu-aside__caption meta">
+          <strong data-menu-caption-name>Tilltugg</strong>
+          <span>Illustration</span>
+        </div>
+      </aside>
+
+      <div class="menu-content">
+        {courses.map((course) => (
+          <section class="menu-cat" id={course.id} aria-labelledby={`${course.id}-title`} data-menu-section>
+            <div class="menu-cat__head" data-reveal>
+              <div class="menu-cat__title">
+                <h2 id={`${course.id}-title`}>{course.title}</h2>
+                <p class="meta text-gold">{course.dishes.length} rätter</p>
+              </div>
+              <p class="menu-cat__note">{course.note}</p>
+              <div class="menu-cat__mobile-plate">
+                <Plate variant={course.variant} decorative />
+              </div>
+            </div>
+
+            <ul>
+              {course.dishes.map((dish) => (
+                <li class="dish">
+                  <div class="dish__line">
+                    <h3 class="dish__name">
+                      {dish.name}
+                      {dish.tags && (
+                        <span class="dish__tags">
+                          {dish.tags.map((tag) => <span>{tag}</span>)}
+                        </span>
+                      )}
+                    </h3>
+                    <span class="dish__leader" aria-hidden="true"></span>
+                    <span class="dish__price">{dish.price} kr</span>
+                  </div>
+                  <p class="dish__desc">{dish.description}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+
+        <div class="tasting" data-reveal>
+          <div>
+            <h3>Tre rätt, ett bord</h3>
+            <p>
+              Tilltugg, varmrätt och efterrätt, valda av köket. Berätta vad du inte äter,
+              så bygger vi menyn runt dig.
+            </p>
+          </div>
+          <p class="tasting__price">495 kr</p>
+        </div>
+
+        <p class="menu-footnote">
+          Menyn är ett exempel i den här demon och ändras med säsongen. Priserna är
+          inklusive moms. Fråga oss om allergener och om du vill ha rätten utan något
+          — vi anpassar det mesta. Sällskap över åtta, hör av dig i god tid.
+        </p>
+      </div>
+    </div>
+
+    <section class="section lunch" id="lunch" aria-labelledby="lunch-title" data-menu-section>
+      <div class="shell lunch__grid">
+        <div class="lunch__head" data-reveal>
+          <h2 id="lunch-title">Lunch</h2>
+          <p>
+            Vardag mitt på dagen: en rätt, sallad, bröd och kaffe. Sätt dig ner, ät ordentligt
+            och gå tillbaka till dagen. Ingen bokning krävs.
+          </p>
+          <p class="lunch__meta meta">Tis–fre 11.30–14.00 · 145 kr</p>
+        </div>
+
+        <ul class="lunch__list">
+          {lunch.map((item) => (
+            <li class="lunch__item">
+              <div>
+                <p class="meta">{item.day}</p>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+              </div>
+              <span class="lunch__price">145 kr</span>
+            </li>
+          ))}
+          <li class="lunch__item">
+            <div>
+              <p class="meta">Alla dagar</p>
+              <h3>Dagens gröna</h3>
+              <p>Veckans grönsaksrätt. Fråga vad köket har hittat på.</p>
+            </div>
+            <span class="lunch__price">135 kr</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <Booking />
+</Base>

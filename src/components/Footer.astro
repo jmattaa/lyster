@@ -1,0 +1,60 @@
+---
+import Mark from './Mark.astro';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="Lyster — till startsidan">
+          <Mark />
+          <span class="brand__word" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
+        </a>
+        <p class="footer__tagline">Modern husmanskost i Stockholm. Recepten känner du igen. Handlaget är vårt.</p>
+      </div>
+
+      <div class="footer__col footer__col--wide">
+        <h3>Kontakt</h3>
+        <address>
+          Lystergränd 4<br />
+          111 30 Stockholm
+        </address>
+        <p>
+          <a href="tel:+46812345678">08–123 45 678</a><br />
+          <a href="mailto:hej@lyster.se">hej@lyster.se</a>
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Öppettider</h3>
+        <div class="footer__hours">
+          <div><span>Tis–fre</span><span>11.30–23.00</span></div>
+          <div><span>Lör</span><span>12.00–23.00</span></div>
+          <div><span>Sön–mån</span><span>Stängt</span></div>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3>Följ</h3>
+        <p>
+          <a href="https://instagram.com/lystersthlm" rel="noopener">Instagram</a><br />
+          <a href="/meny">Menyn</a><br />
+          <a href="#boka" data-booking-link>Boka bord</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__demo">
+        <strong>Demowebbplats.</strong> Meny, priser, öppettider och kontaktuppgifter är exempel och ska
+        ersättas innan lansering. Bokningslänken är inte kopplad.
+      </p>
+      <p>
+        Illustrationsfoto: <a href="https://commons.wikimedia.org/wiki/File:Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg" rel="noopener">tuey / Wikimedia Commons</a>,
+        CC BY 2.0. <span aria-hidden="true">·</span> © {year} Lyster
+      </p>
+    </div>
+  </div>
+</footer>

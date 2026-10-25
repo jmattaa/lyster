@@ -1,0 +1,67 @@
+---
+import Mark from './Mark.astro';
+import Arrow from './Arrow.astro';
+
+const pathname = Astro.url.pathname;
+const onMenu = pathname.startsWith('/meny');
+const menuHref = onMenu ? '/meny' : '/#krogen';
+const homeHref = '/';
+---
+
+<header class="header">
+  <div class="shell header__inner">
+    <a class="brand" href={homeHref} aria-label="Lyster — till startsidan">
+      <Mark />
+      <span class="brand__word" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
+    </a>
+
+    <nav class="nav" aria-label="Huvudmeny">
+      <a class="nav__link" href="/#krogen">Krogen</a>
+      <a class="nav__link" href="/meny" aria-current={onMenu ? 'page' : undefined}>Menyn</a>
+      <a class="nav__link" href="/#hitta">Hitta hit</a>
+    </nav>
+
+    <div class="header__mobile">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="mobilnav"
+        aria-expanded="false"
+        data-menu-open
+      >
+        <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+        Meny
+      </button>
+    </div>
+
+    <a class="btn nav__cta header__cta-desktop" href="#boka" data-booking-link>
+      Boka bord
+      <Arrow class="btn__arrow" />
+    </a>
+  </div>
+</header>
+
+<dialog id="mobilnav" class="mobile-nav" aria-label="Huvudmeny">
+  <div class="mobile-nav__top">
+    <a class="brand" href="/" aria-label="Lyster — till startsidan">
+      <Mark />
+      <span class="brand__word" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
+    </a>
+    <button class="mobile-nav__close" type="button" data-menu-close>
+      Stäng
+    </button>
+  </div>
+  <div class="mobile-nav__body">
+    <nav class="mobile-nav__links" aria-label="Mobilmeny">
+      <a class="mobile-nav__link" href="/#krogen">Krogen</a>
+      <a class="mobile-nav__link" href="/meny">Menyn</a>
+      <a class="mobile-nav__link" href="/#hitta">Hitta hit</a>
+      <a class="mobile-nav__link" href="#boka" data-booking-link>Boka bord</a>
+    </nav>
+    <div class="mobile-nav__foot">
+      <p><a href="tel:+46812345678">08–123 45 678</a><br /><a href="mailto:hej@lyster.se">hej@lyster.se</a></p>
+      <p>Lystergränd 4<br />111 30 Stockholm</p>
+      <p><a href="https://instagram.com/lystersthlm" rel="noopener">@lystersthlm</a></p>
+    </div>
+  </div>
+</dialog>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<svg
+  class:list={['brand__mark', className]}
+  viewBox="0 0 64 64"
+  role="presentation"
+  aria-hidden="true"
+  focusable="false"
+>
+  <circle cx="32" cy="32" r="30" fill="#fbf7ee" stroke="#a97e34" stroke-width="1.5" />
+  <path d="M32 2a30 30 0 0 1 0 60Z" fill="#1e3a5f" />
+  <path d="M32 14a18 18 0 0 0 0 36Z" fill="#a97e34" />
+  <circle cx="32" cy="32" r="5" fill="#c49a4a" />
+</svg>

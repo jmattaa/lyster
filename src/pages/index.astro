@@ -1,0 +1,224 @@
+---
+import Base from '../layouts/Base.astro';
+import Plate from '../components/Plate.astro';
+import Arrow from '../components/Arrow.astro';
+import Map from '../components/Map.astro';
+import Booking from '../components/Booking.astro';
+---
+
+<Base>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="shell">
+      <h1 class="hero__title" id="hero-title" data-reveal-mask>
+        <span class="sr-only">Lyster — modern husmanskost i Stockholm</span>
+        <span class="wordmark" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
+      </h1>
+
+      <div class="hero__lower">
+        <div class="hero__copy">
+          <h2 class="hero__lead">Husmanskost, skärpt.</h2>
+          <p class="hero__body">
+            Köttbullar med riktig gräddsås. Strömming som knastrar. Grönsaker från nära håll.
+            Lagat som vi själva vill äta det — mitt i Stockholm.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#boka" data-booking-link>
+              Boka bord
+              <Arrow class="btn__arrow" />
+            </a>
+            <a class="btn btn--ghost" href="/meny">Läs menyn</a>
+          </div>
+          <div class="hero__meta">
+            <span class="hero__status" data-open-status>
+              <span class="hero__status-dot" aria-hidden="true"></span>
+              <span data-open-text>Lunch tis–fre 11.30–14.00</span>
+            </span>
+            <span><a href="#hitta">Lystergränd 4, Stockholm</a></span>
+          </div>
+        </div>
+
+        <div class="hero__plate-wrap">
+          <div class="hero__plate-stage" data-plate-parallax>
+            <div class="hero__plate">
+              <Plate animate />
+            </div>
+          </div>
+          <div class="hero__caption">
+            <span class="meta">Köttbullar · gräddsås · lingon</span>
+            <a class="link-underline" href="/meny">265 kr</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="krogen" aria-labelledby="krogen-title">
+    <div class="shell grid">
+      <h2 class="intro__statement" id="krogen-title" data-reveal>
+        Recepten känner du igen. <em>Handlaget är vårt.</em>
+      </h2>
+
+      <div class="intro__body">
+        <p data-reveal>
+          Vi öppnade Lyster för att husmanskosten förtjänar bättre än en plastmatta och en
+          söndagskänsla. Recepten känner du igen. Handlaget är vårt. Vi maler köttet själva,
+          reder såsen på kalvben och låter grönsakerna bestämma när menyn ändras.
+        </p>
+        <p data-reveal>
+          Inget krångel. Bara mat som är gjord ordentligt, i ett rum där du kan sitta länge.
+          Kom för lunch, stanna för middag, eller ta ett glas vid baren medan du väntar.
+        </p>
+      </div>
+
+      <div class="facts">
+        <div class="fact">
+          <h3>Nära håll</h3>
+          <p>Svenska råvaror, säsong för säsong. Vi byter meny när det som är bäst byter skepnad.</p>
+        </div>
+        <div class="fact">
+          <h3>Från grunden</h3>
+          <p>Buljong, såser och inläggningar görs i köket. Varje dag, inte bara när någon tittar.</p>
+        </div>
+        <div class="fact">
+          <h3>Till bordet</h3>
+          <p>Lunch, middag eller bara ett glas. Ett rum för vardag och fest, utan att göra stor skillnad på dem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section preview" aria-labelledby="preview-title">
+    <div class="shell">
+      <div class="section-head">
+        <h2 class="h2" id="preview-title" data-reveal>Det vi är kända för</h2>
+        <a class="link-arrow section-head__link" href="/meny">
+          Hela menyn
+          <Arrow />
+        </a>
+      </div>
+
+      <div class="preview__grid">
+        <article class="preview__feature">
+          <div class="preview__feature-plate" data-reveal>
+            <Plate variant="kottbullar" decorative />
+          </div>
+          <div class="dish-feature">
+            <div>
+              <h3>Köttbullar</h3>
+              <p>Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka. Potatispuré som inte skäms för sig.</p>
+            </div>
+            <span class="dish-feature__price">265 kr</span>
+          </div>
+        </article>
+
+        <div class="preview__list">
+          <a class="preview-row" href="/meny#havet">
+            <div class="preview-row__plate">
+              <Plate variant="stromming" decorative />
+            </div>
+            <div class="preview-row__body">
+              <div class="preview-row__line">
+                <h3>Stekt strömming</h3>
+                <span>245 kr</span>
+              </div>
+              <p>Potatispuré, brynt smör, dill och citron. Knaprigt där det ska vara mjukt.</p>
+            </div>
+          </a>
+
+          <a class="preview-row" href="/meny#gront">
+            <div class="preview-row__plate">
+              <Plate variant="rotselleri" decorative />
+            </div>
+            <div class="preview-row__body">
+              <div class="preview-row__line">
+                <h3>Ugnsbakad rotselleri</h3>
+                <span>225 kr</span>
+              </div>
+              <p>Svamp, hasselnöt och brynt smör. Grönsaken får ta lika stor plats som köttet.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section proof" aria-labelledby="proof-title">
+    <div class="shell proof__grid">
+      <figure class="proof__figure" data-reveal-mask>
+        <div class="proof__ring">
+          <img
+            class="proof__photo"
+            src="/images/kottbullar-1280.webp"
+            srcset="/images/kottbullar-720.webp 720w, /images/kottbullar-1280.webp 1280w"
+            sizes="(max-width: 900px) 90vw, 42vw"
+            width="1280"
+            height="1174"
+            alt="Köttbullar med lingon och gräddsås på en tallrik."
+            loading="lazy"
+          />
+        </div>
+        <figcaption class="proof__credit">
+          Illustrationsfoto: <a href="https://commons.wikimedia.org/wiki/File:Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg" rel="noopener">tuey / Wikimedia Commons</a>, CC BY 2.0.
+          Ersätts med egen bild före lansering.
+        </figcaption>
+      </figure>
+
+      <div class="proof__copy">
+        <h2 id="proof-title">Inga genvägar <em>på tallriken.</em></h2>
+        <p>
+          Vi maler köttet själva. Reder såsen på kalvben. Lägger in gurkan på hösten så att
+          den är klar till vintern. Det tar tid. Det är hela poängen.
+        </p>
+        <p>
+          Samma sak med grönsakerna: de får ta den tid de behöver, och de får smaka som de
+          gör. Inget mer, inget mindre.
+        </p>
+        <div class="proof__details">
+          <span>Köttbullar serveras både lunch och middag.</span>
+          <span>Fråga oss om allergener — vi anpassar det mesta.</span>
+          <a class="link-underline" href="/meny">Se hela menyn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hitta" aria-labelledby="find-title">
+    <div class="shell grid">
+      <div class="find__head">
+        <h2 class="h2" id="find-title" data-reveal>Hitta hit</h2>
+        <p data-reveal>
+          Vi sitter på Lystergränd, några minuter från Östermalmstorg. Kom in från gatan,
+          häng av dig och ta plats.
+        </p>
+      </div>
+
+      <Map />
+
+      <div class="find__info">
+        <address class="address">
+          <a href="https://www.google.com/maps/search/?api=1&query=Lystergr%C3%A4nd+4+Stockholm" rel="noopener">
+            Lystergränd 4<br />
+            111 30 Stockholm
+          </a>
+        </address>
+        <div class="contact-list">
+          <a href="tel:+46812345678">08–123 45 678</a>
+          <a href="mailto:hej@lyster.se">hej@lyster.se</a>
+          <a href="https://instagram.com/lystersthlm" rel="noopener">@lystersthlm</a>
+        </div>
+
+        <div class="hours">
+          <h3 class="meta">Öppettider</h3>
+          <dl>
+            <div class="hours__row"><dt>Tisdag–fredag</dt><dd>11.30–23.00</dd></div>
+            <div class="hours__row"><dt>Lördag</dt><dd>12.00–23.00</dd></div>
+            <div class="hours__row"><dt>Söndag–måndag</dt><dd>Stängt</dd></div>
+          </dl>
+          <p class="hours__note">Lunchen serveras tis–fre 11.30–14.00. Köket stänger 22.30.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Booking />
+</Base>

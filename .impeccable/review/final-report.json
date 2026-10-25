@@ -1,0 +1,971 @@
+{
+  "results": [
+    {
+      "name": "final-home-desktop",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 5868
+      },
+      "overflowing": [],
+      "imgs": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "hiddenReveals": 5,
+      "smallTargets": [
+        {
+          "text": "Krogen",
+          "h": 35,
+          "w": 46,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Menyn",
+          "h": 35,
+          "w": 44,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Hitta hit",
+          "h": 35,
+          "w": 50,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Läs menyn",
+          "h": 39,
+          "w": 73,
+          "cls": "btn btn--ghost"
+        },
+        {
+          "text": "Lystergränd 4, Stockholm",
+          "h": 21,
+          "w": 181,
+          "cls": ""
+        },
+        {
+          "text": "265 kr",
+          "h": 26,
+          "w": 47,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Hela menyn",
+          "h": 37,
+          "w": 116,
+          "cls": "link-arrow section-head__link"
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 13,
+          "w": 126,
+          "cls": ""
+        },
+        {
+          "text": "Se hela menyn",
+          "h": 22,
+          "w": 512,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Öppna i kartor",
+          "h": 27,
+          "w": 69,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 35,
+          "w": 113,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 35,
+          "w": 97,
+          "cls": ""
+        },
+        {
+          "text": "@lystersthlm",
+          "h": 35,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 29,
+          "w": 182,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 7.79,
+          "fg": "hero__body",
+          "bg": ""
+        },
+        {
+          "ratio": 7.79,
+          "fg": "meta",
+          "bg": "hero"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "hero__status",
+          "bg": "hero"
+        },
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        }
+      ]
+    },
+    {
+      "name": "final-home-tablet",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "scrollHeight": 7502
+      },
+      "overflowing": [],
+      "imgs": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "hiddenReveals": 5,
+      "smallTargets": [
+        {
+          "text": "Läs menyn",
+          "h": 39,
+          "w": 73,
+          "cls": "btn btn--ghost"
+        },
+        {
+          "text": "Lystergränd 4, Stockholm",
+          "h": 21,
+          "w": 181,
+          "cls": ""
+        },
+        {
+          "text": "265 kr",
+          "h": 26,
+          "w": 47,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Hela menyn",
+          "h": 37,
+          "w": 116,
+          "cls": "link-arrow section-head__link"
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 13,
+          "w": 126,
+          "cls": ""
+        },
+        {
+          "text": "Se hela menyn",
+          "h": 22,
+          "w": 512,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Öppna i kartor",
+          "h": 27,
+          "w": 69,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 35,
+          "w": 113,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 35,
+          "w": 97,
+          "cls": ""
+        },
+        {
+          "text": "@lystersthlm",
+          "h": 35,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 29,
+          "w": 182,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 7.79,
+          "fg": "hero__body",
+          "bg": ""
+        },
+        {
+          "ratio": 7.79,
+          "fg": "meta",
+          "bg": "hero"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "hero__status",
+          "bg": "hero"
+        },
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        }
+      ]
+    },
+    {
+      "name": "final-home-mobile",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 6948
+      },
+      "overflowing": [],
+      "imgs": [
+        {
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
+        }
+      ],
+      "hiddenReveals": 5,
+      "smallTargets": [
+        {
+          "text": "Läs menyn",
+          "h": 39,
+          "w": 73,
+          "cls": "btn btn--ghost"
+        },
+        {
+          "text": "Lystergränd 4, Stockholm",
+          "h": 16,
+          "w": 133,
+          "cls": ""
+        },
+        {
+          "text": "265 kr",
+          "h": 18,
+          "w": 32,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Hela menyn",
+          "h": 35,
+          "w": 110,
+          "cls": "link-arrow section-head__link"
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 13,
+          "w": 126,
+          "cls": ""
+        },
+        {
+          "text": "Se hela menyn",
+          "h": 22,
+          "w": 320,
+          "cls": "link-underline"
+        },
+        {
+          "text": "Öppna i kartor",
+          "h": 27,
+          "w": 69,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 34,
+          "w": 107,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 34,
+          "w": 91,
+          "cls": ""
+        },
+        {
+          "text": "@lystersthlm",
+          "h": 34,
+          "w": 90,
+          "cls": ""
+        },
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 27,
+          "w": 172,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 7.79,
+          "fg": "hero__body",
+          "bg": ""
+        },
+        {
+          "ratio": 7.79,
+          "fg": "meta",
+          "bg": "hero"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "hero__status",
+          "bg": "hero"
+        },
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        }
+      ]
+    },
+    {
+      "name": "final-menu-desktop",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 5604
+      },
+      "overflowing": [],
+      "imgs": [],
+      "hiddenReveals": 4,
+      "smallTargets": [
+        {
+          "text": "Krogen",
+          "h": 35,
+          "w": 46,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Menyn",
+          "h": 35,
+          "w": 44,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Hitta hit",
+          "h": 35,
+          "w": 50,
+          "cls": "nav__link"
+        },
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 29,
+          "w": 182,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        },
+        {
+          "ratio": 8.22,
+          "fg": "lunch__price",
+          "bg": "section lunch"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "dish__desc",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "menu-cat__note",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "",
+          "bg": "tasting"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "tasting__price",
+          "bg": "tasting"
+        }
+      ]
+    },
+    {
+      "name": "final-menu-tablet",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "scrollHeight": 6258
+      },
+      "overflowing": [],
+      "imgs": [],
+      "hiddenReveals": 5,
+      "smallTargets": [
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 29,
+          "w": 182,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        },
+        {
+          "ratio": 8.22,
+          "fg": "lunch__price",
+          "bg": "section lunch"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "dish__desc",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "menu-cat__note",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "",
+          "bg": "tasting"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "tasting__price",
+          "bg": "tasting"
+        }
+      ]
+    },
+    {
+      "name": "final-menu-mobile",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 6326
+      },
+      "overflowing": [],
+      "imgs": [],
+      "hiddenReveals": 5,
+      "smallTargets": [
+        {
+          "text": "Eller ring 08–123 45 678",
+          "h": 27,
+          "w": 172,
+          "cls": "booking__phone"
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 22,
+          "w": 80,
+          "cls": "link-underline"
+        },
+        {
+          "text": "08–123 45 678",
+          "h": 30,
+          "w": 96,
+          "cls": ""
+        },
+        {
+          "text": "hej@lyster.se",
+          "h": 30,
+          "w": 80,
+          "cls": ""
+        },
+        {
+          "text": "Instagram",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "Menyn",
+          "h": 30,
+          "w": 42,
+          "cls": ""
+        },
+        {
+          "text": "Boka bord",
+          "h": 30,
+          "w": 62,
+          "cls": ""
+        },
+        {
+          "text": "tuey / Wikimedia Commons",
+          "h": 15,
+          "w": 133,
+          "cls": ""
+        }
+      ],
+      "fontStatus": true,
+      "contrast": [
+        {
+          "ratio": 13.57,
+          "fg": "",
+          "bg": "booking"
+        },
+        {
+          "ratio": 8.22,
+          "fg": "lunch__price",
+          "bg": "section lunch"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "dish__desc",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 7.79,
+          "fg": "menu-cat__note",
+          "bg": "menu-cat"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "",
+          "bg": "tasting"
+        },
+        {
+          "ratio": 6.49,
+          "fg": "tasting__price",
+          "bg": "tasting"
+        }
+      ]
+    },
+    {
+      "booking": {
+        "noteVisible": true,
+        "noteText": "Bokningslänken är inte kopplad i demon än. Ring 08–123 45 678, så hjälper vi dig.",
+        "noteFocused": true,
+        "noteBox": {
+          "x": 60,
+          "y": 607,
+          "w": 310,
+          "h": 59
+        },
+        "borderTop": "1px solid color(srgb 0.662745 0.494118 0.203922 / 0.7)",
+        "borderLeft": "0px none color(srgb 0.828314 0.835216 0.832392)",
+        "color": "color(srgb 0.828314 0.835216 0.832392)"
+      }
+    },
+    {
+      "scrollSpy": [
+        {
+          "target": "tilltugg",
+          "active": "Tilltugg",
+          "plate": "tilltugg",
+          "caption": "Tilltugg",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "husmanskost",
+          "active": "Husmanskost",
+          "plate": "husmanskost",
+          "caption": "Husmanskost",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "havet",
+          "active": "Från havet",
+          "plate": "havet",
+          "caption": "Från havet",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "gront",
+          "active": "Grönt",
+          "plate": "gront",
+          "caption": "Grönt",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "efterratt",
+          "active": "Efterrätt",
+          "plate": "efterratt",
+          "caption": "Efterrätt",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "dryck",
+          "active": "Dryck",
+          "plate": "dryck",
+          "caption": "Dryck",
+          "sectionTop": 142,
+          "navBottom": 128
+        },
+        {
+          "target": "lunch",
+          "active": "Lunch",
+          "caption": "Lunch",
+          "sectionTop": 142,
+          "navBottom": 128
+        }
+      ],
+      "navAtBottom": {
+        "navTop": 72,
+        "bookingTop": 248
+      }
+    },
+    {
+      "focusSteps": [
+        {
+          "tag": "A",
+          "text": "Hoppa till innehållet",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "LYSTER",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Krogen",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Menyn",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Hitta hit",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Boka bord",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Boka bord",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Läs menyn",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Lystergränd 4, Stockholm",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "265 kr",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Hela menyn",
+          "outline": "solid 2px rgb(169, 126, 52)",
+          "visible": true
+        }
+      ],
+      "skip": {
+        "focused": false,
+        "y": -79,
+        "text": "Hoppa till innehållet"
+      }
+    },
+    {
+      "mobileNav": {
+        "opened": {
+          "open": true,
+          "expanded": "true",
+          "locked": true,
+          "focused": "Stäng"
+        },
+        "closed": {
+          "open": false,
+          "expanded": "false",
+          "locked": false,
+          "focused": true
+        }
+      }
+    },
+    {
+      "reduced": {
+        "hiddenReveals": 0,
+        "plateActive": true,
+        "ringAnimation": "none"
+      }
+    }
+  ],
+  "errors": []
+}
