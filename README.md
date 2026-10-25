@@ -96,10 +96,21 @@ Sök efter följande innan lansering:
 
 - `Demowebbplats.` i `src/components/Footer.astro` — hela demodeklarationen ska bort eller skrivas om.
 - `data-booking-placeholder`, `data-booking-note` och `example.com` i `Booking.astro`.
-- `Ersätts med egen bild före lansering.` i `src/pages/index.astro` (bildcrediten).
+- `Ersätts med egen bild före lansering.` i `src/pages/index.astro` (köttbullefotots credit).
+- `Tillfälligt foto: Unsplash.` i `src/pages/index.astro` (herobandets fotnot).
 - `Menyn är ett exempel i den här demon` i `meny.astro` (fotnot under menyn).
 
 ## Bild och licens
+
+### Hero (tillfällig platshållare)
+
+Startsidans fullbreddsband använder just nu ett tillfälligt platshållarfoto från Unsplash:
+
+- **Filer:** `public/images/hero-rum-1200.webp` (1200×900) och `public/images/hero-rum-2400.webp` (2400×1800).
+- **Källa:** Unsplash, `photo-1567521464027-f127ff144326`, licensierad under Unsplash License. Bilden är endast en platshållare och ska ersättas med ett eget foto före lansering.
+- **Byt:** ersätt båda filerna med eget foto i samma filnamn och storlekar, uppdatera fotnoten under bandet och justera `alt` i `index.astro` så den beskriver den nya bilden. Fotot bör vara ljust dagsljus, liggande 4:3 eller 3:2, minst 2400 px brett, med motivet centrerat eller till höger.
+
+### Köttbullar i proof-sektionen
 
 Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 
@@ -107,10 +118,10 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 - **Upphov:** [tuey / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg), CC BY 2.0.
 - **Krav:** crediteringen "Illustrationsfoto: tuey / Wikimedia Commons, CC BY 2.0." finns i `index.astro` och `Footer.astro` och måste följa med så länge bilden används. Byt helst till eget foto före lansering och uppdatera crediteringen då.
 
-Övriga bilder är gjorda för projektet:
+Övriga filer:
 
 - `public/images/paper-noise.webp` — subtil papperstextur, 128×128 px, används som bakgrund.
-- `src/components/Mark.astro` och `src/components/Lustre.astro` är de enda handritade SVG-formerna. Mark används i header, mobilmeny och footer; den enda linsen används en gång i startsidans hero. Faviconen är samma Mark.
+- `src/components/Mark.astro` är den enda handritade SVG-formen. Den används i header, mobilmeny och footer, och är favicon. Det finns inga andra illustrerade glyfer.
 - `src/components/Map.astro` är en lazy-laddad OpenStreetMap-iframe med synlig kartcreditering och en Google Maps-länk för vägbeskrivning. Ingen handritad karta.
 - Pilarna i knappar och länkar är typografiska `→`, inte SVG-ikoner.
 - Typsnittet **Familjen Grotesk** är self-hosted via `@fontsource-variable/familjen-grotesk`, inklusive den äkta kursiva skärningen (SIL Open Font License 1.1).
@@ -119,7 +130,7 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 
 ```
 src/
-  components/    Header, Footer, Booking, Lustre, Map, Mark, Arrow
+  components/    Header, Footer, Booking, Map, Mark, Arrow
   layouts/       Base.astro (metadata, kontrakt, skal, mobil bokningsrad)
   pages/         index.astro, meny.astro
   scripts/       site.js (mobilnav, reveals, öppettider, menyns kategorisynk)
@@ -135,9 +146,10 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 ## Funktioner
 
 - Responsivt från 390 px till breda skärmar, med 72 px header och mobil bokningsrad.
+- Fullbredds heroband med cobalt kopieplan och foto; under 900 px staplas fotografiet överst och kopian under.
 - Fullskärmig mobilnavigation som `<dialog>` med fokusfångst och Escape-stängning.
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.
-- Scroll-reveals och en lins vars halvor sluter sig, kärna och glint tonar in, och ring ritas en gång på startsidan.
+- Scroll-reveals och ett fullbredds heroband där fotografiet vecklas fram en gång med en clip-path-mask; rubriken använder samma mask.
 - Menyns kategorinav synkas vid scroll; kategorierna kan också klickas. Den sticky menyn är typografisk, utan illustration.
 - Karta i form av ett lazy-laddat OpenStreetMap-embed med vägbeskrivning till Google Maps.
 - `prefers-reduced-motion` stänger av rörelse och visar allt innehåll direkt.

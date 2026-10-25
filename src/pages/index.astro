@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Lustre from '../components/Lustre.astro';
 import Arrow from '../components/Arrow.astro';
 import Map from '../components/Map.astro';
 import Booking from '../components/Booking.astro';
@@ -13,8 +12,10 @@ import Booking from '../components/Booking.astro';
         <span class="sr-only">Lyster — modern husmanskost i Stockholm</span>
         <span class="wordmark" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
       </h1>
+    </div>
 
-      <div class="hero__lower">
+    <div class="hero__band">
+      <div class="hero__panel">
         <div class="hero__copy">
           <h2 class="hero__lead">Husmanskost, skärpt.</h2>
           <p class="hero__body">
@@ -22,33 +23,41 @@ import Booking from '../components/Booking.astro';
             Lagat som vi själva vill äta det — mitt i Stockholm.
           </p>
           <div class="hero__actions">
-            <a class="btn" href="#boka" data-booking-link>
+            <a class="btn btn--gold" href="#boka" data-booking-link>
               Boka bord
               <Arrow class="btn__arrow" />
             </a>
             <a class="btn btn--ghost" href="/meny">Läs menyn</a>
           </div>
-          <div class="hero__meta">
-            <span class="hero__status" data-open-status>
-              <span class="hero__status-dot" aria-hidden="true"></span>
-              <span data-open-text>Lunch tis–fre 11.30–14.00</span>
-            </span>
-            <span><a href="#hitta">Luntmakargatan 42, 111 37 Stockholm</a></span>
-          </div>
         </div>
 
-        <div class="hero__object-wrap">
-          <div class="hero__object-stage">
-            <div class="hero__object">
-              <Lustre animate />
-            </div>
-          </div>
-          <div class="hero__caption">
-            <span class="meta">Modern husmanskost · Stockholm</span>
-            <a class="link-underline" href="/meny">Hela menyn</a>
-          </div>
+        <div class="hero__meta">
+          <span class="hero__status" data-open-status>
+            <span class="hero__status-dot" aria-hidden="true"></span>
+            <span data-open-text>Lunch tis–fre 11.30–14.00</span>
+          </span>
+          <span><a href="#hitta">Luntmakargatan 42, 111 37 Stockholm</a></span>
         </div>
       </div>
+
+      <figure class="hero__figure" data-reveal-mask>
+        <img
+          class="hero__photo"
+          src="/images/hero-rum-2400.webp"
+          srcset="/images/hero-rum-1200.webp 1200w, /images/hero-rum-2400.webp 2400w"
+          sizes="(max-width: 900px) 100vw, 58vw"
+          width="2400"
+          height="1800"
+          alt="Ljus restaurangmiljö med bord, stolar och stora fönster."
+          fetchpriority="high"
+          decoding="async"
+        />
+      </figure>
+    </div>
+
+    <div class="shell hero__foot">
+      <span>Tillfälligt foto: Unsplash. Ersätts med eget foto före lansering.</span>
+      <span class="meta">Modern husmanskost · Stockholm</span>
     </div>
   </section>
 

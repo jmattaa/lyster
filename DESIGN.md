@@ -91,21 +91,22 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Printed Lens"**
+**Creative North Star: "The Printed Room"**
 
-Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The food is never illustrated. Instead the page holds one abstract object — a monumental lustre lens built from the house mark's own split circle: paper and pale brass halves, a cobalt seam, and a protruding deep cobalt core. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.
+Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The room is not illustrated; it is photographed. The homepage opens with a full-bleed band split between a cobalt copy plane and a real, daylight photograph of the dining room. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.
 
-The system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.
+The system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.
 
-Motion is precise and editorial: the single lens focuses into place once — its halves close, its core rises, its rim draws — section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.
+Motion is precise and editorial: the hero photograph wipes into place once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.
 
 **Key Characteristics:**
 - Warm beige paper ground with a subtle 128px noise texture.
-- Cobalt is a room you walk into (hero lens stage, proof band, booking band), not a global theme.
+- Cobalt is a room you walk into (hero band, proof band, booking band), not a global theme.
 - Brass appears as 1px rules, small dots, underlines, and one large disc.
-- Square corners everywhere; the only curves are circles (the lens, the photo crop, the discs, the mark).
+- Square corners everywhere; the only curves are circles (the proof photo crop, the booking disc, the mark).
 - One typeface, used from 0.68rem captions to a 12.5rem wordmark, with a real italic cut.
-- Exactly two authored glyphs: the brand Mark and the single lustre lens, used once. Everything else is type, photography, rule, and a live map.
+- Exactly one authored glyph: the brand Mark. Everything else is type, photography, rule, and a live map.
+- Real photography, never illustration: a full-bleed band in the hero and a circular crop in the proof.
 - Flat at rest: no box-shadows, no gradients, no glass, no rounded cards.
 
 ## Colors
@@ -114,7 +115,7 @@ A warm paper neutral, one deep cobalt, and a brass accent, with ingredient color
 
 ### Primary
 
-- **Cobalt Field** (#1e3a5f): Primary brand field. It fills the proof band, the booking band, the mobile booking bar, and primary buttons. White-on-cobalt is the default high-contrast pairing.
+- **Cobalt Field** (#1e3a5f): Primary brand field. It fills the hero copy plane, the proof band, the booking band, the mobile booking bar, and primary buttons. White-on-cobalt is the default high-contrast pairing.
 - **Late Cobalt** (#142a45): The darkest field, used for the booking band and mobile bar where the gold disc and gold button need more separation.
 
 ### Secondary
@@ -177,37 +178,37 @@ A warm paper neutral, one deep cobalt, and a brass accent, with ingredient color
 
 A 12-column editorial grid inside a 1560px shell. Gutters are `clamp(1.25rem, 4.2vw, 4.5rem)` and section rhythm is `clamp(5.5rem, 11vw, 10.5rem)`.
 
-Compositions rarely fill all twelve columns symmetrically. The hero pairs a wide type block with a 560px lens stage; the intro sets a statement against a narrower body column; the proof band puts a circular photo at columns 1–5 and copy at 7–12. The menu page opens with a typographic hero: the title sits low at left, the introduction and service facts occupy the right column, and the two align on their bottom edge. Below it, a type-only rail at columns 1–3 faces the dishes at columns 5–12. Asymmetry is structural, not decorative: one side carries the object or the navigation, the other carries the reading.
+Compositions rarely fill all twelve columns symmetrically. The homepage opens with the wordmark, then a full-bleed band: a cobalt copy plane on the left and a photograph on the right, split roughly 5/7. The intro sets a statement against a narrower body column; the proof band puts a circular photo at columns 1–5 and copy at 7–12. The menu page opens with a typographic hero: the title sits low at left, the introduction and service facts occupy the right column, and the two align on their bottom edge. Below it, a type-only rail at columns 1–3 faces the dishes at columns 5–12. Asymmetry is structural, not decorative: one side carries the photograph or the navigation, the other carries the reading.
 
 The sticky system is explicit. The header is 72px. The menu category nav sticks directly beneath it at `top: var(--header-h)`, and the menu rail sticks at `header + 64px`. Anchor scroll margins clear both (`header + 16px` for page sections, `header + 70px` for menu categories and lunch).
 
 Breakpoints are coarse and content-led:
 
-- **1100px:** hero lens and proof image begin to shrink; side-by-side proportions loosen.
-- **900px:** the 12-column grid collapses to stacked blocks; the menu rail leaves the viewport and dishes run full width; the mobile booking bar appears.
+- **1100px:** the hero band keeps its 5/7 split but tightens; the proof image begins to shrink and side-by-side proportions loosen.
+- **900px:** the 12-column grid collapses to stacked blocks; the hero band stacks with the photograph above the cobalt copy; the menu rail leaves the viewport and dishes run full width; the mobile booking bar appears.
 - **640px:** type steps down, the wordmark takes over the viewport width, the mobile navigation opens as a full-screen `<dialog>`, and dense meta rows wrap.
 
 ### Named Rules
 
-**The One Object Rule.** Each composition has one dominant object — the lens, the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.
+**The One Object Rule.** Each composition has one dominant object — the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.
 
-**The Two Glyphs Rule.** The site authors exactly two glyphs: the brand Mark and the lustre lens. The lens appears once, in the homepage hero. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.
+**The One Glyph Rule.** The site authors exactly one glyph: the brand Mark. The photograph is real, not drawn. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.
 
 **The Clear The Header Rule.** Anything sticky or anchored must account for the 72px header plus the 64px menu nav; content never lands underneath them.
 
 ## Elevation & Depth
 
-There are no shadows and no gradients. The system is flat by doctrine. Depth is conveyed by three devices only: tonal layering (paper, cobalt, brass), overlapping flat shapes (a cobalt disc behind the lens, a brass ring around a photograph), and the page's own scroll order. Emphasis is typographic: a true italic and a color shift, not an inset highlight or elevation.
+There are no shadows and no gradients. The system is flat by doctrine. Depth is conveyed by three devices only: tonal layering (paper, cobalt, brass), flat planes meeting on clean edges (the cobalt copy plane against the hero photograph, the brass ring around a photograph), and the page's own scroll order. Emphasis is typographic: a true italic and a color shift, not an inset highlight or elevation.
 
 ### Named Rules
 
 **The Flat Plane Rule.** No `box-shadow`, no blur, no glass, no gradient fills. If a surface needs separation, change its paper tone or put a 1px rule next to it.
 
-**The Printed Overlap Rule.** Objects may overlap like misregistered print, but they stay flat. The lens sits on the disc; the photo sits inside the ring; neither casts anything.
+**The Printed Overlap Rule.** Objects may overlap like misregistered print, but they stay flat. The proof photo sits inside its ring; the cobalt copy plane and the hero photograph meet on a clean edge; neither casts anything.
 
 ## Shapes
 
-Square corners are the default; `border-radius: 0` is the unstated rule for buttons, fields, bands, and cards. The only curves are complete circles: the lustre lens, the hero and booking discs, the circular photo crop, and the brand mark. Circular forms are always objects, never containers for text.
+Square corners are the default; `border-radius: 0` is the unstated rule for buttons, fields, bands, and cards. The only curves are complete circles: the brand mark, the booking disc, and the circular proof photo crop. Circular forms are always objects, never containers for text.
 
 Borders are thin and purposeful: 1px for rules, dividers, focus outlines, and the brass ring; 2px for the menu category head rule and the cobalt category underline. Thick one-sided accent borders are forbidden — they read as a card template, not a printed page. The clay-colored side tab that once marked the booking note has been replaced by a 1px brass top rule.
 
@@ -252,13 +253,15 @@ There are no form fields in the product. Booking is an external link; the demo n
 
 A dish is a single row: name and dietary tags on the left, a dotted leader, price on the right, description underneath in Soft Ink. The leader is a 1px dotted rule that aligns prices without a table. Prices are tabular where they stack. Category counts sit below the category heading, not above it.
 
-### Lustre Glyph
+### Hero Band
 
-The single authored object: a 600×600 SVG lens built from the same split circle as the Mark. The disc is divided along a −38° axis into Chalk Paper and Pale Brass halves, separated by a 12-unit cobalt seam. A deep cobalt core with a brass rim and a small Polished Brass centre sits at (448, 412) and breaks the outer edge. A 1px brass rim and a short glint arc complete it. It is used exactly once, in the homepage hero, where the halves close, the core rises, the glint fades in, and the rim draws on first paint. It has no variants and no labels; the caption beneath carries `Modern husmanskost · Stockholm` and the menu link in type. Under reduced motion the lens is simply present, fully drawn.
+The homepage's full-bleed photograph band. On desktop it is a 5/7 split: a Cobalt Field copy plane on the left and a real dining-room photograph on the right, edge to edge, framed top and bottom by a 1px brass rule. The panel carries the promise, a Gold primary "Boka bord", a quiet ghost "Läs menyn", and the live open status above the full address. The photograph fills its side with `object-fit: cover` and a slight `saturate(0.95) contrast(1.02)` grade, never a dark overlay. Below 900px the band stacks, photograph first at `clamp(15rem, 54vw, 24rem)` tall, cobalt copy beneath; the photo wipes open once on entry and is static under reduced motion. A footnote credits the temporary Unsplash image and states that it will be replaced before launch.
+
+The band is designed to accept the owner's own photograph without layout changes. Supply a bright, daylight landscape at least 2400px wide (4:3 or 3:2), with the room's focal point around the centre-right, and export WebP at 2400px and 1200px. Replace `hero-rum-2400.webp` and `hero-rum-1200.webp`, keep the same filenames, then update the footnote credit. Do not substitute an illustration, a dark food still, or a photo with baked-in text.
 
 ### Brand Mark
 
-The only other authored glyph: a 64×64 circle split into cobalt, brass, and chalk fields with a small bright centre. It appears in the header, mobile dialog, and footer, and doubles as the favicon. It is decorative wherever the wordmark already names the restaurant.
+The only authored glyph: a 64×64 circle split into cobalt, brass, and chalk fields with a small bright centre. It appears in the header, mobile dialog, and footer, and doubles as the favicon. It is decorative wherever the wordmark already names the restaurant.
 
 ### Booking Band
 
@@ -280,10 +283,11 @@ Four-column paper footer: brand and tagline, contact, hours, and follow links. B
 - **Do** use cobalt as a full-width band or a contained stage, and pair it with Chalk Paper text.
 - **Do** draw brass as a 1px rule, a dot, an underline, a small inset panel, or the single booking disc.
 - **Do** keep corners square and separation flat; change tone or add a hairline instead of a shadow.
-- **Do** use the circular lens and circular photo crop as the only curved containers.
+- **Do** use the brand mark and the circular proof photo as the only curved forms.
 - **Do** set headings without eyebrow labels, and let the copy beneath them carry the explanation.
 - **Do** use the real italic cut for emphasis inside headings, in cobalt on paper or pale brass on cobalt.
-- **Do** keep the glyph count at two: the Mark and the single hero lens. Let type, photography, rules, and the map do the rest.
+- **Do** use a real, bright photograph for the hero and keep the full-bleed band free of overlays and decoration.
+- **Do** keep the glyph count at one: the Mark. Let type, photography, rules, and the map do the rest.
 - **Do** give the mobile viewport the same hierarchy: one idea, one object, one primary action per screen.
 
 ### Don't:
@@ -295,5 +299,6 @@ Four-column paper footer: brand and tagline, contact, hours, and follow links. B
 - **Don't** fill large areas with brass; it loses its function as a rule.
 - **Don't** add a kicker or uppercase eyebrow above a heading.
 - **Don't** invent testimonials, awards, press logos, or a booking form that pretends to submit.
-- **Don't** add another lens variant, decorative food glyph, or hand-drawn map.
+- **Don't** add another glyph, decorative food glyph, or hand-drawn map.
+- **Don't** turn the hero photograph into an illustration or replace it with a dark, moody food still.
 - **Don't** remove the demo disclosure or the photo credit until real content replaces them.
