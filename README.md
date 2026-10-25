@@ -32,7 +32,7 @@ Sajten använder absoluta sökvägar (`/meny`, `/images/...`). Publiceras den un
 
 ### Domän
 
-`astro.config.mjs` anger `site: 'https://lyster.se'`. Det styr canonical- och Open Graph-URL:er. Ändra till den riktiga domänen vid lansering. `Base.astro` har samma adress som fallback.
+`astro.config.mjs` anger `site: 'https://lysternorrmalm.se'`. Det styr canonical- och Open Graph-URL:er. Ändra till den riktiga domänen vid lansering. `Base.astro` har samma adress som fallback.
 
 ## Innehåll som ska ersättas
 
@@ -41,12 +41,12 @@ Sajten använder absoluta sökvägar (`/meny`, `/images/...`). Publiceras den un
 | Fält | Demovärde | Var |
 | --- | --- | --- |
 | Restaurangnamn | Lyster | `src/layouts/Base.astro`, `Header.astro`, `Footer.astro` |
-| Adress | Lystergränd 4, 111 30 Stockholm | `Footer.astro`, `Header.astro`, `index.astro`, `Map.astro` |
+| Adress | Luntmakargatan 42, 111 37 Stockholm | `Footer.astro`, `Header.astro`, `index.astro`, `Map.astro` |
 | Telefon (visning) | 08–123 45 678 | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro`, `Base.astro` |
 | Telefon (länk) | `+46812345678` | samma filer |
 | E-post | hej@lyster.se | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro` |
 | Instagram | @lystersthlm / `instagram.com/lystersthlm` | `Header.astro`, `Footer.astro`, `index.astro` |
-| Kartlänk | Google Maps-sökning på adressen | `Map.astro`, `index.astro` |
+| Kartlänk | OpenStreetMap-embed på adressen; Google Maps för vägbeskrivning | `Map.astro`, `index.astro` |
 
 ### Öppettider
 
@@ -110,8 +110,10 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 Övriga bilder är gjorda för projektet:
 
 - `public/images/paper-noise.webp` — subtil papperstextur, 128×128 px, används som bakgrund.
-- Alla tallrikar, kartan, logotypen och favicon är SVG-komponenter utan externa bildfiler.
-- Typsnittet **Familjen Grotesk** är self-hosted via `@fontsource-variable/familjen-grotesk` (SIL Open Font License 1.1).
+- `src/components/Mark.astro` och `src/components/Plate.astro` är de enda handritade SVG-formerna. Mark används i header, mobilmeny och footer; den enda tallriken används en gång i startsidans hero. Faviconen är samma Mark.
+- `src/components/Map.astro` är en lazy-laddad OpenStreetMap-iframe med synlig kartcreditering och en Google Maps-länk för vägbeskrivning. Ingen handritad karta.
+- Pilarna i knappar och länkar är typografiska `→`, inte SVG-ikoner.
+- Typsnittet **Familjen Grotesk** är self-hosted via `@fontsource-variable/familjen-grotesk`, inklusive den äkta kursiva skärningen (SIL Open Font License 1.1).
 
 ## Struktur
 
@@ -120,7 +122,7 @@ src/
   components/    Header, Footer, Booking, Plate, Map, Mark, Arrow
   layouts/       Base.astro (metadata, kontrakt, skal, mobil bokningsrad)
   pages/         index.astro, meny.astro
-  scripts/       site.js (mobilnav, reveals, öppettider, parallax, meny-synk)
+  scripts/       site.js (mobilnav, reveals, öppettider, menyns kategorisynk)
   styles/        global.css (tokens, komponenter, responsivt, print)
 public/
   images/        foto och papperstextur
@@ -135,19 +137,20 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 - Responsivt från 390 px till breda skärmar, med 72 px header och mobil bokningsrad.
 - Fullskärmig mobilnavigation som `<dialog>` med fokusfångst och Escape-stängning.
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.
-- Scroll-reveals och en tallrik som monteras en gång på startsidan.
-- Menyns kategorinav och tallrik synkas vid scroll; kategorierna kan också klickas.
+- Scroll-reveals och en tallrik vars ring ritas och mat settle:ar en gång på startsidan.
+- Menyns kategorinav synkas vid scroll; kategorierna kan också klickas. Den sticky menyn är typografisk, utan illustration.
+- Karta i form av ett lazy-laddat OpenStreetMap-embed med vägbeskrivning till Google Maps.
 - `prefers-reduced-motion` stänger av rörelse och visar allt innehåll direkt.
-- Utskrift av `/meny` ger en läsbar pappersmeny (4 sidor vid A4) utan navigation, bokning eller footer.
+- Utskrift av `/meny` ger en läsbar pappersmeny (5 sidor vid A4) utan navigation, bokning, karta eller footer.
 
 ## Tillgänglighet och kvalitet
 
 - Skip-link, synlig fokusmarkering (2 px guld), semantiska rubriker och `aria-current` i navigationen.
 - Ingen horisontell scroll vid 1440, 834 eller 390 px.
 - Kontrast kontrollerad för brödtext, metadata, knappar och bokningsnotis.
-- Inga externa skript, cookies eller analytics. Sidan laddar inga externa resurser; Google Maps och Instagram öppnas först vid klick.
+- Inga externa skript, cookies eller analytics. OpenStreetMap-embedden laddas lazy och är den enda externa resursen som laddas automatiskt; Google Maps och Instagram öppnas först vid klick.
 - QA-underlag, skärmbilder och utskrifts-PDF finns i `.impeccable/review/`.
 
 ## Design
 
-Se `DESIGN.md` för den fullständiga visuella specifikationen: pappersgrund, koboltfält, mässingsregler, typografiska regler, komponenter och förbud. Maskinläsbara tillägg (rörelse, brytpunkter, tonala ramper) ligger i `.impeccable/design.json`.
+Se `DESIGN.md` för den fullständiga visuella specifikationen: pappersgrund, koboltfält, mässingsregler, typografiska regler, de två glyferna, komponenter och förbud. Maskinläsbara tillägg (rörelse, brytpunkter, tonala ramper) ligger i `.impeccable/design.json`.

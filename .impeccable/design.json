@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-25T12:08:18Z",
+  "generatedAt": "2026-10-25T20:28:47Z",
   "title": "Design System: Lyster",
   "extensions": {
     "colorMeta": {
@@ -184,21 +184,6 @@
           "#faf5ea"
         ]
       },
-      "brass-wash": {
-        "role": "accent",
-        "displayName": "Brass Wash",
-        "canonical": "#e7d3a8",
-        "tonalRamp": [
-          "#342b18",
-          "#5f4d28",
-          "#8b7036",
-          "#ba9442",
-          "#ceae67",
-          "#dfc691",
-          "#ecdebe",
-          "#f9f5ec"
-        ]
-      },
       "lingon": {
         "role": "ingredient",
         "displayName": "Lingon",
@@ -271,7 +256,7 @@
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings across both pages."
+        "purpose": "Section headings across both pages; 500 weight, true italic for emphasis."
       },
       "title": {
         "displayName": "Title",
@@ -279,11 +264,11 @@
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running copy, capped at 38-46ch in side-by-side blocks."
+        "purpose": "Running copy, capped at 34–46ch in side-by-side blocks."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Uppercase meta rows, category counts, hours, captions."
+        "purpose": "Uppercase meta rows, category counts, hours, captions, and credits."
       }
     },
     "shadows": [],
@@ -319,21 +304,21 @@
         "purpose": "Clip-path mask reveal for large objects and the hero wordmark."
       },
       {
-        "name": "plate-swap",
-        "value": "500ms / 700ms",
-        "purpose": "Menu aside plate cross-fade: opacity 500ms, transform 700ms."
+        "name": "plate-entry",
+        "value": "1.4s / 1.2s",
+        "purpose": "The single hero plate draws its ring (1.4s) and settles its food (1.2s), once."
       }
     ],
     "breakpoints": [
       {
         "name": "wide",
         "value": "1100px",
-        "purpose": "Hero and proof proportions loosen; plate imagery begins to shrink."
+        "purpose": "Hero and proof proportions loosen; the plate stage begins to shrink."
       },
       {
         "name": "stack",
         "value": "900px",
-        "purpose": "12-column grid stacks; menu aside leaves; mobile booking bar appears."
+        "purpose": "12-column grid stacks; the menu rail leaves; the mobile booking bar appears."
       },
       {
         "name": "narrow",
@@ -348,16 +333,16 @@
       "kind": "button",
       "refersTo": "button-primary",
       "description": "Cobalt action with a brass plane that wipes in from the left on hover.",
-      "html": "<a class=\"ds-btn-primary\" href=\"#boka\">Boka bord <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
-      "css": ".ds-btn-primary{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--cobalt,#1e3a5f);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--gold-bright,#c49a4a);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-primary:hover::before{transform:scaleX(1)}.ds-btn-primary:hover svg{transform:translateX(3px)}.ds-btn-primary svg{width:18px;height:18px;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+      "html": "<a class=\"ds-btn-primary\" href=\"#boka\">Boka bord <span class=\"arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-btn-primary{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--cobalt,#1e3a5f);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--gold-bright,#c49a4a);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-primary:hover::before{transform:scaleX(1)}.ds-btn-primary:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}.ds-btn-primary .arrow,.ds-btn-gold .arrow{flex:none;font-size:1.0625rem;font-weight:400;line-height:1;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover .arrow{transform:translateX(3px)}"
     },
     {
       "name": "Gold Button",
       "kind": "button",
       "refersTo": "button-gold",
       "description": "Brass-filled booking action used only inside the cobalt booking band.",
-      "html": "<a class=\"ds-btn-gold\" href=\"https://example.com/boka-lyster\">Boka bord <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
-      "css": ".ds-btn-gold{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--gold,#a97e34);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--paper-3,#fbf7ee);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-gold:hover::before{transform:scaleX(1)}.ds-btn-gold svg{width:18px;height:18px}.ds-btn-gold:focus-visible{outline:2px solid var(--paper-3,#fbf7ee);outline-offset:3px}"
+      "html": "<a class=\"ds-btn-gold\" href=\"https://example.com/boka-lyster\">Boka bord <span class=\"arrow\" aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-btn-gold{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75rem;min-height:3rem;padding:.7rem 1.5rem;border:0;background:var(--gold,#a97e34);color:var(--paper-3,#fbf7ee);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.95rem;font-weight:600;letter-spacing:.01em;line-height:1.1;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold::before{content:\"\";position:absolute;inset:0;z-index:-1;background:var(--paper-3,#fbf7ee);transform:scaleX(0);transform-origin:left center;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-gold:hover{color:var(--ink,#1b1a17);text-decoration:none}.ds-btn-gold:hover::before{transform:scaleX(1)}.ds-btn-gold:focus-visible{outline:2px solid var(--paper-3,#fbf7ee);outline-offset:3px}.ds-btn-primary .arrow,.ds-btn-gold .arrow{flex:none;font-size:1.0625rem;font-weight:400;line-height:1;transition:transform 380ms cubic-bezier(.16,1,.3,1)}.ds-btn-primary:hover .arrow{transform:translateX(3px)}"
     },
     {
       "name": "Ghost Button",
@@ -370,34 +355,35 @@
     {
       "name": "Arrow Link",
       "kind": "custom",
-      "description": "Section-level link with an underline and a travelling arrow.",
-      "html": "<a class=\"ds-link-arrow\" href=\"/meny\">Hela menyn <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"square\" aria-hidden=\"true\"><path d=\"M3.5 12h16\"/><path d=\"M14 6.5 19.5 12 14 17.5\"/></svg></a>",
-      "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.6rem;padding-block:.5rem;color:var(--ink,#1b1a17);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.9rem;font-weight:600;letter-spacing:.01em;text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 26%,transparent);transition:border-color 260ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow svg{width:22px;height:22px;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover{border-color:var(--gold,#a97e34)}.ds-link-arrow:hover svg{transform:translateX(4px)}.ds-link-arrow:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+      "description": "Section-level link with a typographic arrow that travels on hover.",
+      "html": "<a class=\"ds-link-arrow\" href=\"/meny\">Hela menyn <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.6rem;padding-block:.35rem;color:var(--ink,#1b1a17);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-weight:600;letter-spacing:.01em;text-decoration:none;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow .arrow{font-size:1.0625rem;font-weight:400;line-height:1;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover .arrow{transform:translateX(.3rem)}.ds-link-arrow:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
     },
     {
       "name": "Dish Row",
       "kind": "custom",
       "description": "Menu dish line: name, dietary tags, dotted leader, price, description beneath.",
       "html": "<div class=\"ds-dish\"><div class=\"ds-dish__line\"><h3 class=\"ds-dish__name\">Köttbullar <span class=\"ds-dish__tags\"><span>vegetarisk</span></span></h3><span class=\"ds-dish__leader\" aria-hidden=\"true\"></span><span class=\"ds-dish__price\">265 kr</span></div><p class=\"ds-dish__desc\">Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka.</p></div>",
-      "css": ".ds-dish{padding-block:1.15rem;border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);color:var(--ink,#1b1a17)}.ds-dish__line{display:flex;align-items:baseline;gap:.75rem}.ds-dish__name{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem .7rem;margin:0;font-size:1.12rem;font-weight:600;line-height:1.15;letter-spacing:-.015em}.ds-dish__tags{display:inline-flex;gap:.4rem}.ds-dish__tags span{padding:.18rem .42rem;background:color-mix(in srgb,var(--dill,#3f5f49) 12%,transparent);color:var(--dill,#3f5f49);font-size:.68rem;font-weight:600;letter-spacing:.04em;line-height:1.2;text-transform:uppercase}.ds-dish__leader{flex:1 1 auto;min-width:1.5rem;border-bottom:1px dotted color-mix(in srgb,var(--ink,#1b1a17) 34%,transparent);transform:translateY(-.22em)}.ds-dish__price{flex:none;font-size:.95rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-dish__desc{max-width:52ch;margin:.35rem 0 0;color:var(--ink-soft,#4d483f);font-size:.95rem;line-height:1.5}"
+      "css": ".ds-dish{display:block;padding-block:1.1rem;border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);color:var(--ink,#1b1a17)}.ds-dish__line{display:flex;align-items:baseline;gap:.75rem}.ds-dish__name{margin:0;font-size:1.15rem;font-weight:600;line-height:1.15;letter-spacing:-.02em}.ds-dish__tags{display:inline-flex;gap:.4rem;margin-left:.4rem;color:var(--dill,#3f5f49);font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;vertical-align:.1em;white-space:nowrap}.ds-dish__leader{flex:1;min-width:1rem;border-bottom:1px dotted color-mix(in srgb,var(--ink,#1b1a17) 28%,transparent);transform:translateY(-.22em)}.ds-dish__price{font-size:1rem;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-dish__desc{max-width:52ch;margin:.25rem 0 0;color:var(--ink-soft,#4d483f);font-size:.95rem;line-height:1.6}"
     },
     {
       "name": "Menu Category Nav",
       "kind": "nav",
       "description": "Sticky category strip with a brass underline on the active item.",
       "html": "<nav class=\"ds-menu-nav\" aria-label=\"Menyns avsnitt\"><a class=\"ds-menu-nav__link is-active\" href=\"#husmanskost\" aria-current=\"location\">Husmanskost</a><a class=\"ds-menu-nav__link\" href=\"#havet\">Från havet</a><a class=\"ds-menu-nav__link\" href=\"#gront\">Grönt</a></nav>",
-      "css": ".ds-menu-nav{display:flex;gap:1.5rem;overflow-x:auto;padding-block:.9rem;background:var(--paper,#f4eddf);border-top:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);scrollbar-width:none}.ds-menu-nav__link{flex:none;padding-block:.35rem;color:var(--ink-soft,#4d483f);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.9rem;font-weight:500;letter-spacing:.01em;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color 220ms cubic-bezier(.16,1,.3,1),border-color 220ms cubic-bezier(.16,1,.3,1)}.ds-menu-nav__link:hover{color:var(--ink,#1b1a17)}.ds-menu-nav__link.is-active{color:var(--ink,#1b1a17);border-color:var(--gold,#a97e34)}.ds-menu-nav__link:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
+      "css": ".ds-menu-nav{display:flex;gap:clamp(1.1rem,2.5vw,2.25rem);overflow-x:auto;background:var(--paper,#f4eddf);border-top:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent);scrollbar-width:none}.ds-menu-nav__link{position:relative;flex:none;padding-block:1.05rem;color:var(--ink-soft,#4d483f);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;white-space:nowrap}.ds-menu-nav__link::after{content:\"\";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold,#a97e34);transform:scaleX(0);transform-origin:left center;transition:transform 260ms cubic-bezier(.16,1,.3,1)}.ds-menu-nav__link:hover,.ds-menu-nav__link.is-active{color:var(--ink,#1b1a17)}.ds-menu-nav__link.is-active::after{transform:scaleX(1)}.ds-menu-nav__link:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
     }
   ],
   "narrative": {
     "northStar": "The Printed Plate",
-    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. Familiar Swedish food is drawn as a few flat ingredient planes with no outlines, so a plate can be read before it can be named. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with tight negative tracking on the large end and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: a plate assembles once, a brass line draws, a category plate swaps with a short cross-fade. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
+    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. Familiar Swedish food is drawn once as a few flat ingredient planes with no outlines, so the plate can be read before it can be named. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from objects overlapping like printed sheets. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with a true italic for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: the single plate draws its ring and settles once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
     "keyCharacteristics": [
       "Warm beige paper ground with a subtle 128px noise texture.",
       "Cobalt is a room you walk into (hero plate stage, proof band, booking band), not a global theme.",
       "Brass appears as 1px rules, small dots, underlines, and one large disc.",
-      "Square corners everywhere; the only curves are circles (plates, photo crop, discs, mark).",
-      "One typeface, used from 0.6875rem labels to a 12.5rem wordmark.",
+      "Square corners everywhere; the only curves are circles (the plate, the photo crop, the discs, the mark).",
+      "One typeface, used from 0.68rem captions to a 12.5rem wordmark, with a real italic cut.",
+      "Exactly two authored glyphs: the brand Mark and one meatball Plate, used once.",
       "Flat at rest: no box-shadows, no gradients, no glass, no rounded cards."
     ],
     "rules": [
@@ -413,12 +399,12 @@
       },
       {
         "name": "The Ingredient Only Rule",
-        "body": "Lingon, dill, and crust colors are confined to food illustrations and dietary tags. If a color could be eaten, it does not style chrome.",
+        "body": "Lingon, dill, and crust colors are confined to the food glyph and dietary tags. If a color could be eaten, it does not style chrome.",
         "section": "colors"
       },
       {
         "name": "The Two Registers Rule",
-        "body": "Type is either monumental (display and headline) or a printed whisper (label). Mid-sized decorative type is not part of the system.",
+        "body": "Type is either monumental (display and headline) or a printed whisper (label and supporting). Mid-sized decorative type is not part of the system.",
         "section": "typography"
       },
       {
@@ -428,7 +414,7 @@
       },
       {
         "name": "The One Object Rule",
-        "body": "Each composition has one dominant object — a plate, a photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration.",
+        "body": "Each composition has one dominant object — the plate, the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.",
         "section": "layout"
       },
       {
@@ -455,6 +441,16 @@
         "name": "The No Side Tab Rule",
         "body": "Never mark a card or note with a thick colored border on one side. Use a full-width hairline rule above it instead.",
         "section": "shapes"
+      },
+      {
+        "name": "The Italic Emphasis Rule",
+        "body": "Emphasis inside a heading is a true italic of the same family, usually in cobalt or pale brass. It is never a highlighter wash, fake oblique, or second typeface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Glyphs Rule",
+        "body": "The site authors exactly two glyphs: the brand Mark and the meatball Plate. The Plate appears once, in the homepage hero. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.",
+        "section": "layout"
       }
     ],
     "dos": [
@@ -464,17 +460,20 @@
       "Do keep corners square and separation flat; change tone or add a hairline instead of a shadow.",
       "Do use the circular plate and circular photo crop as the only curved containers.",
       "Do set headings without eyebrow labels, and let the copy beneath them carry the explanation.",
+      "Do use the real italic cut for emphasis inside headings, in cobalt on paper or pale brass on cobalt.",
+      "Do keep the glyph count at two: the Mark and the single hero Plate. Let type, photography, rules, and the map do the rest.",
       "Do give the mobile viewport the same hierarchy: one idea, one object, one primary action per screen."
     ],
     "donts": [
-      "Don't use a dark, moody food-photo hero or dim the paper ground to signal premium.",
-      "Don't add box-shadow, blur, glass, gradient fills, or rounded cards.",
-      "Don't use thick one-sided accent borders (side tabs) on notes, cards, or callouts.",
-      "Don't let ingredient colors (lingon, dill, crust) escape illustrations and dietary tags into buttons, fields, or section backgrounds.",
-      "Don't fill large areas with brass; it loses its function as a rule.",
-      "Don't add a kicker or uppercase eyebrow above a heading.",
-      "Don't invent testimonials, awards, press logos, or a booking form that pretends to submit.",
-      "Don't remove the demo disclosure or the photo credit until real content replaces them."
+      "Don’t use a dark, moody food-photo hero or dim the paper ground to signal premium.",
+      "Don’t add box-shadow, blur, glass, gradient fills, or rounded cards.",
+      "Don’t use thick one-sided accent borders (side tabs) on notes, cards, or callouts.",
+      "Don’t let ingredient colors (lingon, dill, crust) escape the food glyph and dietary tags into buttons, fields, or section backgrounds.",
+      "Don’t fill large areas with brass; it loses its function as a rule.",
+      "Don’t add a kicker or uppercase eyebrow above a heading.",
+      "Don’t invent testimonials, awards, press logos, or a booking form that pretends to submit.",
+      "Don’t add another plate variant, decorative food glyph, or hand-drawn map.",
+      "Don’t remove the demo disclosure or the photo credit until real content replaces them."
     ]
   }
 }

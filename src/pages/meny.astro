@@ -1,10 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import Plate from '../components/Plate.astro';
 import Arrow from '../components/Arrow.astro';
 import Booking from '../components/Booking.astro';
-
-type Variant = 'kottbullar' | 'stromming' | 'rotselleri' | 'ostkaka' | 'dryck' | 'tilltugg' | 'artsoppa';
 
 interface Dish {
   name: string;
@@ -17,7 +14,6 @@ interface Course {
   id: string;
   title: string;
   note: string;
-  variant: Variant;
   dishes: Dish[];
 }
 
@@ -26,7 +22,6 @@ const courses: Course[] = [
     id: 'tilltugg',
     title: 'Tilltugg',
     note: 'Att börja med, eller bara till ett glas',
-    variant: 'tilltugg',
     dishes: [
       {
         name: 'Toast med räkor',
@@ -50,7 +45,6 @@ const courses: Course[] = [
     id: 'husmanskost',
     title: 'Husmanskost',
     note: 'Serveras med potatispuré och pressgurka där inget annat anges',
-    variant: 'kottbullar',
     dishes: [
       {
         name: 'Köttbullar',
@@ -83,7 +77,6 @@ const courses: Course[] = [
     id: 'havet',
     title: 'Från havet',
     note: 'Fisk och skaldjur, fileat i köket',
-    variant: 'stromming',
     dishes: [
       {
         name: 'Stekt strömming',
@@ -106,7 +99,6 @@ const courses: Course[] = [
     id: 'gront',
     title: 'Grönt',
     note: 'Lika mycket mat, inte ett tillval',
-    variant: 'rotselleri',
     dishes: [
       {
         name: 'Ugnsbakad rotselleri',
@@ -132,7 +124,6 @@ const courses: Course[] = [
     id: 'efterratt',
     title: 'Efterrätt',
     note: 'Skeden tar inte slut förrän du säger till',
-    variant: 'ostkaka',
     dishes: [
       {
         name: 'Ostkaka',
@@ -162,7 +153,6 @@ const courses: Course[] = [
     id: 'dryck',
     title: 'Dryck',
     note: 'Öl, snaps och alkoholfritt. Fråga efter vinlistan.',
-    variant: 'dryck',
     dishes: [
       {
         name: 'Lyster lager',
@@ -219,8 +209,10 @@ const lunch = [
 >
   <section class="menu-hero" aria-labelledby="meny-title">
     <div class="shell menu-hero__grid">
-      <div class="menu-hero__copy">
+      <div class="menu-hero__title">
         <h1 id="meny-title" data-reveal>Menyn</h1>
+      </div>
+      <div class="menu-hero__copy">
         <p class="menu-hero__intro" data-reveal>
           Husmanskost, skärpt. Recepten känner du igen. Handlaget är vårt. Vi lagar maten
           från grunden och byter rätter när råvarorna gör det — inte när någon ber oss.
@@ -230,9 +222,6 @@ const lunch = [
           <span>Lunch tis–fre</span>
           <span>Middag tis–lör</span>
         </div>
-      </div>
-      <div class="menu-hero__plate">
-        <Plate variant="stromming" animate />
       </div>
     </div>
   </section>
@@ -250,18 +239,24 @@ const lunch = [
     </nav>
 
     <div class="shell menu-layout">
-      <aside class="menu-aside" aria-hidden="true" data-menu-aside>
-        <div class="menu-aside__stage">
-          {courses.map((course) => (
-            <div data-menu-plate={course.id}>
-              <Plate variant={course.variant} decorative class={course.id === 'tilltugg' ? 'is-active' : undefined} />
-            </div>
-          ))}
-        </div>
-        <div class="menu-aside__caption meta">
-          <strong data-menu-caption-name>Tilltugg</strong>
-          <span>Illustration</span>
-        </div>
+      <aside class="menu-rail" aria-label="Menyns omfattning">
+        <p class="meta text-gold">Höstmeny 2026</p>
+        <dl class="menu-rail__facts">
+          <div>
+            <dt class="meta">Lunch</dt>
+            <dd>Tis–fre 11.30–14.00</dd>
+          </div>
+          <div>
+            <dt class="meta">Middag</dt>
+            <dd>Tis–lör</dd>
+          </div>
+          <div>
+            <dt class="meta">Kök</dt>
+            <dd>Stänger 22.30</dd>
+          </div>
+        </dl>
+        <p class="menu-rail__note">Menyn ändras med säsongen. Fråga oss om allergener.</p>
+        <a class="link-underline" href="#lunch">Lunchmenyn</a>
       </aside>
 
       <div class="menu-content">
@@ -273,9 +268,6 @@ const lunch = [
                 <p class="meta text-gold">{course.dishes.length} rätter</p>
               </div>
               <p class="menu-cat__note">{course.note}</p>
-              <div class="menu-cat__mobile-plate">
-                <Plate variant={course.variant} decorative />
-              </div>
             </div>
 
             <ul>

@@ -1,6 +1,6 @@
 # Finish review — Lyster
 
-Review ran inline (no separate reviewer agent). Screenshots were assessed through OCR, computed layout metrics, contrast calculations, and palette-mapped crops because this model cannot view images directly. The evidence lives in `.impeccable/review/final-*.png`, `final-report.json`, and `meny-print.pdf`.
+Review ran inline (no separate reviewer agent). Because this model cannot view images directly, the visual layer was verified through computed geometry, contrast calculations, focus and interaction traces, reduced-motion state, print output, and the Impeccable detector. Evidence lives in `.impeccable/review/qa-*.png`, `qa-meny.pdf`, and `detector-src.json`.
 
 disposition: ship
 
@@ -8,48 +8,70 @@ disposition: ship
 
 Pass.
 
-- `PRODUCT.md` exists and matches the built product: two-page Swedish restaurant site, lunch and dinner, phone-first, booking as the conversion.
-- `DESIGN.md` was written in this pass from the actual tokens and components. It did not predate the build.
-- `.impeccable/design.json` was regenerated from the same source (17 colors, 6 components, motion, breakpoints, narrative).
-- Direction contract is the first child of `<body>` in `Base.astro` and survives the production build. Seed key `c255ad89` is present and matches the chosen direction.
-- No `.impeccable/mocks/` comp round exists; this was a code-led build, so there is no approval record to check.
+- `PRODUCT.md` matches the built product: a two-page Swedish restaurant site, lunch and dinner, phone-first, booking as the conversion.
+- `DESIGN.md` describes the tokens and components actually shipped: 16 colors, one type family with its true italic cut, the two-glyph rule, the typographic menu rail, the live map, motion, breakpoints, and print.
+- `.impeccable/design.json` is in sync with the same source: 16 colors, 6 components, 7 motion entries, 13 narrative rules, and arrow examples drawn as the typographic `→` rather than SVG.
+- The direction contract is the first child of `<body>` in `Base.astro`, survives the production build, and still records seed key `c255ad89`.
+- No `.impeccable/mocks/` comp exists; this is a code-led build, so there is no approval record to reconcile.
 
 ## fidelity
 
-No approved comp; judged against the contract's OWN-WORLD and the build's actual materials.
+No approved comp; judged against the contract's OWN-WORLD and the built material.
 
 | Salient element | Judgment | Evidence |
 | --- | --- | --- |
-| Giant LYSTER wordmark with brass Y and dot | match | Hero h1 renders at `clamp(4.4rem, 15.4vw, 12.5rem)`, 700, −0.065em; brass on Y and dot. |
-| Flat ingredient plate on a cobalt disc | match | `Plate.astro` 600×600 SVG, seven variants; hero stage sits on a cobalt disc with brass halo rings. |
-| Warm beige paper ground | match | `--paper #f4eddf` plus 128px `paper-noise.webp`; no white body. |
-| Cobalt fields, not a cobalt theme | match | Cobalt appears only in the hero stage, proof band, booking band, mobile bar. |
-| Brass as rules, dots, underlines, one disc | match | 1px rules and underlines throughout; large brass disc only in booking. |
-| One Swedish grotesk in monumental and whisper sizes | match | Familjen Grotesk self-hosted; 0.6875rem labels to 12.5rem wordmark. |
-| Asymmetric editorial grid | match | 12-column compositions with object/reading split; no same-size card triplet as page structure. |
-| Bright, physical photography stance | match | One real photo, circular crop inside a brass ring; custom SVG for everything else. No stock-photo hero. |
-| Authored motion | match | Hero plate assembles once; category plate cross-fades; reveals use clip-path/translate; reduced motion shows everything. |
-| Fake material (bevels, embossing, faux metal) | none | Flat fills and hairlines only. |
-| Kickers or eyebrows | none | Removed in the craft-floor pass; category counts now sit below headings. |
+| Giant LYSTER wordmark with brass Y and dot | match | H1 renders at `clamp(4.4rem, 15.4vw, 12.5rem)`, 700, −0.065em. |
+| One flat meatball plate, used once | match | `Plate.astro` is a single 600×600 glyph in the homepage hero; the menu page contains no plate. |
+| Two authored glyphs in total | match | Home has 4 SVGs: the Mark in header, dialog, and footer, plus the one Plate. Menu has 3 (Mark only). Favicon is the Mark. |
+| Warm beige paper ground | match | `--paper #f4eddf` plus the 128px `paper-noise.webp`; no white body. |
+| Cobalt fields, not a cobalt theme | match | Cobalt stays in the hero stage, proof band, booking band, and mobile bar. |
+| Brass as rules, dots, underlines, one disc | match | 1px rules and underlines throughout; the large brass disc exists only in booking. |
+| One grotesk in monumental and whisper sizes | match | Familjen Grotesk Variable self-hosted, including the true italic cut used on `.intro__statement em` and the proof heading. |
+| Asymmetric editorial grid | match | Statement at 1–12, body at 4–12, facts across the full base; hero type against a 560px plate stage. |
+| Bright, physical photography | match | One real photograph, circular crop inside a brass ring, lazy-loaded with srcset. Credit preserved verbatim. |
+| A real map | match | Lazy OpenStreetMap iframe at `59.3391975, 18.0618873`; frame loads with `hasMap: true`; visible OSM credit and Google Maps directions fallback. |
+| Authored motion | match | The plate ring draws (1.4s) and the food settles (1.2s) once; reveals and nav state are the only other motion. |
+| Fake material (bevels, embossing, faux metal) | none | Flat fills, paper tone, and hairlines only. |
+| Kickers or eyebrows | none | Category counts sit below headings; headings stand alone. |
 
-TYPE: Familjen Grotesk matches the contract's "one Swedish grotesk"; no system display face is used. MATERIAL: flat vector and one photograph are the real materials promised by the world; nothing imitates paint, paper stock, or metal in CSS.
+TYPE: one family, two registers, true italics. MATERIAL: flat planes, one photograph, one live map.
 
 ## ceiling
 
-Reached for the chosen world. The world's native devices are used: the assembling plate, the brass rules, the circular crop, the sticky category plate, the live open/closed line, the printed menu layout, and the full-screen mobile dialog. Frame and depth are flat by doctrine, not by omission. No unused signature device was identified.
+Reached for the chosen world, and deliberately reduced from the earlier pass. The signature devices left are the single hero plate, the brass rules, the circular photo crop, the typographic menu rail, the live open/closed line, the live map, and the full-screen mobile dialog. Nothing was replaced by a weaker device; everything removed was repetition.
+
+The glyph budget is now explicit and enforced in `DESIGN.md`: the Mark and one Plate. Arrows are characters, not drawn icons. The map is an embed, not an illustration. This is the ceiling the user asked for — intentional, and much less.
 
 ## material_fixes
 
-None. The only detector warning left after the craft-floor pass was the 4px cobalt top rule on the tasting block; it was reduced to 2px to match the system's rule weight, and the warning cleared. The remaining detector output is advisory only (micro font sizes and print-only ink colors), not defect evidence.
+Two real defects were found in the final geometry pass and fixed at the source:
+
+- `.facts` had no `grid-column` in a 12-column grid and collapsed into a single 80.9px track at the right edge, stacking three 0-width text columns on top of each other. It now spans `1 / -1` and renders as three 410.9px columns on desktop.
+- The Wikimedia credit links measured 15px tall. They now carry inline-block padding with compensating negative margins, giving a 29px tap target on both pages without moving the line.
+
+The final detector run reports 50 advisories, all `design-system-font-size`: component sizes and clamp endpoints that sit outside the six named roles in `DESIGN.md` frontmatter. There are zero color advisories and zero findings in any defect category. The type sizes are intentional role sizes; they are recorded here as metadata drift, not visual defects.
+
+## verification
+
+- `pnpm build` passes; 2 static pages generated.
+- Zero horizontal overflow at 1440, 834, and 390 on both pages.
+- Zero console errors on both pages at all three widths.
+- Zero interactive targets below 24px after the credit fix.
+- All sampled text contrast ratios ≥ 4.5:1 on paper and cobalt.
+- Sticky menu nav sits at `top: 72px`, the rail at `136px`; an anchored category lands at `141.9px`, clear of the nav bottom at `126.2px`.
+- Mobile dialog opens at 390×844, focuses the close button, restores focus to the toggle on Escape, and toggles `aria-expanded`.
+- Booking placeholder keeps its `href` inert, shows the demo note, and focuses it; nothing pretends to submit.
+- Reduced motion: plate opacity 1, ring animation `none`, food opacity 1.
+- Print: 5 A4 pages, with header, menu nav, rail, booking, footer, and map hidden.
 
 ## keep
 
-Keep the paper ground, the square-corner flatness, and the single brass rule. Replacing any of them with a shadow, a rounded card, or a larger gold field would dissolve the world.
+Keep the paper ground, the square-corner flatness, the single brass rule system, the true italic emphasis, and the two-glyph discipline. Adding another illustration, a shadow, a rounded card, or a larger gold field would dissolve the world.
 
 ## Remaining before a real launch
 
 - Replace the booking placeholder (`https://example.com/boka-lyster`) and remove the demo note.
-- Replace address, phone, email, Instagram, opening hours, menu, and prices.
-- Replace the Wikimedia photo with an own photograph and update the credit, or keep the CC BY 2.0 credit.
+- Replace address, phone, email, Instagram, opening hours, menu, and prices; the address is currently `Luntmakargatan 42, 111 37 Stockholm`.
+- Replace the Wikimedia photo with an own photograph and update the credit, or keep the CC BY 2.0 credit exactly as written.
 - Remove the footer demo disclosure and the menu footnote once content is real.
-- Point `astro.config.mjs` at the production domain.
+- Point `astro.config.mjs` at the production domain; it currently uses `https://lysternorrmalm.se`.

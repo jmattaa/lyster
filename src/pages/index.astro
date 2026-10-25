@@ -33,12 +33,12 @@ import Booking from '../components/Booking.astro';
               <span class="hero__status-dot" aria-hidden="true"></span>
               <span data-open-text>Lunch tis–fre 11.30–14.00</span>
             </span>
-            <span><a href="#hitta">Lystergränd 4, Stockholm</a></span>
+            <span><a href="#hitta">Luntmakargatan 42, 111 37 Stockholm</a></span>
           </div>
         </div>
 
         <div class="hero__plate-wrap">
-          <div class="hero__plate-stage" data-plate-parallax>
+          <div class="hero__plate-stage">
             <div class="hero__plate">
               <Plate animate />
             </div>
@@ -98,24 +98,22 @@ import Booking from '../components/Booking.astro';
       </div>
 
       <div class="preview__grid">
-        <article class="preview__feature">
-          <div class="preview__feature-plate" data-reveal>
-            <Plate variant="kottbullar" decorative />
-          </div>
-          <div class="dish-feature">
-            <div>
-              <h3>Köttbullar</h3>
-              <p>Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka. Potatispuré som inte skäms för sig.</p>
-            </div>
+        <article class="preview__feature" data-reveal>
+          <p class="preview__index meta"><span aria-hidden="true">01 · </span>Husmanskost</p>
+          <h3 class="preview__feature-name">Köttbullar</h3>
+          <p class="preview__feature-desc">
+            Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka. Potatispuré som inte
+            skäms för sig.
+          </p>
+          <div class="preview__feature-foot">
+            <span class="meta">Nöt &amp; fläsk · lingon · pressgurka</span>
             <span class="dish-feature__price">265 kr</span>
           </div>
         </article>
 
         <div class="preview__list">
-          <a class="preview-row" href="/meny#havet">
-            <div class="preview-row__plate">
-              <Plate variant="stromming" decorative />
-            </div>
+          <a class="preview-row" href="/meny#havet" data-reveal>
+            <span class="preview-row__index meta" aria-hidden="true">02</span>
             <div class="preview-row__body">
               <div class="preview-row__line">
                 <h3>Stekt strömming</h3>
@@ -125,10 +123,8 @@ import Booking from '../components/Booking.astro';
             </div>
           </a>
 
-          <a class="preview-row" href="/meny#gront">
-            <div class="preview-row__plate">
-              <Plate variant="rotselleri" decorative />
-            </div>
+          <a class="preview-row" href="/meny#gront" data-reveal>
+            <span class="preview-row__index meta" aria-hidden="true">03</span>
             <div class="preview-row__body">
               <div class="preview-row__line">
                 <h3>Ugnsbakad rotselleri</h3>
@@ -187,8 +183,8 @@ import Booking from '../components/Booking.astro';
       <div class="find__head">
         <h2 class="h2" id="find-title" data-reveal>Hitta hit</h2>
         <p data-reveal>
-          Vi sitter på Lystergränd, några minuter från Östermalmstorg. Kom in från gatan,
-          häng av dig och ta plats.
+          Vi sitter på Luntmakargatan 42, mellan Tegnérgatan och Rådmansgatan. Kom in från
+          gatan, häng av dig och ta plats.
         </p>
       </div>
 
@@ -196,9 +192,9 @@ import Booking from '../components/Booking.astro';
 
       <div class="find__info">
         <address class="address">
-          <a href="https://www.google.com/maps/search/?api=1&query=Lystergr%C3%A4nd+4+Stockholm" rel="noopener">
-            Lystergränd 4<br />
-            111 30 Stockholm
+          <a href="https://www.google.com/maps/search/?api=1&query=Luntmakargatan+42%2C+111+37+Stockholm" rel="noopener">
+            Luntmakargatan 42<br />
+            111 37 Stockholm
           </a>
         </address>
         <div class="contact-list">
