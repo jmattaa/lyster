@@ -115,8 +115,8 @@ A warm paper neutral, one deep cobalt, and a brass accent, with ingredient color
 
 ### Primary
 
-- **Cobalt Field** (#1e3a5f): Primary brand field. It fills the hero copy plane, the proof band, the booking band, the mobile booking bar, and primary buttons. White-on-cobalt is the default high-contrast pairing.
-- **Late Cobalt** (#142a45): The darkest field, used for the booking band and mobile bar where the gold disc and gold button need more separation.
+- **Cobalt Field** (#1e3a5f): Primary brand field. It fills the hero copy plane, the proof band, the booking band, and primary buttons. White-on-cobalt is the default high-contrast pairing.
+- **Late Cobalt** (#142a45): The darkest field, used for the booking band where the gold disc and gold button need more separation.
 
 ### Secondary
 
@@ -185,8 +185,8 @@ The sticky system is explicit. The header is 72px. The menu category nav sticks 
 Breakpoints are coarse and content-led:
 
 - **1100px:** the hero band keeps its 5/7 split but tightens; the proof image begins to shrink and side-by-side proportions loosen.
-- **900px:** the 12-column grid collapses to stacked blocks; the hero band stacks with the photograph above the cobalt copy; the menu rail leaves the viewport and dishes run full width; the mobile booking bar appears.
-- **640px:** type steps down, the wordmark takes over the viewport width, the mobile navigation opens as a full-screen `<dialog>`, and dense meta rows wrap.
+- **900px:** the 12-column grid collapses to stacked blocks; the hero band stacks with the photograph above the cobalt copy; the menu rail leaves the viewport and dishes run full width.
+- **640px:** type steps down, the wordmark takes over the viewport width, the mobile navigation opens as a full-screen `<dialog>`, and dense meta rows wrap. Booking stays inside the page; there is no fixed bottom bar.
 
 ### Named Rules
 
@@ -255,9 +255,9 @@ A dish is a single row: name and dietary tags on the left, a dotted leader, pric
 
 ### Hero Band
 
-The homepage's full-bleed photograph band. On desktop it is a 5/7 split: a Cobalt Field copy plane on the left and a real dining-room photograph on the right, edge to edge, framed top and bottom by a 1px brass rule. The panel carries the promise, a Gold primary "Boka bord", a quiet ghost "Läs menyn", and the live open status above the full address. The photograph fills its side with `object-fit: cover` and a slight `saturate(0.95) contrast(1.02)` grade, never a dark overlay. Below 900px the band stacks, photograph first at `clamp(15rem, 54vw, 24rem)` tall, cobalt copy beneath; the photo wipes open once on entry and is static under reduced motion. A footnote credits the temporary Unsplash image and states that it will be replaced before launch.
+The homepage's full-bleed photograph band. On desktop it is a 5/7 split: a Cobalt Field copy plane on the left and a real dining-room photograph on the right, edge to edge, framed top and bottom by a 1px brass rule. The panel carries the promise, a Gold primary "Boka bord", a quiet ghost "Läs menyn", and the live open status above the full address. The photograph fills its side with `object-fit: cover` and a slight `saturate(0.95) contrast(1.02)` grade, never a dark overlay. Below 900px the band stacks, photograph first at `clamp(15rem, 54vw, 24rem)` tall, cobalt copy beneath; the photo wipes open once on entry and is static under reduced motion. No caption, footnote, or credit text sits under the band.
 
-The band is designed to accept the owner's own photograph without layout changes. Supply a bright, daylight landscape at least 2400px wide (4:3 or 3:2), with the room's focal point around the centre-right, and export WebP at 2400px and 1200px. Replace `hero-rum-2400.webp` and `hero-rum-1200.webp`, keep the same filenames, then update the footnote credit. Do not substitute an illustration, a dark food still, or a photo with baked-in text.
+The band is designed to accept the owner's own photograph without layout changes. Supply a bright, daylight landscape at least 2400px wide (4:3 or 3:2), with the room's focal point around the centre-right, and export WebP at 2400px and 1200px. Replace `hero-rum-2400.webp` and `hero-rum-1200.webp`, keep the same filenames, and update the alt text. Do not substitute an illustration, a dark food still, or a photo with baked-in text.
 
 ### Brand Mark
 
@@ -273,7 +273,7 @@ A live, lazy-loaded OpenStreetMap embed centred on Luntmakargatan 42, held in a 
 
 ### Footer
 
-Four-column paper footer: brand and tagline, contact, hours, and follow links. Below a hairline, a demo disclosure and the photo credit. Footer headings are titles, not labels; the disclosure is the only place where the demo status is stated in full.
+Four-column paper footer: brand and tagline, contact, hours, and follow links. Below a hairline, the demo disclosure and the copyright line. Footer headings are titles, not labels; the disclosure is the only place where the demo status is stated in full. No photo credit appears here or anywhere else in the interface; licensing lives in `README.md`.
 
 ## Do's and Don'ts
 
@@ -301,4 +301,5 @@ Four-column paper footer: brand and tagline, contact, hours, and follow links. B
 - **Don't** invent testimonials, awards, press logos, or a booking form that pretends to submit.
 - **Don't** add another glyph, decorative food glyph, or hand-drawn map.
 - **Don't** turn the hero photograph into an illustration or replace it with a dark, moody food still.
-- **Don't** remove the demo disclosure or the photo credit until real content replaces them.
+- **Don't** remove the demo disclosure until real content replaces it.
+- **Don't** add photo credits, captions, or footnotes to photographic surfaces; licensing is documented in `README.md`, and any image that requires attribution must be replaced or cleared before launch.

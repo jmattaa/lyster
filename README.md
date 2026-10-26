@@ -42,7 +42,7 @@ Sajten använder absoluta sökvägar (`/meny`, `/images/...`). Publiceras den un
 | --- | --- | --- |
 | Restaurangnamn | Lyster | `src/layouts/Base.astro`, `Header.astro`, `Footer.astro` |
 | Adress | Luntmakargatan 42, 111 37 Stockholm | `Footer.astro`, `Header.astro`, `index.astro`, `Map.astro` |
-| Telefon (visning) | 08–123 45 678 | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro`, `Base.astro` |
+| Telefon (visning) | 08–123 45 678 | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro` |
 | Telefon (länk) | `+46812345678` | samma filer |
 | E-post | hej@lyster.se | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro` |
 | Instagram | @lystersthlm / `instagram.com/lystersthlm` | `Header.astro`, `Footer.astro`, `index.astro` |
@@ -96,8 +96,6 @@ Sök efter följande innan lansering:
 
 - `Demowebbplats.` i `src/components/Footer.astro` — hela demodeklarationen ska bort eller skrivas om.
 - `data-booking-placeholder`, `data-booking-note` och `example.com` i `Booking.astro`.
-- `Ersätts med egen bild före lansering.` i `src/pages/index.astro` (köttbullefotots credit).
-- `Tillfälligt foto: Unsplash.` i `src/pages/index.astro` (herobandets fotnot).
 - `Menyn är ett exempel i den här demon` i `meny.astro` (fotnot under menyn).
 
 ## Bild och licens
@@ -108,7 +106,7 @@ Startsidans fullbreddsband använder just nu ett tillfälligt platshållarfoto f
 
 - **Filer:** `public/images/hero-rum-1200.webp` (1200×900) och `public/images/hero-rum-2400.webp` (2400×1800).
 - **Källa:** Unsplash, `photo-1567521464027-f127ff144326`, licensierad under Unsplash License. Bilden är endast en platshållare och ska ersättas med ett eget foto före lansering.
-- **Byt:** ersätt båda filerna med eget foto i samma filnamn och storlekar, uppdatera fotnoten under bandet och justera `alt` i `index.astro` så den beskriver den nya bilden. Fotot bör vara ljust dagsljus, liggande 4:3 eller 3:2, minst 2400 px brett, med motivet centrerat eller till höger.
+- **Byt:** ersätt båda filerna med eget foto i samma filnamn och storlekar och justera `alt` i `index.astro` så den beskriver den nya bilden. Fotot bör vara ljust dagsljus, liggande 4:3 eller 3:2, minst 2400 px brett, med motivet centrerat eller till höger.
 
 ### Köttbullar i proof-sektionen
 
@@ -116,7 +114,11 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 
 - **Fil:** `public/images/kottbullar-720.webp` (720×661) och `public/images/kottbullar-1280.webp` (1280×1174).
 - **Upphov:** [tuey / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Swedish.food-K%C3%B6ttbullar_med_lingon-01.jpg), CC BY 2.0.
-- **Krav:** crediteringen "Illustrationsfoto: tuey / Wikimedia Commons, CC BY 2.0." finns i `index.astro` och `Footer.astro` och måste följa med så länge bilden används. Byt helst till eget foto före lansering och uppdatera crediteringen då.
+- **Lanseringsblockerare:** bilden kräver synlig attribution enligt CC BY 2.0. Den crediteringen har tagits bort från gränssnittet på beställning, så bilden får inte användas vid en riktig lansering som den är. Ersätt den med ett eget foto, eller återställ crediteringen i anslutning till bilden, innan sajten publiceras.
+
+### Fotokrediteringar i gränssnittet
+
+Sajten visar medvetet inga fotokrediteringar, bildtexter eller fotnoter vid bilderna. Licens- och upphovsinformation hålls i stället i den här filen. Det innebär att bilder som kräver attribution — som Wikimedia-fotot ovan — måste bytas ut eller crediteras innan publicering.
 
 Övriga filer:
 
@@ -131,7 +133,7 @@ Fotot i "Inga genvägar på tallriken" är ett illustrationsfoto:
 ```
 src/
   components/    Header, Footer, Booking, Map, Mark, Arrow
-  layouts/       Base.astro (metadata, kontrakt, skal, mobil bokningsrad)
+  layouts/       Base.astro (metadata, kontrakt, skal)
   pages/         index.astro, meny.astro
   scripts/       site.js (mobilnav, reveals, öppettider, menyns kategorisynk)
   styles/        global.css (tokens, komponenter, responsivt, print)
@@ -145,7 +147,7 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 
 ## Funktioner
 
-- Responsivt från 390 px till breda skärmar, med 72 px header och mobil bokningsrad.
+- Responsivt från 390 px till breda skärmar, med 72 px header och bokning i sidans innehåll i stället för en fast rad.
 - Fullbredds heroband med cobalt kopieplan och foto; under 900 px staplas fotografiet överst och kopian under.
 - Fullskärmig mobilnavigation som `<dialog>` med fokusfångst och Escape-stängning.
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.

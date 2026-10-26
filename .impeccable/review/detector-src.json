@@ -116,7 +116,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 744,
+    "line": 733,
     "snippet": "font-size: clamp(2.1rem, 4.8vw, 4.6rem) has fluid endpoint 4.6rem off the DESIGN.md type ramp",
     "ignoreValue": "4.6rem"
   },
@@ -127,7 +127,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 796,
+    "line": 785,
     "snippet": "font-size: 0.95rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.95rem"
   },
@@ -138,7 +138,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 840,
+    "line": 829,
     "snippet": "font-size: clamp(2.8rem, 5.6vw, 5rem) has fluid endpoints 2.8rem and 5rem off the DESIGN.md type ramp",
     "ignoreValue": "2.8rem"
   },
@@ -149,7 +149,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 867,
+    "line": 856,
     "snippet": "font-size: 0.68rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.68rem"
   },
@@ -160,7 +160,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 905,
+    "line": 894,
     "snippet": "font-size: clamp(1.5rem, 2.4vw, 2rem) has fluid endpoints 1.5rem and 2rem off the DESIGN.md type ramp",
     "ignoreValue": "1.5rem"
   },
@@ -171,7 +171,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 935,
+    "line": 924,
     "snippet": "font-size: 0.95rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.95rem"
   },
@@ -182,7 +182,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1012,
+    "line": 981,
     "snippet": "font-size: clamp(2.4rem, 4.8vw, 4.8rem) has fluid endpoints 2.4rem and 4.8rem off the DESIGN.md type ramp",
     "ignoreValue": "2.4rem"
   },
@@ -193,7 +193,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1038,
+    "line": 1007,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -204,7 +204,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1101,
+    "line": 1070,
     "snippet": "font-size: clamp(1.35rem, 2.2vw, 1.75rem) has fluid endpoints 1.35rem and 1.75rem off the DESIGN.md type ramp",
     "ignoreValue": "1.35rem"
   },
@@ -215,7 +215,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1143,
+    "line": 1112,
     "snippet": "font-size: 0.82rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.82rem"
   },
@@ -226,7 +226,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1201,
+    "line": 1170,
     "snippet": "font-size: clamp(2.8rem, 6.2vw, 6.5rem) has fluid endpoints 2.8rem and 6.5rem off the DESIGN.md type ramp",
     "ignoreValue": "2.8rem"
   },
@@ -237,7 +237,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1239,
+    "line": 1208,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -248,7 +248,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1259,
+    "line": 1228,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -259,7 +259,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1266,
+    "line": 1235,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -270,7 +270,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1295,
+    "line": 1264,
     "snippet": "font-size: 0.95rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.95rem"
   },
@@ -281,7 +281,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1318,
+    "line": 1287,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -292,7 +292,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1339,
+    "line": 1308,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -303,40 +303,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1397,
-    "snippet": "font-size: 0.85rem is off the DESIGN.md type ramp",
-    "ignoreValue": "0.85rem"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1409,
-    "snippet": "font-size: 0.85rem is off the DESIGN.md type ramp",
-    "ignoreValue": "0.85rem"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1418,
-    "snippet": "font-size: 0.85rem is off the DESIGN.md type ramp",
-    "ignoreValue": "0.85rem"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1479,
+    "line": 1395,
     "snippet": "font-size: clamp(3.8rem, 8.5vw, 7.5rem) has fluid endpoints 3.8rem and 7.5rem off the DESIGN.md type ramp",
     "ignoreValue": "3.8rem"
   },
@@ -347,7 +314,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1603,
+    "line": 1519,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -358,7 +325,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1611,
+    "line": 1527,
     "snippet": "font-size: 0.82rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.82rem"
   },
@@ -369,7 +336,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1618,
+    "line": 1534,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -380,7 +347,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1646,
+    "line": 1562,
     "snippet": "font-size: clamp(1.9rem, 3vw, 2.75rem) has fluid endpoints 1.9rem and 2.75rem off the DESIGN.md type ramp",
     "ignoreValue": "1.9rem"
   },
@@ -391,7 +358,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1658,
+    "line": 1574,
     "snippet": "font-size: 0.82rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.82rem"
   },
@@ -402,7 +369,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1689,
+    "line": 1605,
     "snippet": "font-size: 1rem is off the DESIGN.md type ramp",
     "ignoreValue": "1rem"
   },
@@ -413,7 +380,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1699,
+    "line": 1615,
     "snippet": "font-size: 0.95rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.95rem"
   },
@@ -424,7 +391,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1708,
+    "line": 1624,
     "snippet": "font-size: 0.68rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.68rem"
   },
@@ -435,7 +402,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1728,
+    "line": 1644,
     "snippet": "font-size: clamp(1.4rem, 2.4vw, 1.9rem) has fluid endpoints 1.4rem and 1.9rem off the DESIGN.md type ramp",
     "ignoreValue": "1.4rem"
   },
@@ -446,7 +413,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1736,
+    "line": 1652,
     "snippet": "font-size: 0.95rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.95rem"
   },
@@ -457,7 +424,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1741,
+    "line": 1657,
     "snippet": "font-size: clamp(1.5rem, 2.8vw, 2.25rem) has fluid endpoints 1.5rem and 2.25rem off the DESIGN.md type ramp",
     "ignoreValue": "1.5rem"
   },
@@ -468,7 +435,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1751,
+    "line": 1667,
     "snippet": "font-size: 0.85rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.85rem"
   },
@@ -479,7 +446,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1771,
+    "line": 1687,
     "snippet": "font-size: clamp(2.4rem, 4.5vw, 4.5rem) has fluid endpoints 2.4rem and 4.5rem off the DESIGN.md type ramp",
     "ignoreValue": "2.4rem"
   },
@@ -490,7 +457,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1786,
+    "line": 1702,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -501,7 +468,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1816,
+    "line": 1732,
     "snippet": "font-size: 0.9rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.9rem"
   },
@@ -512,7 +479,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 1890,
+    "line": 1806,
     "snippet": "font-size: clamp(1.9rem, 7vw, 2.4rem) has fluid endpoints 1.9rem and 2.4rem off the DESIGN.md type ramp",
     "ignoreValue": "1.9rem"
   },
@@ -523,7 +490,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 2015,
+    "line": 1923,
     "snippet": "font-size: 1rem is off the DESIGN.md type ramp",
     "ignoreValue": "1rem"
   },
@@ -534,7 +501,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 2019,
+    "line": 1927,
     "snippet": "font-size: clamp(3.7rem, 18vw, 5.5rem) has fluid endpoints 3.7rem and 5.5rem off the DESIGN.md type ramp",
     "ignoreValue": "3.7rem"
   },
@@ -545,7 +512,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 2032,
+    "line": 1940,
     "snippet": "font-size: 0.82rem is off the DESIGN.md type ramp",
     "ignoreValue": "0.82rem"
   },
@@ -556,18 +523,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 2046,
-    "snippet": "font-size: 0.68rem is off the DESIGN.md type ramp",
-    "ignoreValue": "0.68rem"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/jmattaa/dev/lyster/src/styles/global.css",
-    "line": 2106,
+    "line": 2008,
     "snippet": "font-size: clamp(3.5rem, 17vw, 5.5rem) has fluid endpoints 3.5rem and 5.5rem off the DESIGN.md type ramp",
     "ignoreValue": "3.5rem"
   }

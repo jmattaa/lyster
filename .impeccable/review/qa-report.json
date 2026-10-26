@@ -1,0 +1,601 @@
+{
+  "results": [
+    {
+      "name": "qa-home-desktop",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 5313
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -29,
+          "top": -81,
+          "h": 52
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [
+        {
+          "src": "hero-rum-1200.webp",
+          "complete": true,
+          "w": 835,
+          "h": 626
+        },
+        {
+          "src": "kottbullar-720.webp",
+          "complete": true,
+          "w": 604,
+          "h": 555
+        }
+      ],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".hero__body",
+          "ratio": 8.1,
+          "font": "17px"
+        },
+        {
+          "sel": ".hero__status",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__meta",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__lead",
+          "ratio": 10.76,
+          "font": "41.76px"
+        },
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "89.28px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "17px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "name": "qa-home-tablet",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "scrollHeight": 6570
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -29,
+          "top": -81,
+          "h": 52
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [
+        {
+          "src": "hero-rum-1200.webp",
+          "complete": true,
+          "w": 834,
+          "h": 625
+        },
+        {
+          "src": "kottbullar-1280.webp",
+          "complete": true,
+          "w": 750,
+          "h": 688
+        }
+      ],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".hero__body",
+          "ratio": 8.1,
+          "font": "17px"
+        },
+        {
+          "sel": ".hero__status",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__meta",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__lead",
+          "ratio": 10.76,
+          "font": "38.4px"
+        },
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "51.708px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "17px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "name": "qa-home-mobile",
+      "status": 200,
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 6135
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -28,
+          "top": -78,
+          "h": 50
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [
+        {
+          "src": "hero-rum-1200.webp",
+          "complete": true,
+          "w": 390,
+          "h": 292
+        },
+        {
+          "src": "kottbullar-720.webp",
+          "complete": true,
+          "w": 351,
+          "h": 322
+        }
+      ],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".hero__body",
+          "ratio": 8.1,
+          "font": "17px"
+        },
+        {
+          "sel": ".hero__status",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__meta",
+          "ratio": 6.95,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".hero__lead",
+          "ratio": 10.76,
+          "font": "30.4px"
+        },
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "44.8px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "16px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "name": "qa-meny-desktop",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 5444
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -29,
+          "top": -81,
+          "h": 52
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "89.28px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "17px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".lunch__head p",
+          "ratio": 7.23,
+          "font": "17px"
+        },
+        {
+          "sel": ".lunch__price",
+          "ratio": 8.22,
+          "font": "17px"
+        },
+        {
+          "sel": ".dish__desc",
+          "ratio": 7.79,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".menu-cat__note",
+          "ratio": 7.79,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".tasting p",
+          "ratio": 6.49,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".tasting__price",
+          "ratio": 6.49,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "name": "qa-meny-tablet",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "scrollHeight": 5737
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -29,
+          "top": -81,
+          "h": 52
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "51.708px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "17px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".lunch__head p",
+          "ratio": 7.23,
+          "font": "17px"
+        },
+        {
+          "sel": ".lunch__price",
+          "ratio": 8.22,
+          "font": "17px"
+        },
+        {
+          "sel": ".dish__desc",
+          "ratio": 7.79,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".menu-cat__note",
+          "ratio": 7.79,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".tasting p",
+          "ratio": 6.49,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".tasting__price",
+          "ratio": 6.49,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "name": "qa-meny-mobile",
+      "status": 200,
+      "title": "Menyn — Lyster",
+      "lang": "sv",
+      "size": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 5976
+      },
+      "bodyPaddingBottom": "0px",
+      "overflowing": [],
+      "fixed": [
+        {
+          "tag": "a",
+          "cls": "skip-link",
+          "pos": "fixed",
+          "display": "block",
+          "bottom": -28,
+          "top": -78,
+          "h": 50
+        }
+      ],
+      "mobileBar": null,
+      "forbiddenMatches": null,
+      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
+      "imgs": [],
+      "hiddenReveals": 0,
+      "smallTargets": [],
+      "contrast": [
+        {
+          "sel": ".booking__copy h2",
+          "ratio": 13.57,
+          "font": "44.8px"
+        },
+        {
+          "sel": ".booking__copy p",
+          "ratio": 9.85,
+          "font": "16px"
+        },
+        {
+          "sel": ".booking__note",
+          "ratio": 9.85,
+          "font": "14.4px"
+        },
+        {
+          "sel": ".footer__demo",
+          "ratio": 5.71,
+          "font": "11.52px"
+        },
+        {
+          "sel": ".footer__tagline",
+          "ratio": 8.06,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".lunch__head p",
+          "ratio": 7.23,
+          "font": "16px"
+        },
+        {
+          "sel": ".lunch__price",
+          "ratio": 8.22,
+          "font": "16px"
+        },
+        {
+          "sel": ".dish__desc",
+          "ratio": 7.79,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".menu-cat__note",
+          "ratio": 7.79,
+          "font": "13.12px"
+        },
+        {
+          "sel": ".tasting p",
+          "ratio": 6.49,
+          "font": "15.2px"
+        },
+        {
+          "sel": ".tasting__price",
+          "ratio": 6.49,
+          "font": "15.2px"
+        }
+      ]
+    },
+    {
+      "mobileNav": {
+        "opened": {
+          "open": true,
+          "expanded": "true",
+          "locked": true,
+          "focused": "Stäng",
+          "fixedVisible": [
+            "skip-link",
+            "mobile-nav"
+          ]
+        },
+        "closed": {
+          "open": false,
+          "expanded": "false",
+          "locked": false,
+          "focusReturned": true
+        }
+      }
+    },
+    {
+      "booking": {
+        "noteVisible": true,
+        "noteText": "Bokningslänken är inte kopplad i demon än. Ring 08–123 45 678, så hjälper vi dig.",
+        "noteFocused": true,
+        "noteBox": {
+          "x": 60,
+          "y": 506,
+          "w": 310,
+          "h": 61
+        },
+        "href": "https://example.com/boka-lyster"
+      }
+    },
+    {
+      "map": {
+        "src": "https://www.openstreetmap.org/export/embed.html?bbox=18.0535%2C59.3345%2C18.0705%2C59.3440&layer=mapnik&marker=59.3391975%2C18.0618873",
+        "title": "Karta över Lyster på Luntmakargatan 42, 111 37 Stockholm",
+        "loading": "lazy"
+      },
+      "mobileBottom": {
+        "scrollY": 5291,
+        "maxScroll": 5291,
+        "footerBottom": 844,
+        "viewport": 844,
+        "footerVisible": true
+      }
+    },
+    {
+      "reduced": {
+        "hiddenReveals": 0,
+        "heroMask": "inset(0px)",
+        "titleMask": "inset(0px)",
+        "photoAnimation": "none"
+      }
+    },
+    {
+      "printState": {
+        "header": "none",
+        "booking": "none",
+        "footer": "none",
+        "map": "absent",
+        "heroBand": "absent"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -25,7 +25,7 @@ No approved comp; judged against the contract's OWN-WORLD and the built material
 | Real photography, not illustration | match | Hero uses `hero-rum-2400.webp` / `hero-rum-1200.webp` with `srcset`, `sizes="(max-width: 900px) 100vw, 58vw"`, descriptive Swedish alt text, and `fetchpriority="high"`. The rendered photo region samples to a warm mean `#958a7a` and classifies as interior, furniture, table, and window. |
 | One authored glyph in total | match | Home and menu each render 3 inline SVGs, all the Mark in header, dialog, and footer. `Lustre.astro` is deleted; the favicon is the same Mark. |
 | Warm beige paper ground | match | `--paper #f4eddf` plus the 128px `paper-noise.webp`; no white body. |
-| Cobalt fields, not a cobalt theme | match | Cobalt stays in the hero copy plane, proof band, booking band, and mobile bar. |
+| Cobalt fields, not a cobalt theme | match | Cobalt stays in the hero copy plane, proof band, and booking band. |
 | Brass as rules, dots, underlines, one disc | match | 1px rules and underlines throughout; the hero band carries 1px top and bottom brass rules; the large brass disc exists only in booking. |
 | One grotesk in monumental and whisper sizes | match | Familjen Grotesk Variable self-hosted, including the true italic cut used on `.intro__statement em` and the proof heading. |
 | Asymmetric editorial grid | match | Hero splits 5/7 around the photograph; statement at 1–12, body at 4–12, facts across the full base; proof photo at 1–5 with copy at 7–12. |
@@ -44,9 +44,9 @@ The glyph budget is explicit and enforced in `DESIGN.md`: the Mark, and nothing 
 
 ## material_fixes
 
-No material defects survived the final pass. One contrast margin was hardened before the final run: the hero footnote moved from Faint Ink to Soft Ink because it is 0.72rem text over a noisy paper ground, raising the measured ratio from roughly 4.57:1 to 7.79:1. The QA harness also had to be corrected to parse Chromium's `color(srgb …)` output; that was a measurement bug, not a site bug.
+No material defects survived the final pass. The fixed mobile booking bar and every visible photo credit, caption, and footnote were removed at the owner's request; the mobile viewport now uses the same in-page booking action as the desktop view. Licensing notes remain in `README.md`, which flags that the Wikimedia proof photo cannot ship under CC BY 2.0 without restored attribution and must be replaced or cleared before launch.
 
-The final detector run reports 52 advisories, all `design-system-font-size`: component sizes and clamp endpoints that sit outside the six named roles in `DESIGN.md` frontmatter. There are zero color advisories and zero findings in any defect category. The type sizes are intentional role sizes; they are recorded here as metadata drift, not visual defects.
+The final detector run reports 48 advisories, all `design-system-font-size`: component sizes and clamp endpoints that sit outside the six named roles in `DESIGN.md` frontmatter. There are zero color advisories and zero findings in any defect category. The type sizes are intentional role sizes; they are recorded here as metadata drift, not visual defects. Removing the mobile bar and credit styles also removed four off-ramp font sizes.
 
 ## verification
 
@@ -54,13 +54,14 @@ The final detector run reports 52 advisories, all `design-system-font-size`: com
 - Zero horizontal overflow at 1440, 834, and 390 on both pages.
 - Zero console errors or page errors on both pages at all three widths.
 - Zero interactive targets below 24px at 390px.
-- All sampled text contrast ratios pass on their real surfaces: hero lead 19.64:1, hero body 14.79:1, hero meta 12.68:1, ghost menu link 19.64:1, gold CTA ink 4.74:1, hero footnote 7.79:1.
+- All sampled text contrast ratios pass on their real surfaces: hero lead 10.76:1, hero body 8.1:1, hero status and meta 6.95:1, ghost menu link 10.76:1, gold CTA ink 4.74:1, footer demo 5.71:1.
 - Hero band is fully full-bleed at every width (x=0, width=viewport) and has no panel or copy overflow. At 834 and 390 it stacks with the photograph first: 834×384 photo above the cobalt panel, then 390×240 photo above the panel. The photo mask and the wordmark mask are both cleared under reduced motion.
 - Sticky menu nav sits at `top: 72px`, the rail at `136px`; an anchored category lands at `141.9px`, clear of the nav bottom at `126.2px`.
 - Mobile dialog opens at 390×844, focuses the close button, restores focus to the toggle on Escape, and toggles `aria-expanded`.
 - Booking placeholder keeps its `href` inert, shows the demo note, and focuses it; nothing pretends to submit.
-- Print: 5 A4 pages, with header, hero band, menu nav, rail, booking, footer, and map hidden.
+- Print: 4 A4 pages, with header, hero band, menu nav, rail, booking, footer, and map hidden.
 - The hero photo's rendered region and the cobalt plane were sampled separately and the photo was classified as an interior; the split is real, not a full-bleed color field.
+- The fixed mobile booking bar is absent from the DOM and no visible photo credit remains; the mobile viewport reaches the footer without a reserved bottom offset.
 
 ## keep
 
@@ -68,9 +69,9 @@ Keep the paper ground, the square-corner flatness, the single brass rule system,
 
 ## Remaining before a real launch
 
-- Replace the temporary Unsplash hero photograph with an own image at 2400×1800 (or wider), keep the two filenames, and update the footnote and alt text.
+- Replace the temporary Unsplash hero photograph with an own image at 2400×1800 (or wider), keep the two filenames, and update the alt text.
 - Replace the booking placeholder (`https://example.com/boka-lyster`) and remove the demo note.
 - Replace address, phone, email, Instagram, opening hours, menu, and prices; the address is currently `Luntmakargatan 42, 111 37 Stockholm`.
-- Replace the Wikimedia proof photo with an own photograph and update the credit, or keep the CC BY 2.0 credit exactly as written.
+- Replace the Wikimedia proof photo with an own photograph, or restore its CC BY 2.0 credit in the interface before launch; the visible credit was removed at the owner's request, so the current build does not satisfy that licence for the image.
 - Remove the footer demo disclosure and the menu footnote once content is real.
 - Point `astro.config.mjs` at the production domain; it currently uses `https://lysternorrmalm.se`.

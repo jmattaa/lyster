@@ -268,7 +268,7 @@
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Uppercase meta rows, category counts, hours, captions, and credits."
+        "purpose": "Uppercase meta rows, category counts, hours, and captions."
       }
     },
     "shadows": [],
@@ -313,7 +313,7 @@
       {
         "name": "stack",
         "value": "900px",
-        "purpose": "12-column grid stacks; the hero band puts the photograph above the cobalt copy; the menu rail leaves; the mobile booking bar appears."
+        "purpose": "12-column grid stacks; the hero band puts the photograph above the cobalt copy; the menu rail leaves; booking stays in the page flow."
       },
       {
         "name": "narrow",
@@ -471,7 +471,8 @@
       "Don’t invent testimonials, awards, press logos, or a booking form that pretends to submit.",
       "Don’t add another glyph, decorative food glyph, or hand-drawn map.",
       "Don’t turn the hero photograph into an illustration or replace it with a dark, moody food still.",
-      "Don’t remove the demo disclosure or the photo credit until real content replaces them."
+      "Don’t remove the demo disclosure until real content replaces it.",
+      "Don’t add photo credits, captions, or footnotes to photographic surfaces; licensing is documented in README.md, and any image that requires attribution must be replaced or cleared before launch."
     ]
   }
 }
