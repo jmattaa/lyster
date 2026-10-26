@@ -46,7 +46,7 @@ Sajten använder absoluta sökvägar (`/meny`, `/images/...`). Publiceras den un
 | Telefon (länk) | `+46812345678` | samma filer |
 | E-post | hej@lyster.se | `Header.astro`, `Footer.astro`, `Booking.astro`, `index.astro` |
 | Instagram | @lystersthlm / `instagram.com/lystersthlm` | `Header.astro`, `Footer.astro`, `index.astro` |
-| Kartlänk | OpenStreetMap-embed på adressen; Google Maps för vägbeskrivning | `Map.astro`, `index.astro` |
+| Kartlänk | Google Maps-embed på adressen; vägbeskrivning via Google Maps | `Map.astro`, `index.astro` |
 
 ### Öppettider
 
@@ -124,7 +124,7 @@ Sajten visar medvetet inga fotokrediteringar, bildtexter eller fotnoter vid bild
 
 - `public/images/paper-noise.webp` — subtil papperstextur, 128×128 px, används som bakgrund.
 - `src/components/Mark.astro` är den enda handritade SVG-formen. Den används i header, mobilmeny och footer, och är favicon. Det finns inga andra illustrerade glyfer.
-- `src/components/Map.astro` är en lazy-laddad OpenStreetMap-iframe med synlig kartcreditering och en Google Maps-länk för vägbeskrivning. Ingen handritad karta.
+- `src/components/Map.astro` är en lazy-laddad Google Maps-iframe med Google Maps egen attribution i kartan, en extern kartlänk och en länk för vägbeskrivning. Ingen handritad karta.
 - Pilarna i knappar och länkar är typografiska `→`, inte SVG-ikoner.
 - Typsnittet **Familjen Grotesk** är self-hosted via `@fontsource-variable/familjen-grotesk`, inklusive den äkta kursiva skärningen (SIL Open Font License 1.1).
 
@@ -153,16 +153,16 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.
 - Scroll-reveals och ett fullbredds heroband där fotografiet vecklas fram en gång med en clip-path-mask; rubriken använder samma mask.
 - Menyns kategorinav synkas vid scroll; kategorierna kan också klickas. Den sticky menyn är typografisk, utan illustration.
-- Karta i form av ett lazy-laddat OpenStreetMap-embed med vägbeskrivning till Google Maps.
+- Karta i form av ett lazy-laddat Google Maps-embed med kartlänk och vägbeskrivning.
 - `prefers-reduced-motion` stänger av rörelse och visar allt innehåll direkt.
-- Utskrift av `/meny` ger en läsbar pappersmeny (5 sidor vid A4) utan navigation, bokning, karta eller footer.
+- Utskrift av `/meny` ger en läsbar pappersmeny (4 sidor vid A4) utan navigation, bokning, karta eller footer.
 
 ## Tillgänglighet och kvalitet
 
 - Skip-link, synlig fokusmarkering (2 px guld), semantiska rubriker och `aria-current` i navigationen.
 - Ingen horisontell scroll vid 1440, 834 eller 390 px.
 - Kontrast kontrollerad för brödtext, metadata, knappar och bokningsnotis.
-- Inga externa skript, cookies eller analytics. OpenStreetMap-embedden laddas lazy och är den enda externa resursen som laddas automatiskt; Google Maps och Instagram öppnas först vid klick.
+- Inga analytics eller spårningsskript utöver kartan. Google Maps-embedden laddas lazy när den närmar sig viewporten och är den enda externa resursen som laddas automatiskt. Google kan sätta cookies från embedden, så consent-krav behöver hanteras före publicering i EU. Instagram och vägbeskrivningen öppnas först vid klick.
 - QA-underlag, skärmbilder och utskrifts-PDF finns i `.impeccable/review/`.
 
 ## Design

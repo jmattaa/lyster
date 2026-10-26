@@ -269,7 +269,7 @@ Late Cobalt field with a large brass disc cropped at the right edge. Copy and ac
 
 ### Map
 
-A live, lazy-loaded OpenStreetMap embed centred on Luntmakargatan 42, held in a 4:3 frame with a 1px rule and a restrained paper-toned filter. The visible caption credits OpenStreetMap and links to Google Maps directions, so the location remains usable if the embed is blocked or the visitor prefers another map. There is no hand-drawn map and no third-party tracking script.
+A live, lazy-loaded Google Maps embed centred on Luntmakargatan 42, held in a 4:3 frame with a 1px rule and a restrained paper-toned filter. Google's own attribution and controls stay inside the frame; the caption labels Google Maps and links to the map and to directions, so the location remains usable if the embed is blocked. There is no hand-drawn map. The embed is the only third-party frame that loads automatically; its consent and cookie implications are documented in `README.md`.
 
 ### Footer
 

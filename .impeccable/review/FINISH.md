@@ -29,7 +29,7 @@ No approved comp; judged against the contract's OWN-WORLD and the built material
 | Brass as rules, dots, underlines, one disc | match | 1px rules and underlines throughout; the hero band carries 1px top and bottom brass rules; the large brass disc exists only in booking. |
 | One grotesk in monumental and whisper sizes | match | Familjen Grotesk Variable self-hosted, including the true italic cut used on `.intro__statement em` and the proof heading. |
 | Asymmetric editorial grid | match | Hero splits 5/7 around the photograph; statement at 1–12, body at 4–12, facts across the full base; proof photo at 1–5 with copy at 7–12. |
-| A real map | match | Lazy OpenStreetMap iframe at `59.3391975, 18.0618873`; visible OSM credit and Google Maps directions fallback. |
+| A real map | match | Lazy Google Maps iframe for Luntmakargatan 42; Google attribution inside the map, plus external map and directions links. |
 | Authored motion | match | The hero photograph and wordmark wipe in once via a 1000ms clip-path; copy reveals at 720ms; buttons and nav use 260–380ms state transitions. No idle loops. |
 | Fake material (bevels, embossing, faux metal) | none | Flat fills, paper tone, hairlines, and a real photograph only. |
 | Kickers or eyebrows | none | Category counts sit below headings; headings stand alone. |
@@ -62,6 +62,7 @@ The final detector run reports 48 advisories, all `design-system-font-size`: com
 - Print: 4 A4 pages, with header, hero band, menu nav, rail, booking, footer, and map hidden.
 - The hero photo's rendered region and the cobalt plane were sampled separately and the photo was classified as an interior; the split is real, not a full-bleed color field.
 - The fixed mobile booking bar is absent from the DOM and no visible photo credit remains; the mobile viewport reaches the footer without a reserved bottom offset.
+- The Google Maps embed returns 200, renders map tiles, and exposes Google's own attribution inside the frame. At 1440 it measures 532×399 inside the 4:3 map frame; the caption links to Google Maps and directions.
 
 ## keep
 
@@ -74,4 +75,5 @@ Keep the paper ground, the square-corner flatness, the single brass rule system,
 - Replace address, phone, email, Instagram, opening hours, menu, and prices; the address is currently `Luntmakargatan 42, 111 37 Stockholm`.
 - Replace the Wikimedia proof photo with an own photograph, or restore its CC BY 2.0 credit in the interface before launch; the visible credit was removed at the owner's request, so the current build does not satisfy that licence for the image.
 - Remove the footer demo disclosure and the menu footnote once content is real.
+- Decide how to handle consent for the Google Maps embed, which may set Google cookies.
 - Point `astro.config.mjs` at the production domain; it currently uses `https://lysternorrmalm.se`.
