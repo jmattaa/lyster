@@ -39,6 +39,12 @@ const courses: Course[] = [
         price: 75,
         tags: ['vegetarisk'],
       },
+      {
+        name: 'Burrata',
+        description: 'Tomat, basilika, olivolja och rostat bröd.',
+        price: 135,
+        tags: ['vegetarisk'],
+      },
     ],
   },
   {
@@ -70,6 +76,29 @@ const courses: Course[] = [
         name: 'Isterband',
         description: 'Dillstuvad potatis, rödbetor och senap.',
         price: 235,
+      },
+    ],
+  },
+  {
+    id: 'europa',
+    title: 'Europas bord',
+    note: 'Europeiska vardagsrätter, med samma krav som husmanskosten',
+    dishes: [
+      {
+        name: 'Pasta med svamp och parmesan',
+        description: 'Tagliatelle, skogssvamp, parmesan och brynt smör.',
+        price: 235,
+        tags: ['vegetarisk'],
+      },
+      {
+        name: 'Kalvschnitzel',
+        description: 'Kalv, citron, kapris, persilja och pressad potatis.',
+        price: 295,
+      },
+      {
+        name: 'Moules-frites',
+        description: 'Blåmusslor, vitlök, persilja, vitt vin och pommes frites.',
+        price: 275,
       },
     ],
   },
@@ -142,6 +171,12 @@ const courses: Course[] = [
         price: 95,
       },
       {
+        name: 'Tarte tatin',
+        description: 'Karamelliserat äpple, vaniljglass och salt smör.',
+        price: 115,
+        tags: ['vegetarisk'],
+      },
+      {
         name: 'Blåbärssoppa',
         description: 'Varm eller kall, med vispad grädde.',
         price: 85,
@@ -205,7 +240,7 @@ const lunch = [
 
 <Base
   title="Menyn — Lyster"
-  description="Lysters meny: köttbullar, stekt strömming, ugnsbakad rotselleri och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm."
+  description="Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm."
 >
   <section class="menu-hero" aria-labelledby="meny-title">
     <div class="shell menu-hero__grid">
@@ -214,8 +249,9 @@ const lunch = [
       </div>
       <div class="menu-hero__copy">
         <p class="menu-hero__intro" data-reveal>
-          Husmanskost, skärpt. Recepten känner du igen. Handlaget är vårt. Vi lagar maten
-          från grunden och byter rätter när råvarorna gör det — inte när någon ber oss.
+          Husmanskost, skärpt — och ett europeiskt bord bredvid. Köttbullar, kalops och
+          strömming från det svenska köket. Pasta, schnitzel och moules-frites från resten av
+          Europa. Allt lagat från grunden, med samma handlag.
         </p>
         <div class="menu-hero__meta meta" data-reveal>
           <span>Höstmeny 2026</span>
@@ -296,8 +332,8 @@ const lunch = [
           <div>
             <h3>Tre rätt, ett bord</h3>
             <p>
-              Tilltugg, varmrätt och efterrätt, valda av köket. Berätta vad du inte äter,
-              så bygger vi menyn runt dig.
+              Tre rätt valda av köket, från husmanskost till Europas bord. Berätta vad du inte
+              äter, så bygger vi menyn runt dig.
             </p>
           </div>
           <p class="tasting__price">495 kr</p>
@@ -316,8 +352,8 @@ const lunch = [
         <div class="lunch__head" data-reveal>
           <h2 id="lunch-title">Lunch</h2>
           <p>
-            Vardag mitt på dagen: en rätt, sallad, bröd och kaffe. Sätt dig ner, ät ordentligt
-            och gå tillbaka till dagen. Ingen bokning krävs.
+            Vardag mitt på dagen: en rätt, sallad, bröd och kaffe. Husmanskost eller veckans
+            pasta — sätt dig ner, ät ordentligt och gå tillbaka till dagen. Ingen bokning krävs.
           </p>
           <p class="lunch__meta meta">Tis–fre 11.30–14.00 · 145 kr</p>
         </div>
@@ -340,6 +376,14 @@ const lunch = [
               <p>Veckans grönsaksrätt. Fråga vad köket har hittat på.</p>
             </div>
             <span class="lunch__price">135 kr</span>
+          </li>
+          <li class="lunch__item">
+            <div>
+              <p class="meta">Alla dagar</p>
+              <h3>Veckans pasta</h3>
+              <p>Dagens pasta med svamp, parmesan och örter.</p>
+            </div>
+            <span class="lunch__price">145 kr</span>
           </li>
         </ul>
       </div>

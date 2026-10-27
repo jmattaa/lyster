@@ -1,6 +1,6 @@
 ---
 name: Lyster
-description: A warm paper-and-ink world for modern husmanskost — flat planes, cobalt fields, brass rules.
+description: A warm paper-and-ink world for modern husmanskost — Swedish classics and a European table, flat planes, cobalt fields, brass rules.
 colors:
   paper: "#f4eddf"
   paper-shade: "#eadfcb"
@@ -95,6 +95,8 @@ components:
 
 Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The room is not illustrated; it is photographed. The homepage opens with a full-bleed band split between a cobalt copy plane and a real, daylight photograph of the dining room. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.
 
+The about spread carries the restaurant's definition. A side label and a monumental statement sit against a tall standfirst; beneath them, two equal columns on Chalk Paper set the Swedish kitchen beside the European table, and three numbered principles close the spread. It reads as a printed editorial page, not a card grid.
+
 The system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.
 
 Motion is precise and editorial: the hero photograph wipes into place once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.
@@ -172,20 +174,20 @@ A warm paper neutral, one deep cobalt, and a brass accent, with ingredient color
 
 **The Real Italic Rule.** Emphasis uses Familjen Grotesk's italic cut. Never fake it with `transform: skew`, and never introduce a second family for contrast.
 
-**The No-Kicker Rule.** A heading stands alone. No uppercase eyebrow label sits above an h1 or h2 to explain it; the heading and the surrounding copy do that work.
+**The No-Kicker Rule.** A heading stands alone. No uppercase eyebrow label sits above an h1 or h2 to explain it; the heading and the surrounding copy do that work. A side label in the margin beside a statement is not a kicker; the about spread uses one.
 
 ## Layout
 
 A 12-column editorial grid inside a 1560px shell. Gutters are `clamp(1.25rem, 4.2vw, 4.5rem)` and section rhythm is `clamp(5.5rem, 11vw, 10.5rem)`.
 
-Compositions rarely fill all twelve columns symmetrically. The homepage opens with the wordmark, then a full-bleed band: a cobalt copy plane on the left and a photograph on the right, split roughly 5/7. The intro sets a statement against a narrower body column; the proof band puts a circular photo at columns 1–5 and copy at 7–12. The menu page opens with a typographic hero: the title sits low at left, the introduction and service facts occupy the right column, and the two align on their bottom edge. Below it, a type-only rail at columns 1–3 faces the dishes at columns 5–12. Asymmetry is structural, not decorative: one side carries the photograph or the navigation, the other carries the reading.
+Compositions rarely fill all twelve columns symmetrically. The homepage opens with the wordmark, then a full-bleed band: a cobalt copy plane on the left and a photograph on the right, split roughly 5/7. The about spread sets a side label in column 1, a monumental statement at columns 2–8, and a standfirst at 9–12 aligned to the statement's baseline; beneath it, a two-column definition on Chalk Paper gives the Swedish kitchen and the European table equal width, and three principles run across the full base. The proof band puts a circular photo at columns 1–5 and copy at 7–12. The menu page opens with a typographic hero: the title sits low at left, the introduction and service facts occupy the right column, and the two align on their bottom edge. Below it, a type-only rail at columns 1–3 faces the dishes at columns 5–12. Asymmetry is structural, not decorative: one side carries the photograph or the navigation, the other carries the reading.
 
 The sticky system is explicit. The header is 72px. The menu category nav sticks directly beneath it at `top: var(--header-h)`, and the menu rail sticks at `header + 64px`. Anchor scroll margins clear both (`header + 16px` for page sections, `header + 70px` for menu categories and lunch).
 
 Breakpoints are coarse and content-led:
 
 - **1100px:** the hero band keeps its 5/7 split but tightens; the proof image begins to shrink and side-by-side proportions loosen.
-- **900px:** the 12-column grid collapses to stacked blocks; the hero band stacks with the photograph above the cobalt copy; the menu rail leaves the viewport and dishes run full width.
+- **900px:** the 12-column grid collapses to stacked blocks; the about side label steps out, the statement and standfirst run full width, and the two-column definition becomes one; the hero band stacks with the photograph above the cobalt copy; the menu rail leaves the viewport and dishes run full width.
 - **640px:** type steps down, the wordmark takes over the viewport width, the mobile navigation opens as a full-screen `<dialog>`, and dense meta rows wrap. Booking stays inside the page; there is no fixed bottom bar.
 
 ### Named Rules
@@ -249,6 +251,10 @@ There are no form fields in the product. Booking is an external link; the demo n
 - **Mobile:** below 900px the links collapse into a full-screen dark `<dialog>` with large stacked links, contact details, and Instagram. Index numbers were removed: the links are the navigation, not a numbered list. Focus moves to the close button on open and returns to the toggle on close.
 - **Menu page:** a second sticky nav under the header lists all categories. The active category is brass-underlined; the track scrolls horizontally on narrow screens and keeps the active link in view. Beneath it, a typographic rail carries service hours and a note instead of a sticky illustration.
 
+### About Spread
+
+The homepage's `Om oss` section is an editorial spread rather than a card grid. A 1px ink rule opens it; the `Om oss` label sits in column 1 as a side label, the statement runs at 2–8 in the Display register with a cobalt italic close, and the standfirst sits at 9–12 on its own 1px rule, bottom-aligned to the statement. Below, a Chalk Paper block with a 2px brass top rule splits into two equal columns — `Det svenska köket` and `Det europeiska bordet` — separated by a 1px ink-mix vertical rule; each column closes with a `På menyn` example list pushed to the shared baseline. A final 1px rule introduces three numbered principles across the full base. On Chalk Paper, body copy and examples are Soft Ink; labels and numbers are Deep Brass Ink. Below 900px the side label steps out, the statement and standfirst stack full width, the definition becomes one column with a horizontal rule instead of the vertical one, and the principles stack.
+
 ### Dish Row
 
 A dish is a single row: name and dietary tags on the left, a dotted leader, price on the right, description underneath in Soft Ink. The leader is a 1px dotted rule that aligns prices without a table. Prices are tabular where they stack. Category counts sit below the category heading, not above it.
@@ -284,7 +290,7 @@ Four-column paper footer: brand and tagline, contact, hours, and follow links. B
 - **Do** draw brass as a 1px rule, a dot, an underline, a small inset panel, or the single booking disc.
 - **Do** keep corners square and separation flat; change tone or add a hairline instead of a shadow.
 - **Do** use the brand mark and the circular proof photo as the only curved forms.
-- **Do** set headings without eyebrow labels, and let the copy beneath them carry the explanation.
+- **Do** set headings without eyebrow labels above them, and let the copy beneath them carry the explanation; a side label beside a statement is allowed.
 - **Do** use the real italic cut for emphasis inside headings, in cobalt on paper or pale brass on cobalt.
 - **Do** use a real, bright photograph for the hero and keep the full-bleed band free of overlays and decoration.
 - **Do** keep the glyph count at one: the Mark. Let type, photography, rules, and the map do the rest.

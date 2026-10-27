@@ -1,6 +1,6 @@
 # Lyster
 
-Statisk demowebbplats för den fiktiva restaurangen **Lyster** — modern husmanskost i Stockholm. Byggd med Astro som ren statisk HTML/CSS/JS, utan backend, formulär eller tredjepartsspårning.
+Statisk demowebbplats för den fiktiva restaurangen **Lyster** — modern husmanskost i Stockholm: svensk husmanskost med europeiska rätter. Byggd med Astro som ren statisk HTML/CSS/JS, utan backend, formulär eller tredjepartsspårning.
 
 Sidan finns i två versioner:
 
@@ -72,23 +72,24 @@ Vid riktig bokningslänk: byt `href`, ta bort `data-booking-placeholder` och sta
 
 ### Meny och priser
 
-Menyn är data-driven och ligger i `src/pages/meny.astro` i arrayerna `courses` och `lunch`. Alla 22 rätter, 5 lunchrätter och priser är exempel.
+Menyn är data-driven och ligger i `src/pages/meny.astro` i arrayerna `courses` och `lunch`. Alla 27 rätter, 6 lunchrätter och priser är exempel.
 
 | Kategori | Rätter | Priser |
 | --- | --- | --- |
-| Tilltugg | Toast med räkor; Löjrom med gräddfil; Krondillsinlagd gurka (vegetarisk) | 145 / 165 / 75 kr |
+| Tilltugg | Toast med räkor; Löjrom med gräddfil; Krondillsinlagd gurka (vegetarisk); Burrata (vegetarisk) | 145 / 165 / 75 / 135 kr |
 | Husmanskost | Köttbullar; Wallenbergare; Kalops; Stekt fläsk med löksås; Isterband | 265 / 285 / 255 / 245 / 235 kr |
+| Europas bord | Pasta med svamp och parmesan (vegetarisk); Kalvschnitzel; Moules-frites | 235 / 295 / 275 kr |
 | Från havet | Stekt strömming; Gravad lax; Fiskgryta | 245 / 245 / 275 kr |
 | Grönt | Ugnsbakad rotselleri (vegetarisk); Böngryta (vegansk); Rödbetor med getost (vegetarisk) | 225 / 215 / 155 kr |
-| Efterrätt | Ostkaka (glutenfri); Varm äppelkaka; Kanelbulle med glass; Blåbärssoppa (glutenfri) | 115 / 105 / 95 / 85 kr |
+| Efterrätt | Ostkaka (glutenfri); Varm äppelkaka; Kanelbulle med glass; Tarte tatin (vegetarisk); Blåbärssoppa (glutenfri) | 115 / 105 / 95 / 115 / 85 kr |
 | Dryck | Lyster lager; Gammeldags snaps; Äpple och fläder (alkoholfri); Kaffe | 75 / 65 / 55 / 35 kr |
 
 Övriga exempelvärden:
 
 - Provsmakningsmeny **"Tre rätt, ett bord"**: 495 kr (`meny.astro`).
-- Lunch: 145 kr, dagens gröna 135 kr. Lunchrätterna är Köttbullar (tis), Stekt strömming (ons), Ärtsoppa med fläsk (tors) och Kalops (fre).
+- Lunch: 145 kr, dagens gröna 135 kr, veckans pasta 145 kr. Lunchrätterna är Köttbullar (tis), Stekt strömming (ons), Ärtsoppa med fläsk (tors), Kalops (fre), Dagens gröna och Veckans pasta (alla lunchdagar).
 - Säsongsrad: **Höstmeny 2026**.
-- Startsidans utvalda rätter och priser: Köttbullar 265 kr, Stekt strömming 245 kr, Ugnsbakad rotselleri 225 kr.
+- Startsidans utvalda rätter och priser: Köttbullar 265 kr, Pasta med svamp 235 kr, Stekt strömming 245 kr.
 
 ### Demo- och platshållartexter
 
@@ -149,13 +150,14 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 
 - Responsivt från 390 px till breda skärmar, med 72 px header och bokning i sidans innehåll i stället för en fast rad.
 - Fullbredds heroband med cobalt kopieplan och foto; under 900 px staplas fotografiet överst och kopian under.
+- `Om oss` är en redaktionell spread: en stor konceptmening med sidetikett och standfirst, två kolumner för svensk grund och europeiskt bord, och tre numrerade principer.
 - Fullskärmig mobilnavigation som `<dialog>` med fokusfångst och Escape-stängning.
 - Öppet/stängt-status som räknas om varje minut i `Europe/Stockholm`.
 - Scroll-reveals och ett fullbredds heroband där fotografiet vecklas fram en gång med en clip-path-mask; rubriken använder samma mask.
 - Menyns kategorinav synkas vid scroll; kategorierna kan också klickas. Den sticky menyn är typografisk, utan illustration.
 - Karta i form av ett lazy-laddat Google Maps-embed med kartlänk och vägbeskrivning.
 - `prefers-reduced-motion` stänger av rörelse och visar allt innehåll direkt.
-- Utskrift av `/meny` ger en läsbar pappersmeny (4 sidor vid A4) utan navigation, bokning, karta eller footer.
+- Utskrift av `/meny` ger en läsbar pappersmeny (5 sidor vid A4) utan navigation, bokning, karta eller footer.
 
 ## Tillgänglighet och kvalitet
 
@@ -167,4 +169,4 @@ DESIGN.md        designsystem (tokens, regler, komponenter)
 
 ## Design
 
-Se `DESIGN.md` för den fullständiga visuella specifikationen: pappersgrund, koboltfält, mässingsregler, typografiska regler, de två glyferna, komponenter och förbud. Maskinläsbara tillägg (rörelse, brytpunkter, tonala ramper) ligger i `.impeccable/design.json`.
+Se `DESIGN.md` för den fullständiga visuella specifikationen: pappersgrund, koboltfält, mässingsregler, typografiska regler, den enda glyfen, komponenter och förbud. Maskinläsbara tillägg (rörelse, brytpunkter, tonala ramper) ligger i `.impeccable/design.json`.

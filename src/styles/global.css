@@ -641,6 +641,11 @@ ol {
   letter-spacing: -0.045em;
 }
 
+.hero__lead em {
+  color: var(--gold-pale);
+  font-style: italic;
+}
+
 .hero__body {
   max-width: 36ch;
   margin-top: clamp(1rem, 1.8vw, 1.4rem);
@@ -725,62 +730,154 @@ ol {
   filter: saturate(0.95) contrast(1.02);
 }
 
-/* Intro ------------------------------------------------------------------ */
+/* About ------------------------------------------------------------------ */
 
-.intro__statement {
-  grid-column: 1 / 12;
-  max-width: 22ch;
-  font-size: clamp(2.1rem, 4.8vw, 4.6rem);
-  font-weight: 500;
-  line-height: 1.02;
-  letter-spacing: -0.05em;
+.about__head {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(1rem, 2.2vw, 2.25rem);
+  padding-top: clamp(1rem, 1.6vw, 1.35rem);
+  border-top: 1px solid color-mix(in srgb, var(--ink) 22%, transparent);
 }
 
-.intro__statement em {
+.about__label {
+  grid-column: 1 / 2;
+  padding-top: 0.65rem;
+  color: var(--gold-ink);
+  white-space: nowrap;
+}
+
+.about__statement {
+  grid-column: 2 / 9;
+  max-width: 17ch;
+  padding-top: 0.15rem;
+  font-size: clamp(2.6rem, 5.6vw, 5.25rem);
+  font-weight: 500;
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+}
+
+.about__statement em {
   color: var(--cobalt);
   font-style: italic;
 }
 
-.intro__body {
-  grid-column: 4 / 12;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.5rem, 3vw, 3rem);
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-}
-
-.intro__body p {
-  max-width: 40ch;
+.about__standfirst {
+  grid-column: 9 / 13;
+  align-self: end;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  color: var(--ink-soft);
+  font-size: 1rem;
   line-height: 1.65;
 }
 
-.intro__body p:first-child {
-  font-size: 1.15rem;
-  color: var(--ink);
+.about__standfirst p + p {
+  margin-top: 0.9rem;
 }
 
-.facts {
-  grid-column: 1 / -1;
+.about__traditions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+  background: var(--paper-3);
+  border-top: 2px solid var(--gold);
+  border-bottom: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.about__tradition {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.about__tradition + .about__tradition {
+  border-left: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+}
+
+.about__tradition-index {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--gold-ink);
+}
+
+.about__tradition-no {
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+}
+
+.about__tradition h3 {
+  max-width: 18ch;
+  margin-top: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-size: clamp(1.8rem, 3.4vw, 2.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.about__tradition > p:not(.about__examples) {
+  max-width: 44ch;
+  margin-top: 1.25rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.about__examples {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding-top: clamp(2rem, 4vw, 3.25rem);
+}
+
+.about__examples .meta {
+  color: var(--gold-ink);
+}
+
+.about__examples span:last-child {
+  max-width: 46ch;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.about__principles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1.5rem, 3vw, 3rem);
-  margin-top: clamp(4rem, 8vw, 7rem);
-}
-
-.fact {
-  padding-top: 1rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(1.5rem, 2.5vw, 2rem);
   border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
 }
 
-.fact h3 {
-  font-size: 1.08rem;
+.about__principle {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.about__principle-no {
+  padding-top: 0.38rem;
+  color: var(--gold-ink);
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+}
+
+.about__principle h3 {
+  font-size: 1.12rem;
   font-weight: 600;
   letter-spacing: -0.015em;
 }
 
-.fact p {
-  max-width: 32ch;
-  margin-top: 0.65rem;
+.about__principle p {
+  max-width: 34ch;
+  margin-top: 0.6rem;
   color: var(--ink-soft);
   font-size: 0.95rem;
   line-height: 1.6;
@@ -1363,7 +1460,7 @@ ol {
 
 /* Anchors ---------------------------------------------------------------- */
 
-#krogen,
+#om-oss,
 #hitta,
 #boka {
   scroll-margin-top: calc(var(--header-h) + 16px);
@@ -1743,10 +1840,6 @@ ol {
 /* Responsive ------------------------------------------------------------- */
 
 @media (max-width: 1100px) {
-  .intro__body {
-    grid-column: 4 / 13;
-  }
-
   .preview__feature {
     grid-column: 1 / 6;
   }
@@ -1810,17 +1903,39 @@ ol {
     justify-content: flex-start;
   }
 
-  .intro__statement {
-    grid-column: 1 / 13;
-  }
-
-  .intro__body {
-    grid-column: 1 / 13;
-  }
-
-  .facts {
+  .about__head {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+  }
+
+  .about__label {
+    display: none;
+  }
+
+  .about__statement,
+  .about__standfirst {
+    grid-column: 1 / -1;
+  }
+
+  .about__statement {
+    max-width: 18ch;
+  }
+
+  .about__standfirst {
+    margin-top: 2.5rem;
+  }
+
+  .about__traditions {
+    grid-template-columns: 1fr;
+  }
+
+  .about__tradition + .about__tradition {
+    border-top: 1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+    border-left: 0;
+  }
+
+  .about__principles {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .preview__grid {
@@ -1948,13 +2063,24 @@ ol {
     width: auto;
   }
 
-  .intro__body {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .about__statement {
+    font-size: clamp(2.3rem, 10.5vw, 3.4rem);
   }
 
-  .intro__body p:first-child {
-    font-size: 1.0625rem;
+  .about__traditions {
+    margin-top: 3rem;
+  }
+
+  .about__tradition {
+    padding: 1.5rem;
+  }
+
+  .about__tradition h3 {
+    margin-top: 2rem;
+  }
+
+  .about__examples {
+    padding-top: 2rem;
   }
 
   .section-head {
@@ -2162,7 +2288,16 @@ ol {
     color: var(--ink-soft);
   }
 
+  .lunch__head p {
+    max-width: none;
+  }
+
+  .lunch__meta {
+    margin-top: 1rem;
+  }
+
   .lunch__item {
+    padding-block: 0.6rem;
     border-color: var(--ink-faint);
   }
 

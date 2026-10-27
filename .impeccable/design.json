@@ -313,7 +313,7 @@
       {
         "name": "stack",
         "value": "900px",
-        "purpose": "12-column grid stacks; the hero band puts the photograph above the cobalt copy; the menu rail leaves; booking stays in the page flow."
+        "purpose": "12-column grid stacks; the about side label steps out and its two-column definition becomes one; the hero band puts the photograph above the cobalt copy; the menu rail leaves; booking stays in the page flow."
       },
       {
         "name": "narrow",
@@ -355,6 +355,13 @@
       "css": ".ds-link-arrow{display:inline-flex;align-items:center;gap:.6rem;padding-block:.35rem;color:var(--ink,#1b1a17);font-family:var(--font,\"Familjen Grotesk Variable\",Helvetica,sans-serif);font-weight:600;letter-spacing:.01em;text-decoration:none;transition:color 260ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow .arrow{font-size:1.0625rem;font-weight:400;line-height:1;transition:transform 320ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover .arrow{transform:translateX(.3rem)}.ds-link-arrow:focus-visible{outline:2px solid var(--gold,#a97e34);outline-offset:3px}"
     },
     {
+      "name": "About Spread",
+      "kind": "custom",
+      "description": "Editorial about section: side label, monumental statement, standfirst, two-column definition on Chalk Paper, and three numbered principles.",
+      "html": "<section class='ds-about'><div class='ds-about__head'><p class='ds-about__label'>Om oss</p><h2 class='ds-about__statement'>Husmanskosten är grunden. <em>Europa är bordet bredvid.</em></h2><p class='ds-about__standfirst'>Modern husmanskost börjar i det svenska köket och slutar inte vid landets gräns.</p></div><div class='ds-about__traditions'><article><p class='ds-about__index'>Grunden <span>01</span></p><h3>Det svenska köket</h3><p>Recepten är ärvda, inte uppfunna.</p></article><article><p class='ds-about__index'>Utvidgningen <span>02</span></p><h3>Det europeiska bordet</h3><p>Pasta, schnitzel och moules-frites.</p></article></div></section>",
+      "css": ".ds-about{font-family:var(--font,'Familjen Grotesk Variable',Helvetica,sans-serif);color:var(--ink,#1b1a17)}.ds-about__head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:2.25rem;padding-top:1.35rem;border-top:1px solid color-mix(in srgb,var(--ink,#1b1a17) 22%,transparent)}.ds-about__label{grid-column:1/2;color:var(--gold-ink,#7d5a1e);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}.ds-about__statement{grid-column:2/9;max-width:17ch;font-size:clamp(2.6rem,5.6vw,5.25rem);font-weight:500;line-height:.97;letter-spacing:-.055em}.ds-about__statement em{color:var(--cobalt,#1e3a5f);font-style:italic}.ds-about__standfirst{grid-column:9/13;align-self:end;padding-top:1rem;border-top:1px solid color-mix(in srgb,var(--ink,#1b1a17) 18%,transparent);color:var(--ink-soft,#4d483f);font-size:1rem;line-height:1.65}.ds-about__traditions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:6rem;background:var(--paper-3,#fbf7ee);border-top:2px solid var(--gold,#a97e34)}.ds-about__traditions article{display:flex;flex-direction:column;padding:2.75rem}.ds-about__traditions article+article{border-left:1px solid color-mix(in srgb,var(--ink,#1b1a17) 14%,transparent)}.ds-about__index{display:flex;justify-content:space-between;color:var(--gold-ink,#7d5a1e);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}"
+    },
+    {
       "name": "Dish Row",
       "kind": "custom",
       "description": "Menu dish line: name, dietary tags, dotted leader, price, description beneath.",
@@ -371,7 +378,7 @@
   ],
   "narrative": {
     "northStar": "The Printed Room",
-    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The room is not illustrated; it is photographed. The homepage opens with a full-bleed band split between a cobalt copy plane and a real, daylight photograph of the dining room. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: the hero photograph wipes into place once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
+    "overview": "Lyster looks like a menu printed on good paper and laid on a plain table: warm beige ground, one confident cobalt field, a brass rule holding the line. The room is not illustrated; it is photographed. The homepage opens with a full-bleed band split between a cobalt copy plane and a real, daylight photograph of the dining room. The about spread then carries the definition: a side label and a monumental statement against a tall standfirst, two equal columns on Chalk Paper for the Swedish kitchen and the European table, and three numbered principles. The page is bright and airy, never solemn; the luxury is in the craft, not in the lighting.\n\nThe system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.\n\nMotion is precise and editorial: the hero photograph wipes into place once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.",
     "keyCharacteristics": [
       "Warm beige paper ground with a subtle 128px noise texture.",
       "Cobalt is a room you walk into (hero band, proof band, booking band), not a global theme.",
@@ -405,7 +412,7 @@
       },
       {
         "name": "The No-Kicker Rule",
-        "body": "A heading stands alone. No uppercase eyebrow label sits above an h1 or h2 to explain it; the heading and the surrounding copy do that work.",
+        "body": "A heading stands alone. No uppercase eyebrow label sits above an h1 or h2 to explain it; the heading and the surrounding copy do that work. A side label in the margin beside a statement is not a kicker; the about spread uses one.",
         "section": "typography"
       },
       {
@@ -455,7 +462,7 @@
       "Do draw brass as a 1px rule, a dot, an underline, a small inset panel, or the single booking disc.",
       "Do keep corners square and separation flat; change tone or add a hairline instead of a shadow.",
       "Do use the brand mark and the circular proof photo as the only curved forms.",
-      "Do set headings without eyebrow labels, and let the copy beneath them carry the explanation.",
+      "Do set headings without eyebrow labels above them, and let the copy beneath them carry the explanation; a side label beside a statement is allowed.",
       "Do use the real italic cut for emphasis inside headings, in cobalt on paper or pale brass on cobalt.",
       "Do use a real, bright photograph for the hero and keep the full-bleed band free of overlays and decoration.",
       "Do keep the glyph count at one: the Mark. Let type, photography, rules, and the map do the rest.",

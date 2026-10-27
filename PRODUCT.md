@@ -16,11 +16,11 @@ A broad Swedish restaurant audience, planning mostly on a phone. Weekday lunch g
 
 ## Product Purpose
 
-The public website for Lyster, a restaurant serving modern husmanskost. It exists to turn curiosity into a booked table and to make the menu, the room, and the restaurant's point of view legible at a glance. Success means a visitor understands the concept within seconds, opens the menu, and either books or saves the address.
+The public website for Lyster, a restaurant serving modern husmanskost: Swedish classics with a wider European table. It exists to turn curiosity into a booked table and to make the menu, the room, and the restaurant's point of view legible at a glance. Success means a visitor understands the concept within seconds, opens the menu, and either books or saves the address.
 
 ## Positioning
 
-Husmanskost, sharpened. Classic Swedish dishes are kept recognisable but rebuilt with better technique, seasonal produce, and precise sourcing. The restaurant is warm and generous rather than solemn, and the website should make familiar food feel newly worth crossing town for.
+Modern husmanskost, defined plainly: Swedish husmanskost is the foundation, and European everyday dishes — pasta, schnitzel, moules-frites — sit beside it with the same standards. Not fusion for its own sake, and not a museum of Swedish food. Classic dishes are kept recognisable but rebuilt with better technique, seasonal produce, and precise sourcing. The restaurant is warm and generous rather than solemn, and the website should make familiar food feel newly worth crossing town for.
 
 ## Operating Context
 
@@ -38,7 +38,7 @@ Guests arrive from search, Instagram, or word of mouth. The common path is: what
 ## Brand Commitments
 
 - Name: Lyster.
-- Concept: modern husmanskost.
+- Concept: modern husmanskost — Swedish husmanskost plus other European dishes, such as pasta.
 - Voice: warm, grounded, generous. Short sentences, no clichés, no luxury bluster.
 - Palette is fixed: beige, blue, and gold.
 
@@ -48,7 +48,7 @@ No real photography, menu, prices, address, phone number, opening hours, booking
 
 ## Product Principles
 
-1. Familiar food, treated with seriousness and warmth.
+1. Familiar food, treated with seriousness and warmth — Swedish first, European alongside.
 2. The menu is the proof; show it plainly and make it easy to read.
 3. Booking is never more than one clear action away.
 4. Speak like a host, not a marketing department.

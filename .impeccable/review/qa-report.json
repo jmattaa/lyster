@@ -1,32 +1,55 @@
 {
+  "generatedAt": "2026-10-27T08:47:38.405Z",
+  "base": "http://127.0.0.1:4321",
   "results": [
     {
-      "name": "qa-home-desktop",
-      "status": 200,
       "title": "Lyster — modern husmanskost i Stockholm",
       "lang": "sv",
-      "size": {
-        "scrollWidth": 1440,
-        "clientWidth": 1440,
-        "scrollHeight": 5313
-      },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
+      "metaDescription": "Lyster serverar modern husmanskost i Stockholm: svensk husmanskost och europeiska rätter som pasta, kalvschnitzel och moules-frites. Lunch och middag.",
+      "headings": [
+        "H1: Lyster — modern husmanskost i Stockholm L Y STER",
+        "H2: Svensk husmanskost. Europeiskt bord.",
+        "H2: Husmanskosten är grunden. Europa är bordet bredvid.",
+        "H3: Det svenska köket",
+        "H3: Det europeiska bordet",
+        "H3: Från grunden",
+        "H3: Säsongen bestämmer",
+        "H3: Ett bord, hela dagen",
+        "H2: Från menyn",
+        "H3: Köttbullar",
+        "H3: Pasta med svamp",
+        "H3: Stekt strömming",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: ÖPPETTIDER",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
         {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -29,
-          "top": -81,
-          "h": 52
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
         }
       ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [
+      "overflow": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "delta": 0
+      },
+      "hiddenReveals": [],
+      "smallTargets": [],
+      "images": [
         {
           "src": "hero-rum-1200.webp",
           "complete": true,
@@ -34,89 +57,404 @@
           "h": 626
         },
         {
-          "src": "kottbullar-720.webp",
-          "complete": true,
-          "w": 604,
-          "h": 555
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
         }
       ],
-      "hiddenReveals": 0,
-      "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".hero__body",
-          "ratio": 8.1,
-          "font": "17px"
+      "about": {
+        "section": {
+          "x": 0,
+          "y": -3815.3,
+          "w": 1440,
+          "h": 1314,
+          "right": 1440,
+          "bottom": -2501.3
         },
-        {
-          "sel": ".hero__status",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "label": {
+          "x": 60.5,
+          "y": -3634.3,
+          "w": 80.9,
+          "h": 237.7,
+          "right": 141.3,
+          "bottom": -3396.6,
+          "display": "block",
+          "text": "OM OSS",
+          "scrollWidth": 81,
+          "clientWidth": 81
         },
-        {
-          "sel": ".hero__meta",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "statement": {
+          "x": 173,
+          "y": -3634.3,
+          "w": 756.3,
+          "h": 237.7,
+          "right": 929.3,
+          "bottom": -3396.6,
+          "font": "80.64px",
+          "text": "Husmanskosten är grunden. Europa är bordet bredvid."
         },
-        {
-          "sel": ".hero__lead",
-          "ratio": 10.76,
-          "font": "41.76px"
+        "standfirst": {
+          "x": 961,
+          "y": -3586.3,
+          "w": 418.6,
+          "h": 189.7,
+          "right": 1379.5,
+          "bottom": -3396.6,
+          "text": "Modern husmanskost, som vi menar det, börjar i det svenska köket och slutar inte vid landets gräns. Köttbullar, kalops och strömming står kvar. Bredvid dem står pasta, schnitzel och moules-frites. Vi kallar det inte fusion. Vi kallar det ett kök som har lärt sig av fler än en tradition, och som vägrar välja mellan dem."
         },
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "89.28px"
+        "overlapStatementStandfirst": false,
+        "traditions": [
+          {
+            "x": 60.5,
+            "y": -3298.6,
+            "w": 659.5,
+            "h": 440.5,
+            "right": 720,
+            "bottom": -2858.1,
+            "heading": "Det svenska köket",
+            "examples": "PÅ MENYN Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa"
+          },
+          {
+            "x": 720,
+            "y": -3298.6,
+            "w": 659.5,
+            "h": 440.5,
+            "right": 1379.5,
+            "bottom": -2858.1,
+            "heading": "Det europeiska bordet",
+            "examples": "PÅ MENYN Pasta, Kalvschnitzel, Moules-frites, Tarte tatin"
+          }
+        ],
+        "principles": [
+          "Från grunden",
+          "Säsongen bestämmer",
+          "Ett bord, hela dagen"
+        ],
+        "traditionsBox": {
+          "x": 60.5,
+          "y": -3300.6,
+          "w": 1319.1,
+          "h": 443.5,
+          "right": 1379.5,
+          "bottom": -2857.1
         },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "17px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
+        "principlesBox": {
+          "x": 60.5,
+          "y": -2793.1,
+          "w": 1319.1,
+          "h": 133.5,
+          "right": 1379.5,
+          "bottom": -2659.6
         }
-      ]
+      },
+      "menu": null,
+      "styles": {
+        "paper": "rgb(244, 237, 223)",
+        "chalk": "rgb(251, 247, 238)",
+        "statementEm": "rgb(30, 58, 95)",
+        "label": "rgb(125, 90, 30)",
+        "standfirst": "rgb(77, 72, 63)",
+        "traditionBody": "rgb(77, 72, 63)",
+        "principleBody": "rgb(77, 72, 63)"
+      },
+      "name": "qa-home-desktop",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": 200,
+      "consoleErrors": [],
+      "contrast": {
+        "statementItalic": 9.87,
+        "sideLabel": 5.38,
+        "standfirst": 7.79,
+        "traditionBodyOnChalk": 8.49,
+        "principleBodyOnPaper": 7.79
+      }
     },
     {
-      "name": "qa-home-tablet",
-      "status": 200,
-      "title": "Lyster — modern husmanskost i Stockholm",
+      "title": "Menyn — Lyster",
       "lang": "sv",
-      "size": {
-        "scrollWidth": 834,
-        "clientWidth": 834,
-        "scrollHeight": 6570
-      },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
+      "metaDescription": "Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm.",
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurka VEGETARISK",
+        "H3: Burrata VEGETARISK",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Europas bord",
+        "H3: Pasta med svamp och parmesan VEGETARISK",
+        "H3: Kalvschnitzel",
+        "H3: Moules-frites",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotselleri VEGETARISK",
+        "H3: Böngryta VEGANSK",
+        "H3: Rödbetor med getost VEGETARISK",
+        "H2: Efterrätt",
+        "H3: Ostkaka GLUTENFRI",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Tarte tatin VEGETARISK",
+        "H3: Blåbärssoppa GLUTENFRI",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläder ALKOHOLFRI",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H3: Veckans pasta",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
         {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -29,
-          "top": -81,
-          "h": 52
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
         }
       ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [
+      "overflow": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "delta": 0
+      },
+      "hiddenReveals": [],
+      "smallTargets": [],
+      "images": [],
+      "about": null,
+      "menu": {
+        "nav": [
+          {
+            "text": "Tilltugg",
+            "href": "#tilltugg"
+          },
+          {
+            "text": "Husmanskost",
+            "href": "#husmanskost"
+          },
+          {
+            "text": "Europas bord",
+            "href": "#europa"
+          },
+          {
+            "text": "Från havet",
+            "href": "#havet"
+          },
+          {
+            "text": "Grönt",
+            "href": "#gront"
+          },
+          {
+            "text": "Efterrätt",
+            "href": "#efterratt"
+          },
+          {
+            "text": "Dryck",
+            "href": "#dryck"
+          },
+          {
+            "text": "Lunch",
+            "href": "#lunch"
+          }
+        ],
+        "categories": [
+          {
+            "id": "tilltugg",
+            "title": "Tilltugg",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Toast med räkor",
+              "Löjrom med gräddfil",
+              "Krondillsinlagd gurka",
+              "Burrata"
+            ]
+          },
+          {
+            "id": "husmanskost",
+            "title": "Husmanskost",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Köttbullar",
+              "Wallenbergare",
+              "Kalops",
+              "Stekt fläsk med löksås",
+              "Isterband"
+            ]
+          },
+          {
+            "id": "europa",
+            "title": "Europas bord",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Pasta med svamp och parmesan",
+              "Kalvschnitzel",
+              "Moules-frites"
+            ]
+          },
+          {
+            "id": "havet",
+            "title": "Från havet",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Stekt strömming",
+              "Gravad lax",
+              "Fiskgryta"
+            ]
+          },
+          {
+            "id": "gront",
+            "title": "Grönt",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Ugnsbakad rotselleri",
+              "Böngryta",
+              "Rödbetor med getost"
+            ]
+          },
+          {
+            "id": "efterratt",
+            "title": "Efterrätt",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Ostkaka",
+              "Varm äppelkaka",
+              "Kanelbulle med glass",
+              "Tarte tatin",
+              "Blåbärssoppa"
+            ]
+          },
+          {
+            "id": "dryck",
+            "title": "Dryck",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Lyster lager",
+              "Gammeldags snaps",
+              "Äpple och fläder",
+              "Kaffe"
+            ]
+          }
+        ],
+        "lunch": [
+          {
+            "day": "TISDAG",
+            "name": "Köttbullar",
+            "price": "145 kr"
+          },
+          {
+            "day": "ONSDAG",
+            "name": "Stekt strömming",
+            "price": "145 kr"
+          },
+          {
+            "day": "TORSDAG",
+            "name": "Ärtsoppa med fläsk",
+            "price": "145 kr"
+          },
+          {
+            "day": "FREDAG",
+            "name": "Kalops",
+            "price": "145 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Dagens gröna",
+            "price": "135 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Veckans pasta",
+            "price": "145 kr"
+          }
+        ]
+      },
+      "styles": null,
+      "name": "qa-menu-desktop",
+      "path": "/meny",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": 200,
+      "consoleErrors": []
+    },
+    {
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "metaDescription": "Lyster serverar modern husmanskost i Stockholm: svensk husmanskost och europeiska rätter som pasta, kalvschnitzel och moules-frites. Lunch och middag.",
+      "headings": [
+        "H1: Lyster — modern husmanskost i Stockholm L Y STER",
+        "H2: Svensk husmanskost. Europeiskt bord.",
+        "H2: Husmanskosten är grunden. Europa är bordet bredvid.",
+        "H3: Det svenska köket",
+        "H3: Det europeiska bordet",
+        "H3: Från grunden",
+        "H3: Säsongen bestämmer",
+        "H3: Ett bord, hela dagen",
+        "H2: Från menyn",
+        "H3: Köttbullar",
+        "H3: Pasta med svamp",
+        "H3: Stekt strömming",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: ÖPPETTIDER",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
+        {
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
+        }
+      ],
+      "overflow": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "delta": 0
+      },
+      "hiddenReveals": [],
+      "smallTargets": [],
+      "images": [
         {
           "src": "hero-rum-1200.webp",
           "complete": true,
@@ -124,89 +462,397 @@
           "h": 625
         },
         {
-          "src": "kottbullar-1280.webp",
-          "complete": true,
-          "w": 750,
-          "h": 688
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
         }
       ],
-      "hiddenReveals": 0,
-      "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".hero__body",
-          "ratio": 8.1,
-          "font": "17px"
+      "about": {
+        "section": {
+          "x": 0,
+          "y": -5309.3,
+          "w": 834,
+          "h": 1685.3,
+          "right": 834,
+          "bottom": -3623.9
         },
-        {
-          "sel": ".hero__status",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "label": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "display": "none",
+          "text": "Om oss",
+          "scrollWidth": 0,
+          "clientWidth": 0
         },
-        {
-          "sel": ".hero__meta",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "statement": {
+          "x": 35,
+          "y": -5200.5,
+          "w": 476.3,
+          "h": 138.3,
+          "right": 511.3,
+          "bottom": -5062.2,
+          "font": "46.704px",
+          "text": "Husmanskosten är grunden. Europa är bordet bredvid."
         },
-        {
-          "sel": ".hero__lead",
-          "ratio": 10.76,
-          "font": "38.4px"
+        "standfirst": {
+          "x": 35,
+          "y": -5022.2,
+          "w": 764,
+          "h": 137,
+          "right": 799,
+          "bottom": -4885.3,
+          "text": "Modern husmanskost, som vi menar det, börjar i det svenska köket och slutar inte vid landets gräns. Köttbullar, kalops och strömming står kvar. Bredvid dem står pasta, schnitzel och moules-frites. Vi kallar det inte fusion. Vi kallar det ett kök som har lärt sig av fler än en tradition, och som vägrar välja mellan dem."
         },
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "51.708px"
+        "overlapStatementStandfirst": false,
+        "traditions": [
+          {
+            "x": 35,
+            "y": -4824.9,
+            "w": 764,
+            "h": 349.8,
+            "right": 799,
+            "bottom": -4475.2,
+            "heading": "Det svenska köket",
+            "examples": "PÅ MENYN Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa"
+          },
+          {
+            "x": 35,
+            "y": -4475.2,
+            "w": 764,
+            "h": 350.8,
+            "right": 799,
+            "bottom": -4124.4,
+            "heading": "Det europeiska bordet",
+            "examples": "PÅ MENYN Pasta, Kalvschnitzel, Moules-frites, Tarte tatin"
+          }
+        ],
+        "principles": [
+          "Från grunden",
+          "Säsongen bestämmer",
+          "Ett bord, hela dagen"
+        ],
+        "traditionsBox": {
+          "x": 35,
+          "y": -4826.9,
+          "w": 764,
+          "h": 703.5,
+          "right": 799,
+          "bottom": -4123.4
         },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "17px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
+        "principlesBox": {
+          "x": 35,
+          "y": -4081.7,
+          "w": 764,
+          "h": 366,
+          "right": 799,
+          "bottom": -3715.7
         }
-      ]
+      },
+      "menu": null,
+      "styles": {
+        "paper": "rgb(244, 237, 223)",
+        "chalk": "rgb(251, 247, 238)",
+        "statementEm": "rgb(30, 58, 95)",
+        "label": "rgb(125, 90, 30)",
+        "standfirst": "rgb(77, 72, 63)",
+        "traditionBody": "rgb(77, 72, 63)",
+        "principleBody": "rgb(77, 72, 63)"
+      },
+      "name": "qa-home-tablet",
+      "path": "/",
+      "viewport": {
+        "width": 834,
+        "height": 1000
+      },
+      "status": 200,
+      "consoleErrors": []
     },
     {
-      "name": "qa-home-mobile",
-      "status": 200,
-      "title": "Lyster — modern husmanskost i Stockholm",
+      "title": "Menyn — Lyster",
       "lang": "sv",
-      "size": {
-        "scrollWidth": 390,
-        "clientWidth": 390,
-        "scrollHeight": 6135
-      },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
+      "metaDescription": "Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm.",
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurka VEGETARISK",
+        "H3: Burrata VEGETARISK",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Europas bord",
+        "H3: Pasta med svamp och parmesan VEGETARISK",
+        "H3: Kalvschnitzel",
+        "H3: Moules-frites",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotselleri VEGETARISK",
+        "H3: Böngryta VEGANSK",
+        "H3: Rödbetor med getost VEGETARISK",
+        "H2: Efterrätt",
+        "H3: Ostkaka GLUTENFRI",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Tarte tatin VEGETARISK",
+        "H3: Blåbärssoppa GLUTENFRI",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläder ALKOHOLFRI",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H3: Veckans pasta",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
         {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -28,
-          "top": -78,
-          "h": 50
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
         }
       ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [
+      "overflow": {
+        "scrollWidth": 834,
+        "clientWidth": 834,
+        "delta": 0
+      },
+      "hiddenReveals": [],
+      "smallTargets": [],
+      "images": [],
+      "about": null,
+      "menu": {
+        "nav": [
+          {
+            "text": "Tilltugg",
+            "href": "#tilltugg"
+          },
+          {
+            "text": "Husmanskost",
+            "href": "#husmanskost"
+          },
+          {
+            "text": "Europas bord",
+            "href": "#europa"
+          },
+          {
+            "text": "Från havet",
+            "href": "#havet"
+          },
+          {
+            "text": "Grönt",
+            "href": "#gront"
+          },
+          {
+            "text": "Efterrätt",
+            "href": "#efterratt"
+          },
+          {
+            "text": "Dryck",
+            "href": "#dryck"
+          },
+          {
+            "text": "Lunch",
+            "href": "#lunch"
+          }
+        ],
+        "categories": [
+          {
+            "id": "tilltugg",
+            "title": "Tilltugg",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Toast med räkor",
+              "Löjrom med gräddfil",
+              "Krondillsinlagd gurka",
+              "Burrata"
+            ]
+          },
+          {
+            "id": "husmanskost",
+            "title": "Husmanskost",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Köttbullar",
+              "Wallenbergare",
+              "Kalops",
+              "Stekt fläsk med löksås",
+              "Isterband"
+            ]
+          },
+          {
+            "id": "europa",
+            "title": "Europas bord",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Pasta med svamp och parmesan",
+              "Kalvschnitzel",
+              "Moules-frites"
+            ]
+          },
+          {
+            "id": "havet",
+            "title": "Från havet",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Stekt strömming",
+              "Gravad lax",
+              "Fiskgryta"
+            ]
+          },
+          {
+            "id": "gront",
+            "title": "Grönt",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Ugnsbakad rotselleri",
+              "Böngryta",
+              "Rödbetor med getost"
+            ]
+          },
+          {
+            "id": "efterratt",
+            "title": "Efterrätt",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Ostkaka",
+              "Varm äppelkaka",
+              "Kanelbulle med glass",
+              "Tarte tatin",
+              "Blåbärssoppa"
+            ]
+          },
+          {
+            "id": "dryck",
+            "title": "Dryck",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Lyster lager",
+              "Gammeldags snaps",
+              "Äpple och fläder",
+              "Kaffe"
+            ]
+          }
+        ],
+        "lunch": [
+          {
+            "day": "TISDAG",
+            "name": "Köttbullar",
+            "price": "145 kr"
+          },
+          {
+            "day": "ONSDAG",
+            "name": "Stekt strömming",
+            "price": "145 kr"
+          },
+          {
+            "day": "TORSDAG",
+            "name": "Ärtsoppa med fläsk",
+            "price": "145 kr"
+          },
+          {
+            "day": "FREDAG",
+            "name": "Kalops",
+            "price": "145 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Dagens gröna",
+            "price": "135 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Veckans pasta",
+            "price": "145 kr"
+          }
+        ]
+      },
+      "styles": null,
+      "name": "qa-menu-tablet",
+      "path": "/meny",
+      "viewport": {
+        "width": 834,
+        "height": 1000
+      },
+      "status": 200,
+      "consoleErrors": []
+    },
+    {
+      "title": "Lyster — modern husmanskost i Stockholm",
+      "lang": "sv",
+      "metaDescription": "Lyster serverar modern husmanskost i Stockholm: svensk husmanskost och europeiska rätter som pasta, kalvschnitzel och moules-frites. Lunch och middag.",
+      "headings": [
+        "H1: Lyster — modern husmanskost i Stockholm L Y STER",
+        "H2: Svensk husmanskost. Europeiskt bord.",
+        "H2: Husmanskosten är grunden. Europa är bordet bredvid.",
+        "H3: Det svenska köket",
+        "H3: Det europeiska bordet",
+        "H3: Från grunden",
+        "H3: Säsongen bestämmer",
+        "H3: Ett bord, hela dagen",
+        "H2: Från menyn",
+        "H3: Köttbullar",
+        "H3: Pasta med svamp",
+        "H3: Stekt strömming",
+        "H2: Inga genvägar på tallriken.",
+        "H2: Hitta hit",
+        "H3: ÖPPETTIDER",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
+        {
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
+        }
+      ],
+      "overflow": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "delta": 0
+      },
+      "hiddenReveals": [],
+      "smallTargets": [],
+      "images": [
         {
           "src": "hero-rum-1200.webp",
           "complete": true,
@@ -214,388 +860,378 @@
           "h": 292
         },
         {
-          "src": "kottbullar-720.webp",
-          "complete": true,
-          "w": 351,
-          "h": 322
+          "src": "",
+          "complete": false,
+          "w": 0,
+          "h": 0
         }
       ],
-      "hiddenReveals": 0,
-      "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".hero__body",
-          "ratio": 8.1,
-          "font": "17px"
+      "about": {
+        "section": {
+          "x": 0,
+          "y": -5288.8,
+          "w": 390,
+          "h": 1774.3,
+          "right": 390,
+          "bottom": -3514.6
         },
-        {
-          "sel": ".hero__status",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "label": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0,
+          "right": 0,
+          "bottom": 0,
+          "display": "none",
+          "text": "Om oss",
+          "scrollWidth": 0,
+          "clientWidth": 0
         },
-        {
-          "sel": ".hero__meta",
-          "ratio": 6.95,
-          "font": "13.12px"
+        "statement": {
+          "x": 20,
+          "y": -5183.8,
+          "w": 350,
+          "h": 121.5,
+          "right": 370,
+          "bottom": -5062.3,
+          "font": "40.95px",
+          "text": "Husmanskosten är grunden. Europa är bordet bredvid."
         },
-        {
-          "sel": ".hero__lead",
-          "ratio": 10.76,
-          "font": "30.4px"
+        "standfirst": {
+          "x": 20,
+          "y": -5022.3,
+          "w": 350,
+          "h": 216.1,
+          "right": 370,
+          "bottom": -4806.2,
+          "text": "Modern husmanskost, som vi menar det, börjar i det svenska köket och slutar inte vid landets gräns. Köttbullar, kalops och strömming står kvar. Bredvid dem står pasta, schnitzel och moules-frites. Vi kallar det inte fusion. Vi kallar det ett kök som har lärt sig av fler än en tradition, och som vägrar välja mellan dem."
         },
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "44.8px"
+        "overlapStatementStandfirst": false,
+        "traditions": [
+          {
+            "x": 20,
+            "y": -4756.2,
+            "w": 350,
+            "h": 384.9,
+            "right": 370,
+            "bottom": -4371.2,
+            "heading": "Det svenska köket",
+            "examples": "PÅ MENYN Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa"
+          },
+          {
+            "x": 20,
+            "y": -4371.2,
+            "w": 350,
+            "h": 361.6,
+            "right": 370,
+            "bottom": -4009.6,
+            "heading": "Det europeiska bordet",
+            "examples": "PÅ MENYN Pasta, Kalvschnitzel, Moules-frites, Tarte tatin"
+          }
+        ],
+        "principles": [
+          "Från grunden",
+          "Säsongen bestämmer",
+          "Ett bord, hela dagen"
+        ],
+        "traditionsBox": {
+          "x": 20,
+          "y": -4758.2,
+          "w": 350,
+          "h": 749.5,
+          "right": 370,
+          "bottom": -4008.6
         },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "16px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
+        "principlesBox": {
+          "x": 20,
+          "y": -3968.6,
+          "w": 350,
+          "h": 366,
+          "right": 370,
+          "bottom": -3602.6
         }
-      ]
-    },
-    {
-      "name": "qa-meny-desktop",
-      "status": 200,
-      "title": "Menyn — Lyster",
-      "lang": "sv",
-      "size": {
-        "scrollWidth": 1440,
-        "clientWidth": 1440,
-        "scrollHeight": 5444
       },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
-        {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -29,
-          "top": -81,
-          "h": 52
-        }
-      ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [],
-      "hiddenReveals": 0,
-      "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "89.28px"
-        },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "17px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".lunch__head p",
-          "ratio": 7.23,
-          "font": "17px"
-        },
-        {
-          "sel": ".lunch__price",
-          "ratio": 8.22,
-          "font": "17px"
-        },
-        {
-          "sel": ".dish__desc",
-          "ratio": 7.79,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".menu-cat__note",
-          "ratio": 7.79,
-          "font": "13.12px"
-        },
-        {
-          "sel": ".tasting p",
-          "ratio": 6.49,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".tasting__price",
-          "ratio": 6.49,
-          "font": "15.2px"
-        }
-      ]
-    },
-    {
-      "name": "qa-meny-tablet",
-      "status": 200,
-      "title": "Menyn — Lyster",
-      "lang": "sv",
-      "size": {
-        "scrollWidth": 834,
-        "clientWidth": 834,
-        "scrollHeight": 5737
+      "menu": null,
+      "styles": {
+        "paper": "rgb(244, 237, 223)",
+        "chalk": "rgb(251, 247, 238)",
+        "statementEm": "rgb(30, 58, 95)",
+        "label": "rgb(125, 90, 30)",
+        "standfirst": "rgb(77, 72, 63)",
+        "traditionBody": "rgb(77, 72, 63)",
+        "principleBody": "rgb(77, 72, 63)"
       },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
-        {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -29,
-          "top": -81,
-          "h": 52
-        }
-      ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [],
-      "hiddenReveals": 0,
-      "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "51.708px"
-        },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "17px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".lunch__head p",
-          "ratio": 7.23,
-          "font": "17px"
-        },
-        {
-          "sel": ".lunch__price",
-          "ratio": 8.22,
-          "font": "17px"
-        },
-        {
-          "sel": ".dish__desc",
-          "ratio": 7.79,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".menu-cat__note",
-          "ratio": 7.79,
-          "font": "13.12px"
-        },
-        {
-          "sel": ".tasting p",
-          "ratio": 6.49,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".tasting__price",
-          "ratio": 6.49,
-          "font": "15.2px"
-        }
-      ]
+      "name": "qa-home-mobile",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "consoleErrors": []
     },
     {
-      "name": "qa-meny-mobile",
-      "status": 200,
       "title": "Menyn — Lyster",
       "lang": "sv",
-      "size": {
+      "metaDescription": "Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm.",
+      "headings": [
+        "H1: Menyn",
+        "H2: Tilltugg",
+        "H3: Toast med räkor",
+        "H3: Löjrom med gräddfil",
+        "H3: Krondillsinlagd gurka VEGETARISK",
+        "H3: Burrata VEGETARISK",
+        "H2: Husmanskost",
+        "H3: Köttbullar",
+        "H3: Wallenbergare",
+        "H3: Kalops",
+        "H3: Stekt fläsk med löksås",
+        "H3: Isterband",
+        "H2: Europas bord",
+        "H3: Pasta med svamp och parmesan VEGETARISK",
+        "H3: Kalvschnitzel",
+        "H3: Moules-frites",
+        "H2: Från havet",
+        "H3: Stekt strömming",
+        "H3: Gravad lax",
+        "H3: Fiskgryta",
+        "H2: Grönt",
+        "H3: Ugnsbakad rotselleri VEGETARISK",
+        "H3: Böngryta VEGANSK",
+        "H3: Rödbetor med getost VEGETARISK",
+        "H2: Efterrätt",
+        "H3: Ostkaka GLUTENFRI",
+        "H3: Varm äppelkaka",
+        "H3: Kanelbulle med glass",
+        "H3: Tarte tatin VEGETARISK",
+        "H3: Blåbärssoppa GLUTENFRI",
+        "H2: Dryck",
+        "H3: Lyster lager",
+        "H3: Gammeldags snaps",
+        "H3: Äpple och fläder ALKOHOLFRI",
+        "H3: Kaffe",
+        "H3: Tre rätt, ett bord",
+        "H2: Lunch",
+        "H3: Köttbullar",
+        "H3: Stekt strömming",
+        "H3: Ärtsoppa med fläsk",
+        "H3: Kalops",
+        "H3: Dagens gröna",
+        "H3: Veckans pasta",
+        "H2: Boka ett bord.",
+        "H3: Sällskap över åtta?",
+        "H3: KONTAKT",
+        "H3: ÖPPETTIDER",
+        "H3: FÖLJ"
+      ],
+      "nav": [
+        {
+          "text": "Om oss",
+          "href": "/#om-oss"
+        },
+        {
+          "text": "Menyn",
+          "href": "/meny"
+        },
+        {
+          "text": "Hitta hit",
+          "href": "/#hitta"
+        }
+      ],
+      "overflow": {
         "scrollWidth": 390,
         "clientWidth": 390,
-        "scrollHeight": 5976
+        "delta": 0
       },
-      "bodyPaddingBottom": "0px",
-      "overflowing": [],
-      "fixed": [
-        {
-          "tag": "a",
-          "cls": "skip-link",
-          "pos": "fixed",
-          "display": "block",
-          "bottom": -28,
-          "top": -78,
-          "h": 50
-        }
-      ],
-      "mobileBar": null,
-      "forbiddenMatches": null,
-      "footerText": "Demowebbplats. Meny, priser, öppettider och kontaktuppgifter är exempel och ska ersättas innan lansering. Bokningslänken är inte kopplad. © 2026 Lyster",
-      "imgs": [],
-      "hiddenReveals": 0,
+      "hiddenReveals": [],
       "smallTargets": [],
-      "contrast": [
-        {
-          "sel": ".booking__copy h2",
-          "ratio": 13.57,
-          "font": "44.8px"
-        },
-        {
-          "sel": ".booking__copy p",
-          "ratio": 9.85,
-          "font": "16px"
-        },
-        {
-          "sel": ".booking__note",
-          "ratio": 9.85,
-          "font": "14.4px"
-        },
-        {
-          "sel": ".footer__demo",
-          "ratio": 5.71,
-          "font": "11.52px"
-        },
-        {
-          "sel": ".footer__tagline",
-          "ratio": 8.06,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".lunch__head p",
-          "ratio": 7.23,
-          "font": "16px"
-        },
-        {
-          "sel": ".lunch__price",
-          "ratio": 8.22,
-          "font": "16px"
-        },
-        {
-          "sel": ".dish__desc",
-          "ratio": 7.79,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".menu-cat__note",
-          "ratio": 7.79,
-          "font": "13.12px"
-        },
-        {
-          "sel": ".tasting p",
-          "ratio": 6.49,
-          "font": "15.2px"
-        },
-        {
-          "sel": ".tasting__price",
-          "ratio": 6.49,
-          "font": "15.2px"
-        }
-      ]
-    },
-    {
-      "mobileNav": {
-        "opened": {
-          "open": true,
-          "expanded": "true",
-          "locked": true,
-          "focused": "Stäng",
-          "fixedVisible": [
-            "skip-link",
-            "mobile-nav"
-          ]
-        },
-        "closed": {
-          "open": false,
-          "expanded": "false",
-          "locked": false,
-          "focusReturned": true
-        }
-      }
-    },
-    {
-      "booking": {
-        "noteVisible": true,
-        "noteText": "Bokningslänken är inte kopplad i demon än. Ring 08–123 45 678, så hjälper vi dig.",
-        "noteFocused": true,
-        "noteBox": {
-          "x": 60,
-          "y": 506,
-          "w": 310,
-          "h": 61
-        },
-        "href": "https://example.com/boka-lyster"
-      }
-    },
-    {
-      "map": {
-        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2736.6743794196855!2d18.059317977501735!3d59.33924091022696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d67d7ce6131%3A0xe2aac2620816f3b4!2sLuntmakargatan%2042%2C%20111%2037%20Stockholm!5e1!3m2!1sen!2sse!4v1792999526496!5m2!1sen!2sse",
-        "title": "Karta över Lyster på Luntmakargatan 42, 111 37 Stockholm",
-        "loading": "lazy"
+      "images": [],
+      "about": null,
+      "menu": {
+        "nav": [
+          {
+            "text": "Tilltugg",
+            "href": "#tilltugg"
+          },
+          {
+            "text": "Husmanskost",
+            "href": "#husmanskost"
+          },
+          {
+            "text": "Europas bord",
+            "href": "#europa"
+          },
+          {
+            "text": "Från havet",
+            "href": "#havet"
+          },
+          {
+            "text": "Grönt",
+            "href": "#gront"
+          },
+          {
+            "text": "Efterrätt",
+            "href": "#efterratt"
+          },
+          {
+            "text": "Dryck",
+            "href": "#dryck"
+          },
+          {
+            "text": "Lunch",
+            "href": "#lunch"
+          }
+        ],
+        "categories": [
+          {
+            "id": "tilltugg",
+            "title": "Tilltugg",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Toast med räkor",
+              "Löjrom med gräddfil",
+              "Krondillsinlagd gurka",
+              "Burrata"
+            ]
+          },
+          {
+            "id": "husmanskost",
+            "title": "Husmanskost",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Köttbullar",
+              "Wallenbergare",
+              "Kalops",
+              "Stekt fläsk med löksås",
+              "Isterband"
+            ]
+          },
+          {
+            "id": "europa",
+            "title": "Europas bord",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Pasta med svamp och parmesan",
+              "Kalvschnitzel",
+              "Moules-frites"
+            ]
+          },
+          {
+            "id": "havet",
+            "title": "Från havet",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Stekt strömming",
+              "Gravad lax",
+              "Fiskgryta"
+            ]
+          },
+          {
+            "id": "gront",
+            "title": "Grönt",
+            "count": "3 RÄTTER",
+            "dishes": [
+              "Ugnsbakad rotselleri",
+              "Böngryta",
+              "Rödbetor med getost"
+            ]
+          },
+          {
+            "id": "efterratt",
+            "title": "Efterrätt",
+            "count": "5 RÄTTER",
+            "dishes": [
+              "Ostkaka",
+              "Varm äppelkaka",
+              "Kanelbulle med glass",
+              "Tarte tatin",
+              "Blåbärssoppa"
+            ]
+          },
+          {
+            "id": "dryck",
+            "title": "Dryck",
+            "count": "4 RÄTTER",
+            "dishes": [
+              "Lyster lager",
+              "Gammeldags snaps",
+              "Äpple och fläder",
+              "Kaffe"
+            ]
+          }
+        ],
+        "lunch": [
+          {
+            "day": "TISDAG",
+            "name": "Köttbullar",
+            "price": "145 kr"
+          },
+          {
+            "day": "ONSDAG",
+            "name": "Stekt strömming",
+            "price": "145 kr"
+          },
+          {
+            "day": "TORSDAG",
+            "name": "Ärtsoppa med fläsk",
+            "price": "145 kr"
+          },
+          {
+            "day": "FREDAG",
+            "name": "Kalops",
+            "price": "145 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Dagens gröna",
+            "price": "135 kr"
+          },
+          {
+            "day": "ALLA DAGAR",
+            "name": "Veckans pasta",
+            "price": "145 kr"
+          }
+        ]
       },
-      "mobileBottom": {
-        "scrollY": 5291,
-        "maxScroll": 5291,
-        "footerBottom": 844,
-        "viewport": 844,
-        "footerVisible": true
-      }
-    },
-    {
-      "reduced": {
-        "hiddenReveals": 0,
-        "heroMask": "inset(0px)",
-        "titleMask": "inset(0px)",
-        "photoAnimation": "none"
-      }
-    },
-    {
-      "printState": {
-        "header": "none",
-        "booking": "none",
-        "footer": "none",
-        "map": "absent",
-        "heroBand": "absent"
-      }
+      "styles": null,
+      "name": "qa-menu-mobile",
+      "path": "/meny",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "consoleErrors": []
     }
   ],
-  "errors": []
+  "errors": [],
+  "anchor": {
+    "headerBottom": 73,
+    "aboutTop": 87.7,
+    "clearOfHeader": true
+  },
+  "mobileDialog": {
+    "open": true,
+    "links": [
+      "Om oss",
+      "Menyn",
+      "Hitta hit",
+      "Boka bord"
+    ],
+    "focused": "mobile-nav__close",
+    "ariaExpanded": "true",
+    "closedAfterEscape": true
+  },
+  "reducedMotion": {
+    "allVisible": true,
+    "total": 16,
+    "clips": [
+      "inset(0px)",
+      "none"
+    ]
+  },
+  "print": {
+    "path": ".impeccable/review/qa-meny.pdf",
+    "pages": 5
+  }
 }

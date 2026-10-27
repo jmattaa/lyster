@@ -17,10 +17,11 @@ import Booking from '../components/Booking.astro';
     <div class="hero__band">
       <div class="hero__panel">
         <div class="hero__copy">
-          <h2 class="hero__lead">Husmanskost, skärpt.</h2>
+          <h2 class="hero__lead">Svensk husmanskost. <em>Europeiskt bord.</em></h2>
           <p class="hero__body">
-            Köttbullar med riktig gräddsås. Strömming som knastrar. Grönsaker från nära håll.
-            Lagat som vi själva vill äta det — mitt i Stockholm.
+            Köttbullar med riktig gräddsås. Strömming som knastrar. Pasta med svamp och
+            parmesan. Mat från det svenska köket och resten av Europa, lagad med samma
+            handlag — mitt i Stockholm.
           </p>
           <div class="hero__actions">
             <a class="btn btn--gold" href="#boka" data-booking-link>
@@ -56,45 +57,101 @@ import Booking from '../components/Booking.astro';
     </div>
   </section>
 
-  <section class="section" id="krogen" aria-labelledby="krogen-title">
-    <div class="shell grid">
-      <h2 class="intro__statement" id="krogen-title" data-reveal>
-        Recepten känner du igen. <em>Handlaget är vårt.</em>
-      </h2>
-
-      <div class="intro__body">
-        <p data-reveal>
-          Vi öppnade Lyster för att husmanskosten förtjänar bättre än en plastmatta och en
-          söndagskänsla. Recepten känner du igen. Handlaget är vårt. Vi maler köttet själva,
-          reder såsen på kalvben och låter grönsakerna bestämma när menyn ändras.
-        </p>
-        <p data-reveal>
-          Inget krångel. Bara mat som är gjord ordentligt, i ett rum där du kan sitta länge.
-          Kom för lunch, stanna för middag, eller ta ett glas vid baren medan du väntar.
-        </p>
-      </div>
-
-      <div class="facts">
-        <div class="fact">
-          <h3>Nära håll</h3>
-          <p>Svenska råvaror, säsong för säsong. Vi byter meny när det som är bäst byter skepnad.</p>
-        </div>
-        <div class="fact">
-          <h3>Från grunden</h3>
-          <p>Buljong, såser och inläggningar görs i köket. Varje dag, inte bara när någon tittar.</p>
-        </div>
-        <div class="fact">
-          <h3>Till bordet</h3>
-          <p>Lunch, middag eller bara ett glas. Ett rum för vardag och fest, utan att göra stor skillnad på dem.</p>
+  <section class="section about" id="om-oss" aria-labelledby="om-oss-title">
+    <div class="shell">
+      <div class="about__head">
+        <p class="meta about__label" data-reveal>Om oss</p>
+        <h2 class="about__statement" id="om-oss-title" data-reveal>
+          Husmanskosten är grunden. <em>Europa är bordet bredvid.</em>
+        </h2>
+        <div class="about__standfirst" data-reveal>
+          <p>
+            Modern husmanskost, som vi menar det, börjar i det svenska köket och slutar inte
+            vid landets gräns. Köttbullar, kalops och strömming står kvar. Bredvid dem står
+            pasta, schnitzel och moules-frites.
+          </p>
+          <p>
+            Vi kallar det inte fusion. Vi kallar det ett kök som har lärt sig av fler än en
+            tradition, och som vägrar välja mellan dem.
+          </p>
         </div>
       </div>
+
+      <div class="about__traditions">
+        <article class="about__tradition" data-reveal>
+          <div class="about__tradition-index">
+            <span class="meta">Grunden</span>
+            <span class="about__tradition-no" aria-hidden="true">01</span>
+          </div>
+          <h3>Det svenska köket</h3>
+          <p>
+            Recepten är ärvda, inte uppfunna. Vi maler köttet, reder såsen på kalvben och
+            lägger in gurkan när hösten är som bäst. Husmanskosten är inte en stil. Den är
+            ett sätt att laga mat som håller.
+          </p>
+          <p class="about__examples">
+            <span class="meta">På menyn</span>
+            <span>Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa</span>
+          </p>
+        </article>
+
+        <article class="about__tradition" data-reveal>
+          <div class="about__tradition-index">
+            <span class="meta">Utvidgningen</span>
+            <span class="about__tradition-no" aria-hidden="true">02</span>
+          </div>
+          <h3>Det europeiska bordet</h3>
+          <p>
+            Pasta med svamp och parmesan. Kalvschnitzel. Moules-frites. Rätter från andra
+            europeiska vardagskök, med samma krav på råvara, smör och tid. De är inte gäster
+            på menyn. De hör hemma där.
+          </p>
+          <p class="about__examples">
+            <span class="meta">På menyn</span>
+            <span>Pasta, Kalvschnitzel, Moules-frites, Tarte tatin</span>
+          </p>
+        </article>
+      </div>
+
+      <ol class="about__principles">
+        <li class="about__principle" data-reveal>
+          <span class="about__principle-no" aria-hidden="true">01</span>
+          <div>
+            <h3>Från grunden</h3>
+            <p>
+              Buljong, såser, pasta och inläggningar görs i köket. Varje dag, inte bara när
+              någon tittar.
+            </p>
+          </div>
+        </li>
+        <li class="about__principle" data-reveal>
+          <span class="about__principle-no" aria-hidden="true">02</span>
+          <div>
+            <h3>Säsongen bestämmer</h3>
+            <p>
+              Menyn ändras när råvarorna gör det. Vi byter rätter för att det är bättre,
+              inte för att det är nytt.
+            </p>
+          </div>
+        </li>
+        <li class="about__principle" data-reveal>
+          <span class="about__principle-no" aria-hidden="true">03</span>
+          <div>
+            <h3>Ett bord, hela dagen</h3>
+            <p>
+              Lunch, middag eller bara ett glas. Samma rum, samma krav — utan att göra stor
+              skillnad på vardag och fest.
+            </p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
   <section class="section preview" aria-labelledby="preview-title">
     <div class="shell">
       <div class="section-head">
-        <h2 class="h2" id="preview-title" data-reveal>Det vi är kända för</h2>
+        <h2 class="h2" id="preview-title" data-reveal>Från menyn</h2>
         <a class="link-arrow section-head__link" href="/meny">
           Hela menyn
           <Arrow />
@@ -103,7 +160,7 @@ import Booking from '../components/Booking.astro';
 
       <div class="preview__grid">
         <article class="preview__feature" data-reveal>
-          <p class="preview__index meta"><span aria-hidden="true">01 · </span>Husmanskost</p>
+          <p class="preview__index meta"><span aria-hidden="true">01 · </span>Svensk husmanskost</p>
           <h3 class="preview__feature-name">Köttbullar</h3>
           <p class="preview__feature-desc">
             Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka. Potatispuré som inte
@@ -116,25 +173,25 @@ import Booking from '../components/Booking.astro';
         </article>
 
         <div class="preview__list">
-          <a class="preview-row" href="/meny#havet" data-reveal>
+          <a class="preview-row" href="/meny#europa" data-reveal>
             <span class="preview-row__index meta" aria-hidden="true">02</span>
+            <div class="preview-row__body">
+              <div class="preview-row__line">
+                <h3>Pasta med svamp</h3>
+                <span>235 kr</span>
+              </div>
+              <p>Tagliatelle, skogssvamp, parmesan och brynt smör. Europas vardag, med samma handlag.</p>
+            </div>
+          </a>
+
+          <a class="preview-row" href="/meny#havet" data-reveal>
+            <span class="preview-row__index meta" aria-hidden="true">03</span>
             <div class="preview-row__body">
               <div class="preview-row__line">
                 <h3>Stekt strömming</h3>
                 <span>245 kr</span>
               </div>
               <p>Potatispuré, brynt smör, dill och citron. Knaprigt där det ska vara mjukt.</p>
-            </div>
-          </a>
-
-          <a class="preview-row" href="/meny#gront" data-reveal>
-            <span class="preview-row__index meta" aria-hidden="true">03</span>
-            <div class="preview-row__body">
-              <div class="preview-row__line">
-                <h3>Ugnsbakad rotselleri</h3>
-                <span>225 kr</span>
-              </div>
-              <p>Svamp, hasselnöt och brynt smör. Grönsaken får ta lika stor plats som köttet.</p>
             </div>
           </a>
         </div>
@@ -163,7 +220,8 @@ import Booking from '../components/Booking.astro';
         <h2 id="proof-title">Inga genvägar <em>på tallriken.</em></h2>
         <p>
           Vi maler köttet själva. Reder såsen på kalvben. Lägger in gurkan på hösten så att
-          den är klar till vintern. Det tar tid. Det är hela poängen.
+          den är klar till vintern. Och vi kokar pastan i samma kök, med samma krav på råvara
+          och tid. Det tar tid. Det är hela poängen.
         </p>
         <p>
           Samma sak med grönsakerna: de får ta den tid de behöver, och de får smaka som de
@@ -171,6 +229,7 @@ import Booking from '../components/Booking.astro';
         </p>
         <div class="proof__details">
           <span>Köttbullar serveras både lunch och middag.</span>
+          <span>Veckans pasta står på lunchen — fråga vad köket har hittat.</span>
           <span>Fråga oss om allergener — vi anpassar det mesta.</span>
           <a class="link-underline" href="/meny">Se hela menyn</a>
         </div>
