@@ -3,47 +3,56 @@ import Base from '../layouts/Base.astro';
 import Arrow from '../components/Arrow.astro';
 import Map from '../components/Map.astro';
 import Booking from '../components/Booking.astro';
+
+const meta = 'text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em]';
+const h2 = 'text-[clamp(2.1rem,4.5vw,4.25rem)] font-medium leading-[0.98] tracking-[-0.045em] text-balance';
+const arrow = 'transition-transform duration-[320ms] ease-brand group-hover:translate-x-[0.3rem]';
+const btnGold =
+  'group relative isolate inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 overflow-hidden border-0 bg-gold px-6 py-[0.7rem] text-[0.95rem] font-semibold leading-[1.1] tracking-[0.01em] text-ink no-underline transition-[color] duration-[260ms] ease-brand before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-paper-3 before:transition-transform before:duration-[380ms] before:ease-brand hover:text-cobalt hover:no-underline hover:before:scale-x-100 active:translate-y-px';
+const btnGhost =
+  'group relative isolate inline-flex cursor-pointer overflow-hidden items-center justify-center gap-3 border-b border-paper-3/45 bg-transparent px-0 py-[0.65rem] text-[0.95rem] font-semibold leading-[1.1] tracking-[0.01em] text-paper-3 no-underline transition-[color] duration-[260ms] ease-brand hover:border-gold-pale hover:text-gold-pale hover:no-underline active:translate-y-px';
+const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
 ---
 
 <Base>
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="shell">
-      <h1 class="hero__title" id="hero-title" data-reveal-mask>
+  <section class="relative pb-[clamp(2rem,4vw,3.5rem)] pt-[clamp(2rem,4.5vw,4rem)] max-sm:pt-6" aria-labelledby="hero-title">
+    <div class={shell}>
+      <h1 class="m-0 text-[2em]" id="hero-title" data-reveal-mask>
         <span class="sr-only">Lyster — modern husmanskost i Stockholm</span>
-        <span class="wordmark" aria-hidden="true">L<span class="wordmark__y">Y</span>STER<span class="wordmark__dot"></span></span>
+        <span class="inline-flex items-baseline whitespace-nowrap text-[clamp(4.4rem,15.4vw,12.5rem)] font-bold uppercase leading-[0.78] tracking-[-0.065em] max-sm:text-[clamp(3.7rem,18vw,5.5rem)]" aria-hidden="true">L<span class="text-gold">Y</span>STER<span class="ml-[0.055em] inline-block h-[0.115em] w-[0.115em] -translate-y-[0.03em] bg-gold"></span></span>
       </h1>
     </div>
 
-    <div class="hero__band">
-      <div class="hero__panel">
-        <div class="hero__copy">
-          <h2 class="hero__lead">Svensk husmanskost. <em>Europeiskt bord.</em></h2>
-          <p class="hero__body">
+    <div class="mt-[clamp(2.5rem,5vw,4.5rem)] grid min-h-[clamp(30rem,36vw,36rem)] grid-cols-[minmax(0,5fr)_minmax(0,7fr)] border-y border-gold/60 bg-cobalt text-paper-3 max-md:mt-8 max-md:min-h-0 max-md:grid-cols-1 print:hidden">
+      <div class="flex flex-col justify-between gap-[clamp(2rem,4vw,3.5rem)] py-[clamp(2.25rem,4vw,3.5rem)] pe-[clamp(1.5rem,3.5vw,3.5rem)] ps-[max(var(--spacing-gutter),calc((100vw_-_1560px)/2_+_var(--spacing-gutter)))] max-md:gap-8 max-md:px-gutter max-md:py-[clamp(1.75rem,5vw,2.5rem)]">
+        <div class="max-w-[32rem]">
+          <h2 class="max-w-[13ch] text-[clamp(1.7rem,2.9vw,2.65rem)] font-medium leading-[1.04] tracking-[-0.045em] text-balance max-md:text-[clamp(1.9rem,7vw,2.4rem)] max-sm:max-w-[13ch]">Svensk husmanskost. <em class="italic text-gold-pale">Europeiskt bord.</em></h2>
+          <p class="mt-[clamp(1rem,1.8vw,1.4rem)] max-w-[36ch] text-[1.0625rem] leading-[1.65] text-paper-3/84">
             Köttbullar med riktig gräddsås. Strömming som knastrar. Pasta med svamp och
             parmesan. Mat från det svenska köket och resten av Europa, lagad med samma
             handlag — mitt i Stockholm.
           </p>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="#boka" data-booking-link>
+          <div class="mt-[clamp(1.5rem,2.6vw,2.25rem)] flex flex-wrap items-center gap-5">
+            <a class={btnGold} href="#boka" data-booking-link>
               Boka bord
-              <Arrow class="btn__arrow" />
+              <Arrow class="flex-none text-[1.0625rem] font-normal leading-none transition-transform duration-[380ms] ease-brand group-hover:translate-x-1" />
             </a>
-            <a class="btn btn--ghost" href="/meny">Läs menyn</a>
+            <a class={btnGhost} href="/meny">Läs menyn</a>
           </div>
         </div>
 
-        <div class="hero__meta">
-          <span class="hero__status" data-open-status>
-            <span class="hero__status-dot" aria-hidden="true"></span>
+        <div class="flex flex-wrap justify-between gap-x-6 gap-y-3 border-t border-paper-3/26 pt-[0.95rem] text-[0.82rem] leading-[1.5] text-paper-3/76 max-md:justify-start max-sm:gap-[0.6rem]">
+          <span class="group inline-flex items-center gap-2 max-sm:w-auto" data-open-status>
+            <span class="h-[0.42rem] w-[0.42rem] flex-none rounded-[50%] bg-gold group-data-[open=false]:bg-paper-3/42" aria-hidden="true"></span>
             <span data-open-text>Lunch tis–fre 11.30–14.00</span>
           </span>
-          <span><a href="#hitta">Luntmakargatan 42, 111 37 Stockholm</a></span>
+          <span class="max-sm:w-full"><a class="inline-block py-[0.3rem] -my-[0.3rem] no-underline hover:text-gold-pale" href="#hitta">Luntmakargatan 42, 111 37 Stockholm</a></span>
         </div>
       </div>
 
-      <figure class="hero__figure" data-reveal-mask>
+      <figure class="relative m-0 overflow-clip bg-cobalt-deep max-md:order-first max-md:h-[clamp(15rem,54vw,24rem)]" data-reveal-mask>
         <img
-          class="hero__photo"
+          class="absolute inset-0 h-full w-full object-cover object-[50%_55%] [filter:saturate(0.95)_contrast(1.02)]"
           src="/images/hero-rum-2400.webp"
           srcset="/images/hero-rum-1200.webp 1200w, /images/hero-rum-2400.webp 2400w"
           sizes="(max-width: 900px) 100vw, 58vw"
@@ -57,14 +66,14 @@ import Booking from '../components/Booking.astro';
     </div>
   </section>
 
-  <section class="section about" id="om-oss" aria-labelledby="om-oss-title">
-    <div class="shell">
-      <div class="about__head">
-        <p class="meta about__label" data-reveal>Om oss</p>
-        <h2 class="about__statement" id="om-oss-title" data-reveal>
-          Husmanskosten är grunden. <em>Europa är bordet bredvid.</em>
+  <section class="scroll-mt-[88px] py-section max-md:scroll-mt-20" id="om-oss" aria-labelledby="om-oss-title">
+    <div class={shell}>
+      <div class="grid grid-cols-12 gap-x-[clamp(1rem,2.2vw,2.25rem)] border-t border-ink/22 pt-[clamp(1rem,1.6vw,1.35rem)] max-md:grid-cols-1">
+        <p class:list={[meta, 'col-[1/2] whitespace-nowrap pt-[0.65rem] text-gold-ink max-md:hidden']} data-reveal>Om oss</p>
+        <h2 class="col-[2/9] max-w-[17ch] pt-[0.15rem] text-[clamp(2.6rem,5.6vw,5.25rem)] font-medium leading-[0.97] tracking-[-0.055em] text-balance max-md:col-[1/-1] max-md:max-w-[18ch] max-sm:text-[clamp(2.3rem,10.5vw,3.4rem)]" id="om-oss-title" data-reveal>
+          Husmanskosten är grunden. <em class="italic text-cobalt">Europa är bordet bredvid.</em>
         </h2>
-        <div class="about__standfirst" data-reveal>
+        <div class="col-[9/13] mt-[clamp(2rem,4vw,3rem)] self-end border-t border-ink/18 pt-4 text-base leading-[1.65] text-ink-soft [&>p+p]:mt-[0.9rem] max-md:col-[1/-1] max-md:mt-10" data-reveal>
           <p>
             Modern husmanskost, som vi menar det, börjar i det svenska köket och slutar inte
             vid landets gräns. Köttbullar, kalops och strömming står kvar. Bredvid dem står
@@ -77,68 +86,68 @@ import Booking from '../components/Booking.astro';
         </div>
       </div>
 
-      <div class="about__traditions">
-        <article class="about__tradition" data-reveal>
-          <div class="about__tradition-index">
-            <span class="meta">Grunden</span>
-            <span class="about__tradition-no" aria-hidden="true">01</span>
+      <div class="mt-[clamp(3.5rem,7vw,6rem)] grid grid-cols-2 border-b border-b-ink/14 border-t-2 border-t-gold bg-paper-3 max-md:grid-cols-1 max-sm:mt-12">
+        <article class="flex flex-col p-[clamp(1.5rem,3vw,2.75rem)] max-sm:p-6" data-reveal>
+          <div class="flex items-baseline justify-between gap-4 text-gold-ink">
+            <span class={meta}>Grunden</span>
+            <span class="text-[0.72rem] font-semibold tabular-nums tracking-[0.14em]" aria-hidden="true">01</span>
           </div>
-          <h3>Det svenska köket</h3>
-          <p>
+          <h3 class="mt-[clamp(2.25rem,4.5vw,3.5rem)] max-w-[18ch] text-[clamp(1.8rem,3.4vw,2.9rem)] font-medium leading-[0.98] tracking-[-0.045em] text-balance max-sm:mt-8">Det svenska köket</h3>
+          <p class="mt-5 max-w-[44ch] leading-[1.65] text-ink-soft">
             Recepten är ärvda, inte uppfunna. Vi maler köttet, reder såsen på kalvben och
             lägger in gurkan när hösten är som bäst. Husmanskosten är inte en stil. Den är
             ett sätt att laga mat som håller.
           </p>
-          <p class="about__examples">
-            <span class="meta">På menyn</span>
-            <span>Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa</span>
+          <p class="mt-auto grid gap-[0.55rem] pt-[clamp(2rem,4vw,3.25rem)] max-sm:pt-8">
+            <span class:list={[meta, 'text-gold-ink']}> På menyn</span>
+            <span class="max-w-[46ch] text-[0.95rem] leading-[1.6] text-ink-soft">Köttbullar, Wallenbergare, Kalops, Stekt strömming, Ärtsoppa</span>
           </p>
         </article>
 
-        <article class="about__tradition" data-reveal>
-          <div class="about__tradition-index">
-            <span class="meta">Utvidgningen</span>
-            <span class="about__tradition-no" aria-hidden="true">02</span>
+        <article class="flex flex-col border-l border-ink/14 p-[clamp(1.5rem,3vw,2.75rem)] max-md:border-l-0 max-md:border-t max-md:border-ink/14 max-sm:p-6" data-reveal>
+          <div class="flex items-baseline justify-between gap-4 text-gold-ink">
+            <span class={meta}>Utvidgningen</span>
+            <span class="text-[0.72rem] font-semibold tabular-nums tracking-[0.14em]" aria-hidden="true">02</span>
           </div>
-          <h3>Det europeiska bordet</h3>
-          <p>
+          <h3 class="mt-[clamp(2.25rem,4.5vw,3.5rem)] max-w-[18ch] text-[clamp(1.8rem,3.4vw,2.9rem)] font-medium leading-[0.98] tracking-[-0.045em] text-balance max-sm:mt-8">Det europeiska bordet</h3>
+          <p class="mt-5 max-w-[44ch] leading-[1.65] text-ink-soft">
             Pasta med svamp och parmesan. Kalvschnitzel. Moules-frites. Rätter från andra
             europeiska vardagskök, med samma krav på råvara, smör och tid. De är inte gäster
             på menyn. De hör hemma där.
           </p>
-          <p class="about__examples">
-            <span class="meta">På menyn</span>
-            <span>Pasta, Kalvschnitzel, Moules-frites, Tarte tatin</span>
+          <p class="mt-auto grid gap-[0.55rem] pt-[clamp(2rem,4vw,3.25rem)] max-sm:pt-8">
+            <span class:list={[meta, 'text-gold-ink']}>På menyn</span>
+            <span class="max-w-[46ch] text-[0.95rem] leading-[1.6] text-ink-soft">Pasta, Kalvschnitzel, Moules-frites, Tarte tatin</span>
           </p>
         </article>
       </div>
 
-      <ol class="about__principles">
-        <li class="about__principle" data-reveal>
-          <span class="about__principle-no" aria-hidden="true">01</span>
+      <ol class="mt-[clamp(2.5rem,5vw,4rem)] grid grid-cols-3 gap-[clamp(1.5rem,3vw,3rem)] border-t border-ink/18 pt-[clamp(1.5rem,2.5vw,2rem)] max-md:grid-cols-1 max-md:gap-8">
+        <li class="grid grid-cols-[2rem_minmax(0,1fr)] content-start gap-3" data-reveal>
+          <span class="pt-[0.38rem] text-[0.72rem] font-semibold tabular-nums tracking-[0.14em] text-gold-ink" aria-hidden="true">01</span>
           <div>
-            <h3>Från grunden</h3>
-            <p>
+            <h3 class="text-[1.12rem] font-semibold leading-none tracking-[-0.015em] text-balance">Från grunden</h3>
+            <p class="mt-[0.6rem] max-w-[34ch] text-[0.95rem] leading-[1.6] text-ink-soft">
               Buljong, såser, pasta och inläggningar görs i köket. Varje dag, inte bara när
               någon tittar.
             </p>
           </div>
         </li>
-        <li class="about__principle" data-reveal>
-          <span class="about__principle-no" aria-hidden="true">02</span>
+        <li class="grid grid-cols-[2rem_minmax(0,1fr)] content-start gap-3" data-reveal>
+          <span class="pt-[0.38rem] text-[0.72rem] font-semibold tabular-nums tracking-[0.14em] text-gold-ink" aria-hidden="true">02</span>
           <div>
-            <h3>Säsongen bestämmer</h3>
-            <p>
+            <h3 class="text-[1.12rem] font-semibold leading-none tracking-[-0.015em] text-balance">Säsongen bestämmer</h3>
+            <p class="mt-[0.6rem] max-w-[34ch] text-[0.95rem] leading-[1.6] text-ink-soft">
               Menyn ändras när råvarorna gör det. Vi byter rätter för att det är bättre,
               inte för att det är nytt.
             </p>
           </div>
         </li>
-        <li class="about__principle" data-reveal>
-          <span class="about__principle-no" aria-hidden="true">03</span>
+        <li class="grid grid-cols-[2rem_minmax(0,1fr)] content-start gap-3" data-reveal>
+          <span class="pt-[0.38rem] text-[0.72rem] font-semibold tabular-nums tracking-[0.14em] text-gold-ink" aria-hidden="true">03</span>
           <div>
-            <h3>Ett bord, hela dagen</h3>
-            <p>
+            <h3 class="text-[1.12rem] font-semibold leading-none tracking-[-0.015em] text-balance">Ett bord, hela dagen</h3>
+            <p class="mt-[0.6rem] max-w-[34ch] text-[0.95rem] leading-[1.6] text-ink-soft">
               Lunch, middag eller bara ett glas. Samma rum, samma krav — utan att göra stor
               skillnad på vardag och fest.
             </p>
@@ -148,50 +157,50 @@ import Booking from '../components/Booking.astro';
     </div>
   </section>
 
-  <section class="section preview" aria-labelledby="preview-title">
-    <div class="shell">
-      <div class="section-head">
-        <h2 class="h2" id="preview-title" data-reveal>Från menyn</h2>
-        <a class="link-arrow section-head__link" href="/meny">
+  <section class="bg-paper-2 py-section" aria-labelledby="preview-title">
+    <div class={shell}>
+      <div class="flex items-end justify-between gap-8 border-b border-ink/20 pb-5 max-sm:flex-col max-sm:items-start max-sm:gap-4">
+        <h2 class={h2} id="preview-title" data-reveal>Från menyn</h2>
+        <a class="group inline-flex flex-none items-center gap-[0.6rem] py-[0.35rem] pb-[0.3rem] font-semibold no-underline" href="/meny">
           Hela menyn
-          <Arrow />
+          <Arrow class:list={[arrow, 'flex-none text-[1.0625rem] font-normal leading-none']} />
         </a>
       </div>
 
-      <div class="preview__grid">
-        <article class="preview__feature" data-reveal>
-          <p class="preview__index meta"><span aria-hidden="true">01 · </span>Svensk husmanskost</p>
-          <h3 class="preview__feature-name">Köttbullar</h3>
-          <p class="preview__feature-desc">
+      <div class="mt-[clamp(2.5rem,5vw,4rem)] grid grid-cols-12 gap-[clamp(2rem,4vw,4.5rem)] max-md:grid-cols-1">
+        <article class="col-[1/6] flex flex-col items-start max-md:col-[1/13]" data-reveal>
+          <p class:list={[meta, 'text-gold-ink']}><span aria-hidden="true">01 · </span>Svensk husmanskost</p>
+          <h3 class="mt-[clamp(1.25rem,2.5vw,2rem)] text-[clamp(2.8rem,5.6vw,5rem)] font-medium leading-[0.94] tracking-[-0.055em] text-balance">Köttbullar</h3>
+          <p class="mt-5 max-w-[34ch] text-[1.0625rem] leading-[1.65] text-ink-soft">
             Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka. Potatispuré som inte
             skäms för sig.
           </p>
-          <div class="preview__feature-foot">
-            <span class="meta">Nöt &amp; fläsk · lingon · pressgurka</span>
-            <span class="dish-feature__price">265 kr</span>
+          <div class="mt-auto flex w-full items-baseline justify-between gap-6 border-t border-ink/22 pt-5">
+            <span class="text-[0.68rem] font-semibold uppercase leading-[1.45] tracking-[0.12em] text-ink-faint">Nöt &amp; fläsk · lingon · pressgurka</span>
+            <span class="whitespace-nowrap text-[1.0625rem] font-semibold tabular-nums">265 kr</span>
           </div>
         </article>
 
-        <div class="preview__list">
-          <a class="preview-row" href="/meny#europa" data-reveal>
-            <span class="preview-row__index meta" aria-hidden="true">02</span>
-            <div class="preview-row__body">
-              <div class="preview-row__line">
-                <h3>Pasta med svamp</h3>
-                <span>235 kr</span>
+        <div class="col-[7/13] flex flex-col justify-center max-md:col-[1/13]">
+          <a class="group grid grid-cols-[2.25rem_1fr] items-start gap-[clamp(1rem,2vw,1.75rem)] border-t border-ink/22 py-[clamp(1.5rem,3vw,2.25rem)] no-underline last:border-b max-sm:grid-cols-[2rem_1fr] max-sm:gap-4" href="/meny#europa" data-reveal>
+            <span class:list={[meta, 'pt-[0.45rem] text-gold-ink']} aria-hidden="true">02</span>
+            <div>
+              <div class="flex items-baseline justify-between gap-4 max-sm:flex-wrap max-sm:gap-x-4 max-sm:gap-y-1">
+                <h3 class="text-[clamp(1.5rem,2.4vw,2rem)] font-medium leading-[1.05] tracking-[-0.035em] text-balance group-hover:underline group-hover:decoration-gold group-hover:decoration-1 group-hover:underline-offset-[0.12em]">Pasta med svamp</h3>
+                <span class="whitespace-nowrap font-semibold tabular-nums">235 kr</span>
               </div>
-              <p>Tagliatelle, skogssvamp, parmesan och brynt smör. Europas vardag, med samma handlag.</p>
+              <p class="mt-2 max-w-[42ch] text-[0.95rem] leading-[1.6] text-ink-soft">Tagliatelle, skogssvamp, parmesan och brynt smör. Europas vardag, med samma handlag.</p>
             </div>
           </a>
 
-          <a class="preview-row" href="/meny#havet" data-reveal>
-            <span class="preview-row__index meta" aria-hidden="true">03</span>
-            <div class="preview-row__body">
-              <div class="preview-row__line">
-                <h3>Stekt strömming</h3>
-                <span>245 kr</span>
+          <a class="group grid grid-cols-[2.25rem_1fr] items-start gap-[clamp(1rem,2vw,1.75rem)] border-t border-ink/22 py-[clamp(1.5rem,3vw,2.25rem)] no-underline last:border-b max-sm:grid-cols-[2rem_1fr] max-sm:gap-4" href="/meny#havet" data-reveal>
+            <span class:list={[meta, 'pt-[0.45rem] text-gold-ink']} aria-hidden="true">03</span>
+            <div>
+              <div class="flex items-baseline justify-between gap-4 max-sm:flex-wrap max-sm:gap-x-4 max-sm:gap-y-1">
+                <h3 class="text-[clamp(1.5rem,2.4vw,2rem)] font-medium leading-[1.05] tracking-[-0.035em] text-balance group-hover:underline group-hover:decoration-gold group-hover:decoration-1 group-hover:underline-offset-[0.12em]">Stekt strömming</h3>
+                <span class="whitespace-nowrap font-semibold tabular-nums">245 kr</span>
               </div>
-              <p>Potatispuré, brynt smör, dill och citron. Knaprigt där det ska vara mjukt.</p>
+              <p class="mt-2 max-w-[42ch] text-[0.95rem] leading-[1.6] text-ink-soft">Potatispuré, brynt smör, dill och citron. Knaprigt där det ska vara mjukt.</p>
             </div>
           </a>
         </div>
@@ -199,12 +208,12 @@ import Booking from '../components/Booking.astro';
     </div>
   </section>
 
-  <section class="section proof" aria-labelledby="proof-title">
-    <div class="shell proof__grid">
-      <figure class="proof__figure" data-reveal-mask>
-        <div class="proof__ring">
+  <section class="overflow-clip bg-cobalt py-section text-paper-3" aria-labelledby="proof-title">
+    <div class="mx-auto grid w-full max-w-shell grid-cols-12 items-center gap-[clamp(2rem,5vw,5rem)] px-gutter print:w-full print:px-0">
+      <figure class="relative col-[1/6] m-0 before:pointer-events-none before:absolute before:inset-[9%_5%_-6%_9%] before:rounded-[50%] before:border before:border-gold-pale/55 max-md:col-[1/12]" data-reveal-mask>
+        <div class="relative aspect-square w-[min(100%,520px)] rounded-[50%] border border-gold-pale p-[0.8rem] max-md:w-[min(100%,460px)]">
           <img
-            class="proof__photo"
+            class="h-full w-full rounded-[50%] object-cover [filter:saturate(0.92)_contrast(1.03)]"
             src="/images/kottbullar-1280.webp"
             srcset="/images/kottbullar-720.webp 720w, /images/kottbullar-1280.webp 1280w"
             sizes="(max-width: 900px) 90vw, 42vw"
@@ -216,32 +225,32 @@ import Booking from '../components/Booking.astro';
         </div>
       </figure>
 
-      <div class="proof__copy">
-        <h2 id="proof-title">Inga genvägar <em>på tallriken.</em></h2>
-        <p>
+      <div class="col-[7/13] max-md:col-[1/12] max-md:mt-4">
+        <h2 class="max-w-[12ch] text-[clamp(2.4rem,4.8vw,4.8rem)] font-medium leading-none tracking-[-0.055em] text-balance max-sm:max-w-[14ch]" id="proof-title">Inga genvägar <em class="italic text-gold-pale">på tallriken.</em></h2>
+        <p class="mt-[clamp(1.25rem,2.5vw,2rem)] max-w-[42ch] text-[1.0625rem] leading-[1.65] text-paper-3/82">
           Vi maler köttet själva. Reder såsen på kalvben. Lägger in gurkan på hösten så att
           den är klar till vintern. Och vi kokar pastan i samma kök, med samma krav på råvara
           och tid. Det tar tid. Det är hela poängen.
         </p>
-        <p>
+        <p class="mt-[clamp(1.25rem,2.5vw,2rem)] max-w-[42ch] text-[1.0625rem] leading-[1.65] text-paper-3/82">
           Samma sak med grönsakerna: de får ta den tid de behöver, och de får smaka som de
           gör. Inget mer, inget mindre.
         </p>
-        <div class="proof__details">
+        <div class="mt-[clamp(2rem,4vw,3rem)] grid max-w-[32rem] gap-[0.6rem] border-t border-paper-3/26 pt-5 text-[0.9rem] leading-[1.6] text-gold-pale">
           <span>Köttbullar serveras både lunch och middag.</span>
           <span>Veckans pasta står på lunchen — fråga vad köket har hittat.</span>
           <span>Fråga oss om allergener — vi anpassar det mesta.</span>
-          <a class="link-underline" href="/meny">Se hela menyn</a>
+          <a class="inline-block py-[0.3rem] -my-[0.3rem] underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold" href="/meny">Se hela menyn</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="hitta" aria-labelledby="find-title">
-    <div class="shell grid">
-      <div class="find__head">
-        <h2 class="h2" id="find-title" data-reveal>Hitta hit</h2>
-        <p data-reveal>
+  <section class="scroll-mt-[88px] py-section max-md:scroll-mt-20" id="hitta" aria-labelledby="find-title">
+    <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(1rem,2.2vw,2.25rem)] px-gutter print:w-full print:px-0">
+      <div class="col-[1/7] max-md:col-[1/13]">
+        <h2 class:list={[h2, 'max-w-[10ch]']} id="find-title" data-reveal>Hitta hit</h2>
+        <p class="mt-5 max-w-[38ch] text-ink-soft" data-reveal>
           Vi sitter på Luntmakargatan 42, mellan Tegnérgatan och Rådmansgatan. Kom in från
           gatan, häng av dig och ta plats.
         </p>
@@ -249,27 +258,27 @@ import Booking from '../components/Booking.astro';
 
       <Map />
 
-      <div class="find__info">
-        <address class="address">
-          <a href="https://www.google.com/maps/search/?api=1&query=Luntmakargatan+42%2C+111+37+Stockholm" rel="noopener">
+      <div class="col-[7/13] pt-[clamp(2rem,4vw,3rem)] max-md:col-[1/13] max-md:pt-0">
+        <address class="text-[clamp(1.35rem,2.2vw,1.75rem)] not-italic leading-[1.3] tracking-[-0.025em]">
+          <a class="no-underline hover:text-gold" href="https://www.google.com/maps/search/?api=1&query=Luntmakargatan+42%2C+111+37+Stockholm" rel="noopener">
             Luntmakargatan 42<br />
             111 37 Stockholm
           </a>
         </address>
-        <div class="contact-list">
-          <a href="tel:+46812345678">08–123 45 678</a>
-          <a href="mailto:hej@lyster.se">hej@lyster.se</a>
-          <a href="https://instagram.com/lystersthlm" rel="noopener">@lystersthlm</a>
+        <div class="mt-[clamp(2rem,4vw,3rem)] flex flex-wrap gap-x-7 gap-y-3">
+          <a class="inline-block border-b border-gold/60 pb-[0.2rem] pt-[0.4rem] font-medium no-underline hover:text-gold" href="tel:+46812345678">08–123 45 678</a>
+          <a class="inline-block border-b border-gold/60 pb-[0.2rem] pt-[0.4rem] font-medium no-underline hover:text-gold" href="mailto:hej@lyster.se">hej@lyster.se</a>
+          <a class="inline-block border-b border-gold/60 pb-[0.2rem] pt-[0.4rem] font-medium no-underline hover:text-gold" href="https://instagram.com/lystersthlm" rel="noopener">@lystersthlm</a>
         </div>
 
-        <div class="hours">
-          <h3 class="meta">Öppettider</h3>
+        <div class="mt-[clamp(2rem,4vw,3rem)]">
+          <h3 class={meta}>Öppettider</h3>
           <dl>
-            <div class="hours__row"><dt>Tisdag–fredag</dt><dd>11.30–23.00</dd></div>
-            <div class="hours__row"><dt>Lördag</dt><dd>12.00–23.00</dd></div>
-            <div class="hours__row"><dt>Söndag–måndag</dt><dd>Stängt</dd></div>
+            <div class="flex items-baseline justify-between gap-8 border-t border-ink/16 py-[0.7rem] last:border-b"><dt class="font-medium">Tisdag–fredag</dt><dd class="tabular-nums whitespace-nowrap">11.30–23.00</dd></div>
+            <div class="flex items-baseline justify-between gap-8 border-t border-ink/16 py-[0.7rem] last:border-b"><dt class="font-medium">Lördag</dt><dd class="tabular-nums whitespace-nowrap">12.00–23.00</dd></div>
+            <div class="flex items-baseline justify-between gap-8 border-t border-ink/16 py-[0.7rem] last:border-b"><dt class="font-medium">Söndag–måndag</dt><dd class="tabular-nums whitespace-nowrap">Stängt</dd></div>
           </dl>
-          <p class="hours__note">Lunchen serveras tis–fre 11.30–14.00. Köket stänger 22.30.</p>
+          <p class="mt-4 text-[0.82rem] text-ink-soft">Lunchen serveras tis–fre 11.30–14.00. Köket stänger 22.30.</p>
         </div>
       </div>
     </div>

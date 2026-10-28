@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Arrow from '../components/Arrow.astro';
 import Booking from '../components/Booking.astro';
 
 interface Dish {
@@ -242,18 +241,18 @@ const lunch = [
   title="Menyn — Lyster"
   description="Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm."
 >
-  <section class="menu-hero" aria-labelledby="meny-title">
-    <div class="shell menu-hero__grid">
-      <div class="menu-hero__title">
-        <h1 id="meny-title" data-reveal>Menyn</h1>
+  <section class="pb-[clamp(2.5rem,5vw,4.5rem)] pt-[clamp(2.5rem,6vw,5rem)] print:pb-6 print:pt-0" aria-labelledby="meny-title">
+    <div class="mx-auto grid w-full max-w-shell grid-cols-12 items-end gap-[clamp(2rem,4vw,4rem)] px-gutter print:block print:w-full print:px-0">
+      <div class="col-[1/7] max-md:col-[1/13]">
+        <h1 class="text-[clamp(3.8rem,8.5vw,7.5rem)] font-medium leading-[0.9] tracking-[-0.06em] text-balance max-sm:text-[clamp(3.5rem,17vw,5.5rem)] print:text-[32pt]" id="meny-title" data-reveal>Menyn</h1>
       </div>
-      <div class="menu-hero__copy">
-        <p class="menu-hero__intro" data-reveal>
+      <div class="col-[8/13] border-t border-ink/18 pt-5 max-md:col-[1/13] max-md:mt-6 print:mt-4 print:border-t-0 print:pt-0">
+        <p class="max-w-[36ch] text-[1.0625rem] leading-[1.65] text-ink-soft print:max-w-none" data-reveal>
           Husmanskost, skärpt — och ett europeiskt bord bredvid. Köttbullar, kalops och
           strömming från det svenska köket. Pasta, schnitzel och moules-frites från resten av
           Europa. Allt lagat från grunden, med samma handlag.
         </p>
-        <div class="menu-hero__meta meta" data-reveal>
+        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-ink/18 pt-4 text-[0.75rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-soft print:hidden" data-reveal>
           <span>Höstmeny 2026</span>
           <span>Lunch tis–fre</span>
           <span>Middag tis–lör</span>
@@ -262,84 +261,92 @@ const lunch = [
     </div>
   </section>
 
-  <div class="menu-body">
-    <nav class="menu-nav" aria-label="Menyns avsnitt" data-menu-nav>
-      <div class="shell">
-        <div class="menu-nav__track">
+  <div>
+    <nav class="sticky top-[72px] z-30 border-y border-ink/14 bg-paper max-md:top-16 print:hidden" aria-label="Menyns avsnitt" data-menu-nav>
+      <div class="mx-auto w-full max-w-shell px-gutter print:w-full print:px-0">
+        <div class="flex gap-[clamp(1.1rem,2.5vw,2.25rem)] overflow-x-auto [scroll-padding-inline:1rem] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-menu-track>
           {courses.map((course) => (
-            <a class="menu-nav__link" href={`#${course.id}`} data-menu-link>{course.title}</a>
+            <a
+              class="relative flex-none whitespace-nowrap py-[1.05rem] text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-ink-soft no-underline after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-[260ms] after:ease-brand hover:text-ink aria-[current=location]:text-ink aria-[current=location]:after:scale-x-100"
+              href={`#${course.id}`}
+              data-menu-link
+            >{course.title}</a>
           ))}
-          <a class="menu-nav__link" href="#lunch" data-menu-link>Lunch</a>
+          <a
+            class="relative flex-none whitespace-nowrap py-[1.05rem] text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-ink-soft no-underline after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-[260ms] after:ease-brand hover:text-ink aria-[current=location]:text-ink aria-[current=location]:after:scale-x-100"
+            href="#lunch"
+            data-menu-link
+          >Lunch</a>
         </div>
       </div>
     </nav>
 
-    <div class="shell menu-layout">
-      <aside class="menu-rail" aria-label="Menyns omfattning">
-        <p class="meta text-gold">Höstmeny 2026</p>
-        <dl class="menu-rail__facts">
-          <div>
-            <dt class="meta">Lunch</dt>
-            <dd>Tis–fre 11.30–14.00</dd>
+    <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(2rem,4.5vw,5rem)] px-gutter py-[clamp(2.5rem,6vw,5rem)] max-md:grid-cols-1 max-md:pt-0 print:block print:w-full print:px-0">
+      <aside class="sticky top-[136px] col-[1/4] self-start pt-6 max-md:hidden print:hidden" aria-label="Menyns omfattning">
+        <p class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-gold-ink">Höstmeny 2026</p>
+        <dl class="mt-6 border-t border-ink/18">
+          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
+            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Lunch</dt>
+            <dd class="m-0 text-[0.9rem] leading-[1.45]">Tis–fre 11.30–14.00</dd>
           </div>
-          <div>
-            <dt class="meta">Middag</dt>
-            <dd>Tis–lör</dd>
+          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
+            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Middag</dt>
+            <dd class="m-0 text-[0.9rem] leading-[1.45]">Tis–lör</dd>
           </div>
-          <div>
-            <dt class="meta">Kök</dt>
-            <dd>Stänger 22.30</dd>
+          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
+            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Kök</dt>
+            <dd class="m-0 text-[0.9rem] leading-[1.45]">Stänger 22.30</dd>
           </div>
         </dl>
-        <p class="menu-rail__note">Menyn ändras med säsongen. Fråga oss om allergener.</p>
-        <a class="link-underline" href="#lunch">Lunchmenyn</a>
+        <p class="mt-6 max-w-[24ch] text-[0.82rem] leading-[1.6] text-ink-soft">Menyn ändras med säsongen. Fråga oss om allergener.</p>
+        <a class="mt-4 inline-block py-[0.3rem] -my-[0.3rem] text-[0.9rem] underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold" href="#lunch">Lunchmenyn</a>
       </aside>
 
-      <div class="menu-content">
+      <div class="col-[5/12] min-w-0 max-w-[46rem] max-md:col-[1/13] max-md:max-w-none print:max-w-none">
         {courses.map((course) => (
-          <section class="menu-cat" id={course.id} aria-labelledby={`${course.id}-title`} data-menu-section>
-            <div class="menu-cat__head" data-reveal>
-              <div class="menu-cat__title">
-                <h2 id={`${course.id}-title`}>{course.title}</h2>
-                <p class="meta text-gold">{course.dishes.length} rätter</p>
+          <section class="scroll-mt-[142px] pt-[clamp(2.5rem,5vw,4rem)] first:pt-4 max-md:scroll-mt-[134px] max-md:first:pt-10 print:break-inside-avoid print:pt-6" id={course.id} aria-labelledby={`${course.id}-title`} data-menu-section>
+            <div class="flex items-end justify-between gap-6 border-b-2 border-cobalt pb-[0.9rem] max-sm:items-start max-sm:gap-3" data-reveal>
+              <div>
+                <h2 class="text-[clamp(1.9rem,3vw,2.75rem)] font-medium leading-none tracking-[-0.04em] text-balance" id={`${course.id}-title`}>{course.title}</h2>
+                <p class="mt-[0.35rem] text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-gold-ink">{course.dishes.length} rätter</p>
               </div>
-              <p class="menu-cat__note">{course.note}</p>
+              <p class="max-w-[28ch] text-right text-[0.82rem] leading-[1.55] text-ink-soft max-sm:hidden print:block print:max-w-none print:text-left">{course.note}</p>
             </div>
 
             <ul>
               {course.dishes.map((dish) => (
-                <li class="dish">
-                  <div class="dish__line">
-                    <h3 class="dish__name">
+                <li class="block border-b border-ink/14 py-[1.1rem] print:break-inside-avoid">
+                  <div class="flex items-baseline gap-3">
+                    <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">
                       {dish.name}
                       {dish.tags && (
-                        <span class="dish__tags">
+                        <span class="ml-[0.4rem] inline-flex gap-[0.4rem] whitespace-nowrap align-[0.1em] text-[0.68rem] font-semibold uppercase tracking-[0.06em] text-dill">
                           {dish.tags.map((tag) => <span>{tag}</span>)}
                         </span>
                       )}
                     </h3>
-                    <span class="dish__leader" aria-hidden="true"></span>
-                    <span class="dish__price">{dish.price} kr</span>
+                    <span class="min-w-4 flex-1 [transform:translateY(-0.22em)] border-b border-dotted border-ink/28" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap text-[1rem] font-semibold tabular-nums">{dish.price} kr</span>
                   </div>
-                  <p class="dish__desc">{dish.description}</p>
+                  <p class="mt-1 max-w-[52ch] text-[0.95rem] leading-[1.6] text-ink-soft print:text-ink-soft">{dish.description}</p>
                 </li>
               ))}
             </ul>
           </section>
         ))}
 
-        <div class="tasting" data-reveal>
+        <div class="mt-[clamp(2.5rem,5vw,4rem)] grid grid-cols-[1fr_auto] items-end gap-6 border-t-2 border-cobalt bg-gold-pale p-[clamp(1.5rem,3vw,2.25rem)] max-sm:grid-cols-1 max-sm:gap-4 print:break-inside-avoid print:border print:border-ink print:bg-paper" data-reveal>
           <div>
-            <h3>Tre rätt, ett bord</h3>
-            <p>
+            <h3 class="text-[clamp(1.4rem,2.4vw,1.9rem)] font-semibold leading-none text-balance">Tre rätt, ett bord</h3>
+            <p class="mt-[0.4rem] max-w-[42ch] text-[0.95rem] leading-[1.6] text-ink-soft">
               Tre rätt valda av köket, från husmanskost till Europas bord. Berätta vad du inte
               äter, så bygger vi menyn runt dig.
             </p>
           </div>
-          <p class="tasting__price">495 kr</p>
+          <p class="mt-[0.4rem] max-w-[42ch] whitespace-nowrap text-[0.95rem] font-semibold leading-[1.6] tabular-nums text-ink-soft">495 kr</p>
         </div>
 
-        <p class="menu-footnote">
+        <p class="mt-[clamp(2.5rem,5vw,4rem)] max-w-[52ch] text-[0.85rem] leading-[1.65] text-ink-soft print:max-w-none print:text-ink-soft">
           Menyn är ett exempel i den här demon och ändras med säsongen. Priserna är
           inklusive moms. Fråga oss om allergener och om du vill ha rätten utan något
           — vi anpassar det mesta. Sällskap över åtta, hör av dig i god tid.
@@ -347,43 +354,43 @@ const lunch = [
       </div>
     </div>
 
-    <section class="section lunch" id="lunch" aria-labelledby="lunch-title" data-menu-section>
-      <div class="shell lunch__grid">
-        <div class="lunch__head" data-reveal>
-          <h2 id="lunch-title">Lunch</h2>
-          <p>
+    <section class="scroll-mt-[142px] bg-cobalt py-section text-paper-3 max-md:scroll-mt-[134px] print:bg-paper print:py-6 print:text-ink" id="lunch" aria-labelledby="lunch-title" data-menu-section>
+      <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(2rem,4vw,4rem)] px-gutter print:block print:w-full print:px-0">
+        <div class="col-[1/5] max-md:col-[1/13]" data-reveal>
+          <h2 class="text-[clamp(2.4rem,4.5vw,4.5rem)] font-medium leading-none tracking-[-0.05em] text-balance" id="lunch-title">Lunch</h2>
+          <p class="mt-5 max-w-[30ch] leading-[1.65] text-paper-3/78 print:max-w-none print:text-ink-soft">
             Vardag mitt på dagen: en rätt, sallad, bröd och kaffe. Husmanskost eller veckans
             pasta — sätt dig ner, ät ordentligt och gå tillbaka till dagen. Ingen bokning krävs.
           </p>
-          <p class="lunch__meta meta">Tis–fre 11.30–14.00 · 145 kr</p>
+          <p class="mt-5 max-w-[30ch] text-[0.9rem] font-semibold uppercase leading-[1.65] tracking-[0.14em] text-paper-3/78 print:mt-5 print:max-w-none print:text-ink-soft">Tis–fre 11.30–14.00 · 145 kr</p>
         </div>
 
-        <ul class="lunch__list">
+        <ul class="col-[6/13] max-md:col-[1/13]">
           {lunch.map((item) => (
-            <li class="lunch__item">
+            <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
               <div>
-                <p class="meta">{item.day}</p>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
+                <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">{item.day}</p>
+                <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">{item.name}</h3>
+                <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">{item.description}</p>
               </div>
-              <span class="lunch__price">145 kr</span>
+              <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">145 kr</span>
             </li>
           ))}
-          <li class="lunch__item">
+          <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
             <div>
-              <p class="meta">Alla dagar</p>
-              <h3>Dagens gröna</h3>
-              <p>Veckans grönsaksrätt. Fråga vad köket har hittat på.</p>
+              <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">Alla dagar</p>
+              <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">Dagens gröna</h3>
+              <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">Veckans grönsaksrätt. Fråga vad köket har hittat på.</p>
             </div>
-            <span class="lunch__price">135 kr</span>
+            <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">135 kr</span>
           </li>
-          <li class="lunch__item">
+          <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
             <div>
-              <p class="meta">Alla dagar</p>
-              <h3>Veckans pasta</h3>
-              <p>Dagens pasta med svamp, parmesan och örter.</p>
+              <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">Alla dagar</p>
+              <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">Veckans pasta</h3>
+              <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">Dagens pasta med svamp, parmesan och örter.</p>
             </div>
-            <span class="lunch__price">145 kr</span>
+            <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">145 kr</span>
           </li>
         </ul>
       </div>

@@ -8,9 +8,10 @@ const mapHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
 ---
 
-<figure class="find__map">
-  <div class="find__map-frame">
+<figure class="col-[1/6] mt-[clamp(2rem,4vw,3rem)] max-md:col-[1/13] print:hidden">
+  <div class="relative aspect-[4/3] overflow-hidden border border-ink/18 bg-paper-2">
     <iframe
+      class="block h-full w-full border-0 [filter:grayscale(0.18)_sepia(0.08)_saturate(0.78)_contrast(0.98)]"
       src={embedSrc}
       title={`Karta över Lyster på ${address}`}
       width="600"
@@ -20,8 +21,8 @@ const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${enc
       referrerpolicy="strict-origin-when-cross-origin"
     ></iframe>
   </div>
-  <figcaption class="find__caption">
-    <span>Karta: <a href={mapHref} rel="noopener">Google Maps</a></span>
-    <a class="link-underline" href={directionsHref} rel="noopener">Vägbeskrivning</a>
+  <figcaption class="mt-[0.6rem] flex justify-between gap-4 text-[0.75rem] leading-[1.5] text-ink-soft max-sm:flex-wrap">
+    <span>Karta: <a class="inline-block py-[0.3rem] underline decoration-1 underline-offset-[0.2em] hover:decoration-gold" href={mapHref} rel="noopener">Google Maps</a></span>
+    <a class="inline-block py-[0.3rem] -my-[0.3rem] underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold" href={directionsHref} rel="noopener">Vägbeskrivning</a>
   </figcaption>
 </figure>

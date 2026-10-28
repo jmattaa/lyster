@@ -1,44 +1,44 @@
 ---
 import Arrow from './Arrow.astro';
 
-interface Props {
-  compact?: boolean;
-}
-const { compact = false } = Astro.props;
+const btnGold =
+  'group relative isolate inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 overflow-hidden border-0 bg-gold px-6 py-[0.7rem] text-[0.95rem] font-semibold leading-[1.1] tracking-[0.01em] text-ink no-underline transition-[color] duration-[260ms] ease-brand before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-paper-3 before:transition-transform before:duration-[380ms] before:ease-brand hover:text-cobalt hover:no-underline hover:before:scale-x-100 active:translate-y-px';
+const linkUnderline =
+  'inline-block py-[0.3rem] -my-[0.3rem] underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold';
 ---
 
-<section class:list={['booking', compact && 'booking--compact']} id="boka" data-booking-section>
-  <div class="booking__disc" aria-hidden="true"></div>
-  <div class="shell booking__inner">
-    <div class="booking__copy">
-      <h2>Boka ett bord.</h2>
-      <p>
+<section class="relative overflow-clip bg-cobalt-deep text-paper-3 scroll-mt-[88px] max-md:scroll-mt-20 print:hidden" id="boka" data-booking-section>
+  <div class="pointer-events-none absolute -right-[14%] top-1/2 aspect-square w-[min(62vw,760px)] -translate-y-1/2 rounded-[50%] bg-gold max-md:-bottom-[38%] max-md:-right-[45%] max-md:top-auto max-md:w-[115vw] max-md:translate-y-0" aria-hidden="true"></div>
+  <div class="relative z-[1] mx-auto grid w-full max-w-shell grid-cols-12 items-center gap-8 px-gutter print:w-full print:px-0">
+    <div class="col-[1/8] max-md:col-[1/13]">
+      <h2 class="max-w-[9ch] text-[clamp(2.8rem,6.2vw,6.5rem)] font-medium leading-none tracking-[-0.055em] text-balance max-sm:max-w-[10ch]">Boka ett bord.</h2>
+      <p class="mt-6 max-w-[38ch] text-paper-3/82">
         Lunch, middag eller bara ett glas. Husmanskost eller pasta — vi håller bordet, du tar
         hand om sällskapet.
       </p>
-      <div class="booking__actions">
+      <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-5 max-sm:flex-col max-sm:items-start max-sm:gap-4">
         <a
-          class="btn btn--gold"
+          class={btnGold}
           href="https://example.com/boka-lyster"
           data-booking-link
           data-booking-placeholder
         >
           Boka bord
-          <Arrow class="btn__arrow" />
+          <Arrow class="flex-none text-[1.0625rem] font-normal leading-none transition-transform duration-[380ms] ease-brand group-hover:translate-x-1" />
         </a>
-        <a class="booking__phone" href="tel:+46812345678">Eller ring 08–123 45 678</a>
+        <a class="border-b border-paper-3/42 pb-[0.1rem] font-medium text-paper-3 no-underline hover:border-gold-pale hover:text-gold-pale" href="tel:+46812345678">Eller ring 08–123 45 678</a>
       </div>
-      <p class="booking__note" data-booking-note hidden role="status" tabindex="-1">
-        Bokningslänken är inte kopplad i demon än. Ring <a href="tel:+46812345678">08–123 45 678</a>,
+      <p class="mt-6 max-w-[40ch] border-t border-gold/70 pt-[0.85rem] text-[0.9rem] text-gold-pale" data-booking-note hidden role="status" tabindex="-1">
+        Bokningslänken är inte kopplad i demon än. Ring <a class="underline decoration-1 underline-offset-[0.2em] hover:decoration-gold" href="tel:+46812345678">08–123 45 678</a>,
         så hjälper vi dig.
       </p>
     </div>
 
-    <aside class="booking__aside">
-      <h3>Sällskap över åtta?</h3>
-      <p>Ring oss, så sätter vi ihop en kväll som passar er. Vi tar också emot förfrågningar om
+    <aside class="col-[9/13] w-[min(100%,20rem)] justify-self-end border border-paper-3/28 bg-cobalt-deep/76 p-6 max-md:col-[1/13] max-md:mt-10 max-md:justify-self-start max-sm:w-full">
+      <h3 class="text-[1.0625rem] font-medium leading-none tracking-[-0.01em] text-balance">Sällskap över åtta?</h3>
+      <p class="mt-[0.6rem] text-[0.9rem] text-paper-3/76">Ring oss, så sätter vi ihop en kväll som passar er. Vi tar också emot förfrågningar om
         allergier och önskemål i god tid.</p>
-      <a class="link-underline" href="mailto:hej@lyster.se">hej@lyster.se</a>
+      <a class:list={[linkUnderline, 'mt-[0.9rem] text-[0.9rem] text-gold-pale']} href="mailto:hej@lyster.se">hej@lyster.se</a>
     </aside>
   </div>
 </section>

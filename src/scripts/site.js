@@ -17,7 +17,7 @@ if (dialog instanceof HTMLDialogElement && openButton) {
   const setExpanded = (value) => openButton.setAttribute('aria-expanded', String(value));
 
   const openNav = () => {
-    document.body.classList.add('nav-open');
+    document.body.style.overflow = 'hidden';
     dialog.showModal();
     setExpanded(true);
     closeButton?.focus({ preventScroll: true });
@@ -35,12 +35,12 @@ if (dialog instanceof HTMLDialogElement && openButton) {
   });
 
   dialog.addEventListener('cancel', () => {
-    document.body.classList.remove('nav-open');
+    document.body.style.overflow = '';
     setExpanded(false);
   });
 
   dialog.addEventListener('close', () => {
-    document.body.classList.remove('nav-open');
+    document.body.style.overflow = '';
     setExpanded(false);
     openButton.focus({ preventScroll: true });
   });
@@ -53,13 +53,15 @@ if (dialog instanceof HTMLDialogElement && openButton) {
 const revealTargets = $$('[data-reveal], [data-reveal-mask]');
 
 if (reduceMotion || !('IntersectionObserver' in window)) {
-  revealTargets.forEach((element) => element.classList.add('is-in'));
+  revealTargets.forEach((element) => {
+    element.dataset.revealed = 'true';
+  });
 } else {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-in');
+        entry.target.dataset.revealed = 'true';
         observer.unobserve(entry.target);
       });
     },
@@ -172,7 +174,7 @@ if (menuNav) {
     })
     .filter(Boolean);
 
-  const track = $('.menu-nav__track', menuNav);
+  const track = $('[data-menu-track]', menuNav);
   let activeId = null;
   let ticking = false;
 
@@ -182,7 +184,6 @@ if (menuNav) {
 
     entries.forEach(({ link }) => {
       const isActive = link.getAttribute('href') === `#${id}`;
-      link.classList.toggle('is-active', isActive);
       if (isActive) {
         link.setAttribute('aria-current', 'location');
       } else {
@@ -205,7 +206,7 @@ if (menuNav) {
   };
 
   const update = () => {
-    const header = $('.header');
+    const header = $('header');
     const headerHeight = header ? header.getBoundingClientRect().height : 0;
     const navHeight = menuNav.getBoundingClientRect().height;
     const offset = headerHeight + navHeight + 24;

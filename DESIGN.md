@@ -182,7 +182,7 @@ A 12-column editorial grid inside a 1560px shell. Gutters are `clamp(1.25rem, 4.
 
 Compositions rarely fill all twelve columns symmetrically. The homepage opens with the wordmark, then a full-bleed band: a cobalt copy plane on the left and a photograph on the right, split roughly 5/7. The about spread sets a side label in column 1, a monumental statement at columns 2–8, and a standfirst at 9–12 aligned to the statement's baseline; beneath it, a two-column definition on Chalk Paper gives the Swedish kitchen and the European table equal width, and three principles run across the full base. The proof band puts a circular photo at columns 1–5 and copy at 7–12. The menu page opens with a typographic hero: the title sits low at left, the introduction and service facts occupy the right column, and the two align on their bottom edge. Below it, a type-only rail at columns 1–3 faces the dishes at columns 5–12. Asymmetry is structural, not decorative: one side carries the photograph or the navigation, the other carries the reading.
 
-The sticky system is explicit. The header is 72px. The menu category nav sticks directly beneath it at `top: var(--header-h)`, and the menu rail sticks at `header + 64px`. Anchor scroll margins clear both (`header + 16px` for page sections, `header + 70px` for menu categories and lunch).
+The sticky system is explicit. The header is 72px. The menu category nav sticks directly beneath it at `top: 72px`, and the menu rail sticks at `top: 136px`. Anchor scroll margins clear both (`header + 70px` for menu categories and lunch; 134px on mobile, where the header is 64px).
 
 Breakpoints are coarse and content-led:
 

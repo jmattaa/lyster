@@ -20,7 +20,7 @@ const ogImage = new URL(image, Astro.site ?? 'https://lysternorrmalm.se');
 ---
 
 <!doctype html>
-<html lang="sv">
+<html lang="sv" class="scroll-smooth motion-reduce:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,10 +40,12 @@ const ogImage = new URL(image, Astro.site ?? 'https://lysternorrmalm.se');
     <meta name="twitter:card" content="summary_large_image" />
 
     <script is:inline>
-      document.documentElement.classList.add('js');
+      document.documentElement.setAttribute('data-js', '');
     </script>
   </head>
-  <body>
+  <body
+    class="m-0 overflow-x-clip bg-paper bg-[url('/images/paper-noise.webp')] bg-[length:128px_128px] font-sans text-[1.0625rem] font-normal leading-[1.62] text-ink antialiased [font-kerning:normal] [font-optical-sizing:auto] [font-synthesis:none] [text-rendering:optimizeLegibility] max-sm:text-[1rem] print:bg-none print:bg-paper print:text-[10.5pt] print:leading-[1.45]"
+  >
     <!--
       THESIS: Familiar Swedish dishes rebuilt as a precise editorial system — a full-bleed photograph of the room beside one cobalt plane. Refuses the dark, moody food-photo hero.
       OWN-WORLD: Warm beige paper, cobalt fields, gold rules; one authored mark; a full-bleed photograph band; one Swedish grotesk in monumental and whisper sizes; asymmetric editorial grid.
@@ -53,7 +55,7 @@ const ogImage = new URL(image, Astro.site ?? 'https://lysternorrmalm.se');
       FORM: Plangeometrin, the dealt challenger chosen in the direction round (not a grounded-list position); seed key c255ad89.
       FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
     -->
-    <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+    <a class="fixed left-3 top-3 z-[200] -translate-y-[180%] bg-ink px-4 py-3 text-paper-3 no-underline transition-transform duration-[180ms] ease-brand focus:translate-y-0 print:hidden" href="#innehall">Hoppa till innehållet</a>
     <Header />
     <main id="innehall">
       <slot />
