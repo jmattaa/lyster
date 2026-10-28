@@ -71,24 +71,7 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
   revealTargets.forEach((element) => observer.observe(element));
 }
 
-/* Booking placeholder ---------------------------------------------------- */
 
-const bookingNote = $('[data-booking-note]');
-
-$$('[data-booking-placeholder]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    $('[data-booking-section]')?.scrollIntoView({
-      behavior: reduceMotion ? 'auto' : 'smooth',
-      block: 'start',
-    });
-
-    if (!bookingNote) return;
-    bookingNote.hidden = false;
-    window.setTimeout(() => bookingNote.focus({ preventScroll: true }), reduceMotion ? 0 : 550);
-  });
-});
 
 /* Open / closed status --------------------------------------------------- */
 

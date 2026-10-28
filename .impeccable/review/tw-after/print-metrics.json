@@ -1,0 +1,93 @@
+{
+ "header": {
+  "display": "none",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "menuNav": {
+  "display": "none",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "aside": {
+  "display": "none",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgba(0, 0, 0, 0)",
+  "fontSize": "14px",
+  "paddingTop": "24px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "booking": {
+  "display": "none",
+  "color": "rgb(251, 247, 238)",
+  "bg": "rgb(20, 42, 69)",
+  "fontSize": "14px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "footer": {
+  "display": "none",
+  "color": "rgb(251, 247, 238)",
+  "bg": "rgb(0, 0, 0)",
+  "fontSize": "14px",
+  "paddingTop": "88px",
+  "paddingBottom": "24px",
+  "maxWidth": "none"
+ },
+ "h1": {
+  "display": "block",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgba(0, 0, 0, 0)",
+  "fontSize": "42.6667px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "lunch": {
+  "display": "block",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "paddingTop": "24px",
+  "paddingBottom": "24px",
+  "maxWidth": "none"
+ },
+ "lunchPrice": {
+  "display": "block",
+  "color": "rgb(34, 34, 34)",
+  "bg": "rgba(0, 0, 0, 0)",
+  "fontSize": "14px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "tasting": {
+  "display": "grid",
+  "color": "rgb(0, 0, 0)",
+  "bg": "rgb(255, 255, 255)",
+  "fontSize": "14px",
+  "paddingTop": "36px",
+  "paddingBottom": "36px",
+  "maxWidth": "none"
+ },
+ "footnote": {
+  "display": "block",
+  "color": "rgb(34, 34, 34)",
+  "bg": "rgba(0, 0, 0, 0)",
+  "fontSize": "13.6px",
+  "paddingTop": "0px",
+  "paddingBottom": "0px",
+  "maxWidth": "none"
+ },
+ "revealOpacity": "0.997372"
+}
