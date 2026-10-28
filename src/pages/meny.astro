@@ -1,402 +1,54 @@
 ---
 import Base from '../layouts/Base.astro';
-import Booking from '../components/Booking.astro';
-
-interface Dish {
-  name: string;
-  description: string;
-  price: number;
-  tags?: string[];
-}
-
-interface Course {
-  id: string;
-  title: string;
-  note: string;
-  dishes: Dish[];
-}
-
-const courses: Course[] = [
-  {
-    id: 'tilltugg',
-    title: 'Tilltugg',
-    note: 'Att börja med, eller bara till ett glas',
-    dishes: [
-      {
-        name: 'Toast med räkor',
-        description: 'Rostat bröd, räkor, löjrom, dill och brynt smör.',
-        price: 145,
-      },
-      {
-        name: 'Löjrom med gräddfil',
-        description: 'Rödlök, dill och knaprig potatis.',
-        price: 165,
-      },
-      {
-        name: 'Krondillsinlagd gurka',
-        description: 'Senap, dill och smörstekt knäcke.',
-        price: 75,
-        tags: ['vegetarisk'],
-      },
-      {
-        name: 'Burrata',
-        description: 'Tomat, basilika, olivolja och rostat bröd.',
-        price: 135,
-        tags: ['vegetarisk'],
-      },
-    ],
-  },
-  {
-    id: 'husmanskost',
-    title: 'Husmanskost',
-    note: 'Serveras med potatispuré och pressgurka där inget annat anges',
-    dishes: [
-      {
-        name: 'Köttbullar',
-        description: 'Nöt och fläsk, gräddsås på kalvben, lingon och pressgurka.',
-        price: 265,
-      },
-      {
-        name: 'Wallenbergare',
-        description: 'Kalvfärs, gräddsås, gröna ärtor och potatispuré.',
-        price: 285,
-      },
-      {
-        name: 'Kalops',
-        description: 'Nötkött, kryddpeppar, lök, rödbetor och pressad potatis.',
-        price: 255,
-      },
-      {
-        name: 'Stekt fläsk med löksås',
-        description: 'Sidfläsk, löksås, potatispuré och lingon.',
-        price: 245,
-      },
-      {
-        name: 'Isterband',
-        description: 'Dillstuvad potatis, rödbetor och senap.',
-        price: 235,
-      },
-    ],
-  },
-  {
-    id: 'europa',
-    title: 'Europas bord',
-    note: 'Europeiska vardagsrätter, med samma krav som husmanskosten',
-    dishes: [
-      {
-        name: 'Pasta med svamp och parmesan',
-        description: 'Tagliatelle, skogssvamp, parmesan och brynt smör.',
-        price: 235,
-        tags: ['vegetarisk'],
-      },
-      {
-        name: 'Kalvschnitzel',
-        description: 'Kalv, citron, kapris, persilja och pressad potatis.',
-        price: 295,
-      },
-      {
-        name: 'Moules-frites',
-        description: 'Blåmusslor, vitlök, persilja, vitt vin och pommes frites.',
-        price: 275,
-      },
-    ],
-  },
-  {
-    id: 'havet',
-    title: 'Från havet',
-    note: 'Fisk och skaldjur, fileat i köket',
-    dishes: [
-      {
-        name: 'Stekt strömming',
-        description: 'Potatispuré, brynt smör, dill och citron.',
-        price: 245,
-      },
-      {
-        name: 'Gravad lax',
-        description: 'Senapssås, dillstuvad potatis och knäcke.',
-        price: 245,
-      },
-      {
-        name: 'Fiskgryta',
-        description: 'Saffran, aioli, tomat och rostat bröd.',
-        price: 275,
-      },
-    ],
-  },
-  {
-    id: 'gront',
-    title: 'Grönt',
-    note: 'Lika mycket mat, inte ett tillval',
-    dishes: [
-      {
-        name: 'Ugnsbakad rotselleri',
-        description: 'Svamp, hasselnöt, brynt smör och persilja.',
-        price: 225,
-        tags: ['vegetarisk'],
-      },
-      {
-        name: 'Böngryta',
-        description: 'Vita bönor, tomat, dill och rostat bröd.',
-        price: 215,
-        tags: ['vegansk'],
-      },
-      {
-        name: 'Rödbetor med getost',
-        description: 'Hasselnöt, honung och grönkål.',
-        price: 155,
-        tags: ['vegetarisk'],
-      },
-    ],
-  },
-  {
-    id: 'efterratt',
-    title: 'Efterrätt',
-    note: 'Skeden tar inte slut förrän du säger till',
-    dishes: [
-      {
-        name: 'Ostkaka',
-        description: 'Hjortronsylt och vispad grädde.',
-        price: 115,
-        tags: ['glutenfri'],
-      },
-      {
-        name: 'Varm äppelkaka',
-        description: 'Vaniljsås och kanel.',
-        price: 105,
-      },
-      {
-        name: 'Kanelbulle med glass',
-        description: 'Värmd kanelbulle, vaniljglass och salt karamell.',
-        price: 95,
-      },
-      {
-        name: 'Tarte tatin',
-        description: 'Karamelliserat äpple, vaniljglass och salt smör.',
-        price: 115,
-        tags: ['vegetarisk'],
-      },
-      {
-        name: 'Blåbärssoppa',
-        description: 'Varm eller kall, med vispad grädde.',
-        price: 85,
-        tags: ['glutenfri'],
-      },
-    ],
-  },
-  {
-    id: 'dryck',
-    title: 'Dryck',
-    note: 'Öl, snaps och alkoholfritt. Fråga efter vinlistan.',
-    dishes: [
-      {
-        name: 'Lyster lager',
-        description: 'Svensk ljus lager på fat, 40 cl.',
-        price: 75,
-      },
-      {
-        name: 'Gammeldags snaps',
-        description: 'Kryddad, kall, till husmanskosten.',
-        price: 65,
-      },
-      {
-        name: 'Äpple och fläder',
-        description: 'Alkoholfri, med mynta och is.',
-        price: 55,
-        tags: ['alkoholfri'],
-      },
-      {
-        name: 'Kaffe',
-        description: 'Bryggt, med påtår.',
-        price: 35,
-      },
-    ],
-  },
-];
-
-const lunch = [
-  {
-    day: 'Tisdag',
-    name: 'Köttbullar',
-    description: 'Gräddsås, lingon och pressgurka.',
-  },
-  {
-    day: 'Onsdag',
-    name: 'Stekt strömming',
-    description: 'Potatispuré, brynt smör och dill.',
-  },
-  {
-    day: 'Torsdag',
-    name: 'Ärtsoppa med fläsk',
-    description: 'Senap, knäcke och pannkaka med sylt.',
-  },
-  {
-    day: 'Fredag',
-    name: 'Kalops',
-    description: 'Rödbetor, lök och pressad potatis.',
-  },
-];
 ---
 
 <Base
   title="Menyn — Lyster"
-  description="Lysters meny: köttbullar, stekt strömming, pasta med svamp och parmesan, kalvschnitzel, moules-frites och ostkaka. Lunch tis–fre, middag tis–lör. Modern husmanskost i Stockholm."
+  description="Lysters meny. Bläddra i menyn direkt på sidan eller ladda ner PDF."
 >
-  <section class="pb-[clamp(2.5rem,5vw,4.5rem)] pt-[clamp(2.5rem,6vw,5rem)] print:pb-6 print:pt-0" aria-labelledby="meny-title">
-    <div class="mx-auto grid w-full max-w-shell grid-cols-12 items-end gap-[clamp(2rem,4vw,4rem)] px-gutter print:block print:w-full print:px-0">
-      <div class="col-[1/7] max-md:col-[1/13]">
-        <h1 class="text-[clamp(3.8rem,8.5vw,7.5rem)] font-medium leading-[0.9] tracking-[-0.06em] text-balance max-sm:text-[clamp(3.5rem,17vw,5.5rem)] print:text-[32pt]" id="meny-title" data-reveal>Menyn</h1>
-      </div>
-      <div class="col-[8/13] border-t border-ink/18 pt-5 max-md:col-[1/13] max-md:mt-6 print:mt-4 print:border-t-0 print:pt-0">
-        <p class="max-w-[36ch] text-[1.0625rem] leading-[1.65] text-ink-soft print:max-w-none" data-reveal>
-          Husmanskost, skärpt — och ett europeiskt bord bredvid. Köttbullar, kalops och
-          strömming från det svenska köket. Pasta, schnitzel och moules-frites från resten av
-          Europa. Allt lagat från grunden, med samma handlag.
+  <section class="pb-[clamp(3rem,8vw,6rem)] pt-[clamp(2.5rem,6vw,5rem)]">
+    <div class="mx-auto w-full max-w-shell px-gutter">
+      <header class="mb-[clamp(2rem,4vw,3rem)]">
+        <h1
+          class="text-[clamp(3.8rem,8.5vw,7.5rem)] font-medium leading-[0.9] tracking-[-0.06em] text-balance"
+        >
+          Menyn
+        </h1>
+        <p class="mt-6 max-w-[42ch] text-[1.0625rem] leading-[1.65] text-ink-soft">
+          Bläddra i menyn nedan. Du kan även
+          <a
+            class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
+            href="/meny.pdf"
+            target="_blank"
+            rel="noopener"
+          >öppna eller ladda ner PDF:en</a>.
         </p>
-        <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-ink/18 pt-4 text-[0.75rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-soft print:hidden" data-reveal>
-          <span>Höstmeny 2026</span>
-          <span>Lunch tis–fre</span>
-          <span>Middag tis–lör</span>
-        </div>
+      </header>
+
+      <div class="w-full border border-ink/14 bg-paper-3 shadow-none">
+        <object
+          data="/meny.pdf#view=FitH"
+          type="application/pdf"
+          class="h-[85vh] min-h-[720px] w-full"
+          aria-label="Lysters meny som PDF"
+        >
+          <iframe
+            src="/meny.pdf#view=FitH"
+            class="h-[85vh] min-h-[720px] w-full"
+            title="Lysters meny"
+            loading="lazy"
+          ></iframe>
+          <p class="p-6 text-ink-soft">
+            Din webbläsare kan inte visa PDF:en inbäddad.
+            <a
+              class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
+              href="/meny.pdf"
+              target="_blank"
+              rel="noopener"
+            >Ladda ner menyn här</a>.
+          </p>
+        </object>
       </div>
     </div>
   </section>
-
-  <div>
-    <nav class="sticky top-[72px] z-30 border-y border-ink/14 bg-paper max-md:top-16 print:hidden" aria-label="Menyns avsnitt" data-menu-nav>
-      <div class="mx-auto w-full max-w-shell px-gutter print:w-full print:px-0">
-        <div class="flex gap-[clamp(1.1rem,2.5vw,2.25rem)] overflow-x-auto [scroll-padding-inline:1rem] [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" data-menu-track>
-          {courses.map((course) => (
-            <a
-              class="relative flex-none whitespace-nowrap py-[1.05rem] text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-ink-soft no-underline after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-[260ms] after:ease-brand hover:text-ink aria-[current=location]:text-ink aria-[current=location]:after:scale-x-100"
-              href={`#${course.id}`}
-              data-menu-link
-            >{course.title}</a>
-          ))}
-          <a
-            class="relative flex-none whitespace-nowrap py-[1.05rem] text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-ink-soft no-underline after:absolute after:inset-x-0 after:-bottom-px after:h-0.5 after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-[260ms] after:ease-brand hover:text-ink aria-[current=location]:text-ink aria-[current=location]:after:scale-x-100"
-            href="#lunch"
-            data-menu-link
-          >Lunch</a>
-        </div>
-      </div>
-    </nav>
-
-    <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(2rem,4.5vw,5rem)] px-gutter py-[clamp(2.5rem,6vw,5rem)] max-md:grid-cols-1 max-md:pt-0 print:block print:w-full print:px-0">
-      <aside class="sticky top-[136px] col-[1/4] self-start pt-6 max-md:hidden print:hidden" aria-label="Menyns omfattning">
-        <p class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-gold-ink">Höstmeny 2026</p>
-        <dl class="mt-6 border-t border-ink/18">
-          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
-            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Lunch</dt>
-            <dd class="m-0 text-[0.9rem] leading-[1.45]">Tis–fre 11.30–14.00</dd>
-          </div>
-          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
-            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Middag</dt>
-            <dd class="m-0 text-[0.9rem] leading-[1.45]">Tis–lör</dd>
-          </div>
-          <div class="grid gap-1 border-b border-ink/14 py-[0.85rem]">
-            <dt class="text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-ink-faint">Kök</dt>
-            <dd class="m-0 text-[0.9rem] leading-[1.45]">Stänger 22.30</dd>
-          </div>
-        </dl>
-        <p class="mt-6 max-w-[24ch] text-[0.82rem] leading-[1.6] text-ink-soft">Menyn ändras med säsongen. Fråga oss om allergener.</p>
-        <a class="mt-4 inline-block py-[0.3rem] -my-[0.3rem] text-[0.9rem] underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold" href="#lunch">Lunchmenyn</a>
-      </aside>
-
-      <div class="col-[5/12] min-w-0 max-w-[46rem] max-md:col-[1/13] max-md:max-w-none print:max-w-none">
-        {courses.map((course) => (
-          <section class="scroll-mt-[142px] pt-[clamp(2.5rem,5vw,4rem)] first:pt-4 max-md:scroll-mt-[134px] max-md:first:pt-10 print:break-inside-avoid print:pt-6" id={course.id} aria-labelledby={`${course.id}-title`} data-menu-section>
-            <div class="flex items-end justify-between gap-6 border-b-2 border-cobalt pb-[0.9rem] max-sm:items-start max-sm:gap-3" data-reveal>
-              <div>
-                <h2 class="text-[clamp(1.9rem,3vw,2.75rem)] font-medium leading-none tracking-[-0.04em] text-balance" id={`${course.id}-title`}>{course.title}</h2>
-                <p class="mt-[0.35rem] text-[0.72rem] font-semibold uppercase leading-[1.45] tracking-[0.14em] text-gold-ink">{course.dishes.length} rätter</p>
-              </div>
-              <p class="max-w-[28ch] text-right text-[0.82rem] leading-[1.55] text-ink-soft max-sm:hidden print:block print:max-w-none print:text-left">{course.note}</p>
-            </div>
-
-            <ul>
-              {course.dishes.map((dish) => (
-                <li class="block border-b border-ink/14 py-[1.1rem] print:break-inside-avoid">
-                  <div class="flex items-baseline gap-3">
-                    <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">
-                      {dish.name}
-                      {dish.tags && (
-                        <span class="ml-[0.4rem] inline-flex gap-[0.4rem] whitespace-nowrap align-[0.1em] text-[0.68rem] font-semibold uppercase tracking-[0.06em] text-dill">
-                          {dish.tags.map((tag) => <span>{tag}</span>)}
-                        </span>
-                      )}
-                    </h3>
-                    <span class="min-w-4 flex-1 [transform:translateY(-0.22em)] border-b border-dotted border-ink/28" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap text-[1rem] font-semibold tabular-nums">{dish.price} kr</span>
-                  </div>
-                  <p class="mt-1 max-w-[52ch] text-[0.95rem] leading-[1.6] text-ink-soft print:text-ink-soft">{dish.description}</p>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-
-        <div class="mt-[clamp(2.5rem,5vw,4rem)] grid grid-cols-[1fr_auto] items-end gap-6 border-t-2 border-cobalt bg-gold-pale p-[clamp(1.5rem,3vw,2.25rem)] max-sm:grid-cols-1 max-sm:gap-4 print:break-inside-avoid print:border print:border-ink print:bg-paper" data-reveal>
-          <div>
-            <h3 class="text-[clamp(1.4rem,2.4vw,1.9rem)] font-semibold leading-none text-balance">Tre rätt, ett bord</h3>
-            <p class="mt-[0.4rem] max-w-[42ch] text-[0.95rem] leading-[1.6] text-ink-soft">
-              Tre rätt valda av köket, från husmanskost till Europas bord. Berätta vad du inte
-              äter, så bygger vi menyn runt dig.
-            </p>
-          </div>
-          <p class="mt-[0.4rem] max-w-[42ch] whitespace-nowrap text-[0.95rem] font-semibold leading-[1.6] tabular-nums text-ink-soft">495 kr</p>
-        </div>
-
-        <p class="mt-[clamp(2.5rem,5vw,4rem)] max-w-[52ch] text-[0.85rem] leading-[1.65] text-ink-soft print:max-w-none print:text-ink-soft">
-          Menyn ändras med säsongen. Priserna är inklusive moms. Fråga oss om allergener
-          och om du vill ha rätten utan något — vi anpassar det mesta. Sällskap över åtta,
-          hör av dig i god tid.
-        </p>
-      </div>
-    </div>
-
-    <section class="scroll-mt-[142px] bg-cobalt py-section text-paper-3 max-md:scroll-mt-[134px] print:bg-paper print:py-6 print:text-ink" id="lunch" aria-labelledby="lunch-title" data-menu-section>
-      <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(2rem,4vw,4rem)] px-gutter print:block print:w-full print:px-0">
-        <div class="col-[1/5] max-md:col-[1/13]" data-reveal>
-          <h2 class="text-[clamp(2.4rem,4.5vw,4.5rem)] font-medium leading-none tracking-[-0.05em] text-balance" id="lunch-title">Lunch</h2>
-          <p class="mt-5 max-w-[30ch] leading-[1.65] text-paper-3/78 print:max-w-none print:text-ink-soft">
-            Vardag mitt på dagen: en rätt, sallad, bröd och kaffe. Husmanskost eller veckans
-            pasta — sätt dig ner, ät ordentligt och gå tillbaka till dagen. Ingen bokning krävs.
-          </p>
-          <p class="mt-5 max-w-[30ch] text-[0.9rem] font-semibold uppercase leading-[1.65] tracking-[0.14em] text-paper-3/78 print:mt-5 print:max-w-none print:text-ink-soft">Tis–fre 11.30–14.00 · 145 kr</p>
-        </div>
-
-        <ul class="col-[6/13] max-md:col-[1/13]">
-          {lunch.map((item) => (
-            <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
-              <div>
-                <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">{item.day}</p>
-                <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">{item.name}</h3>
-                <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">{item.description}</p>
-              </div>
-              <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">145 kr</span>
-            </li>
-          ))}
-          <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
-            <div>
-              <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">Alla dagar</p>
-              <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">Dagens gröna</h3>
-              <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">Veckans grönsaksrätt. Fråga vad köket har hittat på.</p>
-            </div>
-            <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">135 kr</span>
-          </li>
-          <li class="flex items-baseline justify-between gap-5 border-t border-paper-3/24 py-[0.95rem] last:border-b print:border-ink-faint print:last:[border-bottom-color:color-mix(in_srgb,var(--color-paper-3)_24%,transparent)] print:py-[0.6rem]">
-            <div>
-              <p class="mt-[0.2rem] text-[0.9rem] font-semibold uppercase leading-[1.6] tracking-[0.14em] text-paper-3/72 print:text-ink-soft">Alla dagar</p>
-              <h3 class="text-[1.15rem] font-semibold leading-none tracking-[-0.02em] text-balance">Veckans pasta</h3>
-              <p class="mt-[0.2rem] max-w-[38ch] text-[0.9rem] leading-[1.6] text-paper-3/72 print:text-ink-soft">Dagens pasta med svamp, parmesan och örter.</p>
-            </div>
-            <span class="whitespace-nowrap font-semibold tabular-nums text-gold-pale print:text-ink-soft">145 kr</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </div>
-
-  <Booking />
 </Base>
