@@ -24,7 +24,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
     <div class="mt-[clamp(1.75rem,4vw,3rem)] grid min-h-[clamp(26rem,34vw,34rem)] grid-cols-[minmax(0,5fr)_minmax(0,7fr)] border-y border-gold/60 bg-cobalt text-paper-3 max-md:mt-6 max-md:min-h-0 max-md:grid-cols-1 print:hidden">
       <div class="flex flex-col justify-between gap-[clamp(2rem,4vw,3.5rem)] py-[clamp(2.25rem,4vw,3.5rem)] pe-[clamp(1.5rem,3.5vw,3.5rem)] ps-[max(var(--spacing-gutter),calc((100vw_-_1560px)/2_+_var(--spacing-gutter)))] max-md:gap-8 max-md:px-gutter max-md:py-[clamp(1.75rem,5vw,2.5rem)]">
         <div class="max-w-[32rem]">
-          <h2 class="max-w-[14ch] text-[clamp(1.9rem,3.2vw,2.9rem)] font-medium leading-[1.02] tracking-[-0.045em] text-balance max-md:text-[clamp(2rem,7vw,2.6rem)] max-sm:max-w-[14ch]">Svensk husmanskost. <em class="italic text-gold-pale">Europeiskt bord.</em></h2>
+          <h2 class="max-w-[14ch] font-display text-[clamp(1.9rem,3.2vw,2.9rem)] font-medium leading-[1.02] tracking-[-0.03em] text-balance max-md:text-[clamp(2rem,7vw,2.6rem)] max-sm:max-w-[14ch]">Svensk husmanskost. <em class="italic text-gold-pale">Europeiskt bord.</em></h2>
           <p class="mt-[clamp(1rem,1.8vw,1.4rem)] max-w-[36ch] text-[1.0625rem] leading-[1.65] text-paper-3/84">
             Köttbullar med riktig gräddsås. Strömming som knastrar. Mat från det svenska köket
             och resten av Europa, lagad med precision och värme — mitt i Stockholm.
@@ -70,7 +70,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
     <div class={shell}>
       <div class="grid grid-cols-12 gap-x-[clamp(1rem,2.2vw,2.25rem)] border-t border-ink/22 pt-[clamp(1rem,1.6vw,1.35rem)] max-md:grid-cols-1">
         <p class:list={[meta, 'col-[1/2] whitespace-nowrap pt-[0.65rem] text-gold-ink max-md:hidden']} data-reveal>Om oss</p>
-        <h2 class="col-[2/9] max-w-[17ch] pt-[0.15rem] text-[clamp(2.6rem,5.6vw,5.25rem)] font-medium leading-[0.97] tracking-[-0.055em] text-balance max-md:col-[1/-1] max-md:max-w-[18ch] max-sm:text-[clamp(2.3rem,10.5vw,3.4rem)]" id="om-oss-title" data-reveal>
+        <h2 class="col-[2/9] max-w-[17ch] pt-[0.15rem] font-display text-[clamp(2.6rem,5.6vw,5.25rem)] font-medium leading-[0.97] tracking-[-0.03em] text-balance max-md:col-[1/-1] max-md:max-w-[18ch] max-sm:text-[clamp(2.3rem,10.5vw,3.4rem)]" id="om-oss-title" data-reveal>
           Husmanskosten är grunden. <em class="italic text-cobalt">Europa är bordet bredvid.</em>
         </h2>
         <div class="col-[9/13] mt-[clamp(2rem,4vw,3rem)] self-end border-t border-ink/18 pt-4 text-base leading-[1.65] text-ink-soft [&>p+p]:mt-[0.9rem] max-md:col-[1/-1] max-md:mt-10" data-reveal>
@@ -161,7 +161,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
       </figure>
 
       <div class="col-[7/13] max-md:col-[1/12] max-md:mt-4">
-        <h2 class="max-w-[12ch] text-[clamp(2.4rem,4.8vw,4.8rem)] font-medium leading-none tracking-[-0.055em] text-balance max-sm:max-w-[14ch]" id="proof-title">Omtanke <em class="italic text-gold-pale">i varje detalj.</em></h2>
+        <h2 class="max-w-[12ch] font-display text-[clamp(2.4rem,4.8vw,4.8rem)] font-medium leading-none tracking-[-0.03em] text-balance max-sm:max-w-[14ch]" id="proof-title">Omtanke <em class="italic text-gold-pale">i varje detalj.</em></h2>
         <p class="mt-[clamp(1.25rem,2.5vw,2rem)] max-w-[42ch] text-[1.0625rem] leading-[1.65] text-paper-3/82">
           Vi maler köttet själva, reder såsen på kalvben och lägger omsorg på det som ofta går
           obemärkt förbi. Det tar tid — och det är meningen.
@@ -182,7 +182,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
   <section class="scroll-mt-[88px] pt-[clamp(6rem,12vw,11rem)] pb-[clamp(6rem,14vw,13rem)] max-md:scroll-mt-20" id="hitta" aria-labelledby="find-title">
     <div class="mx-auto grid w-full max-w-shell grid-cols-12 gap-[clamp(1rem,2.2vw,2.25rem)] px-gutter print:w-full print:px-0">
       <div class="col-[1/7] max-md:col-[1/13]">
-        <h2 class:list={[h2, 'max-w-[10ch]']} id="find-title" data-reveal>Hitta hit</h2>
+        <h2 class:list={[h2.replace('tracking-[-0.045em]', 'tracking-[-0.03em]'), 'font-display max-w-[10ch]']} id="find-title" data-reveal>Hitta hit</h2>
         <p class="mt-5 max-w-[38ch] text-ink-soft" data-reveal>
           Vi sitter på Luntmakargatan 42, mellan Tegnérgatan och Rådmansgatan. Kom in från
           gatan, häng av dig och ta plats.
