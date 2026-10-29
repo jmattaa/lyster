@@ -5,7 +5,7 @@
 /* Design tokens exposed as Tailwind utilities. */
 @theme {
   --font-sans: 'Familjen Grotesk Variable', 'Familjen Grotesk', 'Helvetica Neue', sans-serif;
-  --font-display: 'Familjen Grotesk Variable', 'Familjen Grotesk', 'Helvetica Neue', sans-serif;
+  --font-display: 'MuseoModerno', 'Familjen Grotesk Variable', 'Helvetica Neue', sans-serif;
 
   --color-paper: #f4eddf;
   --color-paper-2: #eadfcb;
@@ -155,4 +155,12 @@
       clip-path: none !important;
     }
   }
+}
+
+@font-face {
+  font-family: 'MuseoModerno';
+  src: url('/museomoderno.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
