@@ -5,6 +5,7 @@
 /* Design tokens exposed as Tailwind utilities. */
 @theme {
   --font-sans: 'Familjen Grotesk Variable', 'Familjen Grotesk', 'Helvetica Neue', sans-serif;
+  --font-display: 'Familjen Grotesk Variable', 'Familjen Grotesk', 'Helvetica Neue', sans-serif;
 
   --color-paper: #f4eddf;
   --color-paper-2: #eadfcb;
