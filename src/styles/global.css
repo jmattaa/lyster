@@ -35,7 +35,7 @@
   --breakpoint-md: 900px;
   --breakpoint-lg: 1100px;
 
-  --animate-nav-in: nav-in 240ms var(--ease-brand);
+  --animate-nav-in: nav-in 420ms var(--ease-brand);
 
   @keyframes nav-in {
     from {
