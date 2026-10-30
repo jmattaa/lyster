@@ -26,6 +26,19 @@ const dot = 'ml-[0.18em] inline-block h-[0.12em] w-[0.12em] -translate-y-[0.03em
         <a class="relative py-[0.35rem] text-[0.95rem] no-underline after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-right after:scale-x-0 after:bg-gold after:transition-transform after:duration-320 after:ease-brand hover:after:origin-left hover:after:scale-x-100 aria-[current=page]:after:origin-left aria-[current=page]:after:scale-x-100" href="/meny" aria-current={onMenu ? 'page' : undefined}>Menyn</a>
     </nav>
 
+    <div class="hidden items-center gap-[0.65rem] max-md:flex">
+      <button
+        class="inline-flex min-h-11 cursor-pointer items-center gap-[0.55rem] border border-ink/24 bg-transparent px-[0.9rem] py-[0.55rem] text-[0.85rem] font-semibold"
+        type="button"
+        aria-controls="mobilnav"
+        aria-expanded="false"
+        data-menu-open
+      >
+        <span class="grid w-[1.1rem] gap-1" aria-hidden="true"><span class="h-px bg-current"></span><span class="h-px bg-current"></span></span>
+        Meny
+      </button>
+    </div>
+
     <a class={btnNav} href="#boka" data-booking-link>
       Boka bord
       <Arrow class="flex-none text-[1.0625rem] font-normal leading-none transition-transform duration-380 ease-brand group-hover:translate-x-1" />
