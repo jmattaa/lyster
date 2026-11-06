@@ -3,7 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
     output: 'static',
-    site: 'https://lysternorrmalm.se',
+    site: 'https://jmattaa.github.io',
+    base: '/lyster',
     build: {
         format: 'directory',
     },
