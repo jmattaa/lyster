@@ -24,7 +24,7 @@ const dot = 'ml-[0.18em] inline-block h-[0.12em] w-[0.12em] -translate-y-[0.03em
     <nav class="flex items-center gap-[clamp(1.25rem,2.5vw,2.5rem)] max-md:hidden" aria-label="Huvudmeny">
         <a class="relative py-[0.35rem] text-[0.95rem] no-underline after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-right after:scale-x-0 after:bg-gold after:transition-transform after:duration-320 after:ease-brand hover:after:origin-left hover:after:scale-x-100 aria-[current=page]:after:origin-left aria-[current=page]:after:scale-x-100" href={`${base}#om-oss`}>Om oss</a> 
         <a class="relative py-[0.35rem] text-[0.95rem] no-underline after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-right after:scale-x-0 after:bg-gold after:transition-transform after:duration-320 after:ease-brand hover:after:origin-left hover:after:scale-x-100 aria-[current=page]:after:origin-left aria-[current=page]:after:scale-x-100" href={`${base}#hitta`}>Hitta hit</a>
-        <a class="relative py-[0.35rem] text-[0.95rem] no-underline after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-right after:scale-x-0 after:bg-gold after:transition-transform after:duration-320 after:ease-brand hover:after:origin-left hover:after:scale-x-100 aria-[current=page]:after:origin-left aria-[current=page]:after:scale-x-100" href={`${base}meny`} aria-current={onMenu ? 'page' : undefined}>Menyn</a>
+        <a class="relative py-[0.35rem] text-[0.95rem] no-underline after:absolute after:inset-x-0 after:bottom-0 after:h-px after:origin-right after:scale-x-0 after:bg-gold after:transition-transform after:duration-320 after:ease-brand hover:after:origin-left hover:after:scale-x-100 aria-[current=page]:after:origin-left aria-[current=page]:after:scale-x-100" href={`${base}meny/`} aria-current={onMenu ? 'page' : undefined}>Menyn</a>
     </nav>
 
     <div class="hidden items-center gap-[0.65rem] max-md:flex">
@@ -68,7 +68,7 @@ const dot = 'ml-[0.18em] inline-block h-[0.12em] w-[0.12em] -translate-y-[0.03em
   <div class="flex flex-1 flex-col justify-between px-gutter pt-[clamp(2rem,6vh,4rem)] pb-[calc(2rem+env(safe-area-inset-bottom))]">
     <nav class="grid gap-[0.1rem]" aria-label="Mobilmeny">
       <a class="flex items-baseline justify-between border-b border-paper-3/18 py-[0.55rem] text-[clamp(2.2rem,9vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em] text-paper-3 no-underline" href={`${base}#om-oss`}>Om oss</a>
-      <a class="flex items-baseline justify-between border-b border-paper-3/18 py-[0.55rem] text-[clamp(2.2rem,9vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em] text-paper-3 no-underline" href={`${base}meny`}>Menyn</a>
+      <a class="flex items-baseline justify-between border-b border-paper-3/18 py-[0.55rem] text-[clamp(2.2rem,9vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em] text-paper-3 no-underline" href={`${base}meny/`}>Menyn</a>
       <a class="flex items-baseline justify-between border-b border-paper-3/18 py-[0.55rem] text-[clamp(2.2rem,9vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em] text-paper-3 no-underline" href={`${base}#hitta`}>Hitta hit</a>
       <a class="flex items-baseline justify-between border-b border-paper-3/18 py-[0.55rem] text-[clamp(2.2rem,9vw,4rem)] font-medium leading-[1.05] tracking-[-0.045em] text-paper-3 no-underline" href="#boka" data-booking-link>Boka bord</a>
     </nav>
