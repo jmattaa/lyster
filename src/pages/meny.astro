@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Base
@@ -19,7 +19,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         Bläddra i menyn nedan. Du kan även <span> </span>
           <a
             class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
-            href={`${base}meny.pdf`}
+            href={`${base}/meny.pdf`}
             target="_blank"
             rel="noopener"
           >öppna eller ladda ner PDF:en</a>.
@@ -34,7 +34,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
           aria-label="Lysters meny som PDF"
         >
           <iframe
-            src={`${base}meny.pdf#view=FitH`}
+            src={`${base}/meny.pdf#view=FitH`}
             class="h-[85vh] min-h-[720px] w-full"
             title="Lysters meny"
             loading="lazy"
@@ -43,7 +43,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
             Din webbläsare kan inte visa PDF:en inbäddad.
             <a
               class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
-              href={`${base}meny.pdf`}
+              href={`${base}/meny.pdf`}
               target="_blank"
               rel="noopener"
             >Ladda ner menyn här</a>.

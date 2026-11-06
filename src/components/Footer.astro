@@ -1,5 +1,5 @@
 ---
-const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 import Mark from './Mark.astro';
 
 const year = new Date().getFullYear();
@@ -14,7 +14,7 @@ const footerLink = 'inline-block py-[0.2rem] text-inherit no-underline hover:tex
   <div class="mx-auto w-full max-w-shell px-gutter print:w-full print:px-0">
     <div class="grid grid-cols-12 gap-[clamp(2rem,4vw,4rem)]">
       <div class="col-[1/4] max-lg:col-[1/5] max-md:col-[1/13]">
-        <a class={brand} href={base} aria-label="Lyster, till startsidan">
+        <a class={brand} href={`${base}/`} aria-label="Lyster, till startsidan">
           <Mark />
           <span class={brandWord} aria-hidden="true">L<span class="text-gold">Y</span>STER<span class={dot}></span></span>
         </a>
@@ -46,7 +46,7 @@ const footerLink = 'inline-block py-[0.2rem] text-inherit no-underline hover:tex
         <h3 class="text-[0.72rem] font-semibold uppercase leading-none tracking-[0.16em] text-gold-pale">Följ</h3>
         <p class="mt-4 text-[0.9rem] leading-[1.65] text-paper-3/78">
           <a class={footerLink} href="https://instagram.com/lystersthlm" rel="noopener">Instagram</a><br />
-          <a class={footerLink} href={`${base}meny/`}>Menyn</a><br />
+          <a class={footerLink} href={`${base}/meny/`}>Menyn</a><br />
           <a class={footerLink} href="#boka" data-booking-link>Boka bord</a>
         </p>
       </div>
