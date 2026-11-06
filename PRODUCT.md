@@ -20,7 +20,7 @@ The public website for Lyster, a restaurant serving modern husmanskost: Swedish 
 
 ## Positioning
 
-Modern husmanskost, defined plainly: Swedish husmanskost is the foundation, and European everyday dishes — pasta, schnitzel, moules-frites — sit beside it with the same standards. Not fusion for its own sake, and not a museum of Swedish food. Classic dishes are kept recognisable but rebuilt with better technique, seasonal produce, and precise sourcing. The restaurant is warm and generous rather than solemn, and the website should make familiar food feel newly worth crossing town for.
+Modern husmanskost, defined plainly: Swedish husmanskost is the foundation, and familiar European everyday dishes sit beside it with the same standards. Not fusion for its own sake, and not a museum of Swedish food. Classic dishes are kept recognisable but rebuilt with better technique, seasonal produce, and precise sourcing. The restaurant is warm and generous rather than solemn, and the website should make familiar food feel newly worth crossing town for.
 
 ## Operating Context
 
@@ -38,7 +38,7 @@ Guests arrive from search, Instagram, or word of mouth. The common path is: what
 ## Brand Commitments
 
 - Name: Lyster.
-- Concept: modern husmanskost — Swedish husmanskost plus other European dishes, such as pasta.
+- Concept: modern husmanskost — Swedish husmanskost plus familiar dishes from other European kitchens.
 - Voice: warm, grounded, generous. Short sentences, no clichés, no luxury bluster.
 - Palette is fixed: beige, blue, and gold.
 
