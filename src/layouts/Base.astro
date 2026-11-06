@@ -10,7 +10,7 @@ interface Props {
   image?: string;
 }
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const defaultImage = `${base}images/hero-rum-2400.webp`;
 
 const {

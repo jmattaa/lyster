@@ -10,7 +10,7 @@ const arrow = 'transition-transform duration-[320ms] ease-brand group-hover:tran
 const btnGold =
   'group relative isolate inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 overflow-hidden border-0 bg-gold px-6 py-[0.7rem] text-[0.95rem] font-semibold leading-[1.1] tracking-[0.01em] text-ink no-underline transition-[color] duration-[260ms] ease-brand before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-paper-3 before:transition-transform before:duration-[380ms] before:ease-brand hover:text-cobalt hover:no-underline hover:before:scale-x-100 active:translate-y-px';
 const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <Base>

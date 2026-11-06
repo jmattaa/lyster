@@ -2,7 +2,7 @@
 import Mark from './Mark.astro';
 import Arrow from './Arrow.astro';
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const pathname = Astro.url.pathname;
 const onMenu = pathname.startsWith(`${base}meny`);
 const homeHref = base;
