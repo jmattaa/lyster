@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Base
@@ -18,7 +19,7 @@ import Base from '../layouts/Base.astro';
         Bläddra i menyn nedan. Du kan även <span> </span>
           <a
             class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
-            href="/meny.pdf"
+            href={`${base}meny.pdf`}
             target="_blank"
             rel="noopener"
           >öppna eller ladda ner PDF:en</a>.
@@ -33,7 +34,7 @@ import Base from '../layouts/Base.astro';
           aria-label="Lysters meny som PDF"
         >
           <iframe
-            src="/meny.pdf#view=FitH"
+            src={`${base}meny.pdf#view=FitH`}
             class="h-[85vh] min-h-[720px] w-full"
             title="Lysters meny"
             loading="lazy"
@@ -42,7 +43,7 @@ import Base from '../layouts/Base.astro';
             Din webbläsare kan inte visa PDF:en inbäddad.
             <a
               class="underline decoration-gold/70 decoration-1 underline-offset-[0.22em] hover:decoration-gold"
-              href="/meny.pdf"
+              href={`${base}meny.pdf`}
               target="_blank"
               rel="noopener"
             >Ladda ner menyn här</a>.

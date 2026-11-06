@@ -10,6 +10,7 @@ const arrow = 'transition-transform duration-[320ms] ease-brand group-hover:tran
 const btnGold =
   'group relative isolate inline-flex min-h-12 cursor-pointer items-center justify-center gap-3 overflow-hidden border-0 bg-gold px-6 py-[0.7rem] text-[0.95rem] font-semibold leading-[1.1] tracking-[0.01em] text-ink no-underline transition-[color] duration-[260ms] ease-brand before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-paper-3 before:transition-transform before:duration-[380ms] before:ease-brand hover:text-cobalt hover:no-underline hover:before:scale-x-100 active:translate-y-px';
 const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Base>
@@ -34,7 +35,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
               Boka bord
               <Arrow class="flex-none text-[1.0625rem] font-normal leading-none transition-transform duration-[380ms] ease-brand group-hover:translate-x-1" />
             </a>
-            <a class="group inline-flex items-center gap-2 border-b border-paper-3/40 pb-[0.15rem] pt-[0.4rem] text-[0.95rem] font-semibold text-paper-3 no-underline transition-colors hover:border-gold-pale hover:text-gold-pale" href="/meny">
+            <a class="group inline-flex items-center gap-2 border-b border-paper-3/40 pb-[0.15rem] pt-[0.4rem] text-[0.95rem] font-semibold text-paper-3 no-underline transition-colors hover:border-gold-pale hover:text-gold-pale" href={`${base}meny`}>
               Se menyn
               <Arrow class:list={[arrow, 'flex-none text-[1.0625rem] font-normal leading-none']} />
             </a>
@@ -53,8 +54,8 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
       <figure class="relative m-0 overflow-clip bg-cobalt-deep max-md:order-first max-md:h-[clamp(15rem,54vw,24rem)]" data-reveal-mask>
         <img
           class="absolute inset-0 h-full w-full object-cover object-[50%_55%] [filter:saturate(0.95)_contrast(1.02)]"
-          src="/images/hero-rum-2400.webp"
-          srcset="/images/hero-rum-1200.webp 1200w, /images/hero-rum-2400.webp 2400w"
+          src={`${base}images/hero-rum-2400.webp`}
+          srcset={`${base}images/hero-rum-1200.webp 1200w, ${base}images/hero-rum-2400.webp 2400w`}
           sizes="(max-width: 900px) 100vw, 58vw"
           width="2400"
           height="1800"
@@ -149,8 +150,8 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
         <div class="relative aspect-square w-[min(100%,520px)] rounded-[50%] border border-gold-pale p-[0.8rem] max-md:w-[min(100%,460px)]">
           <img
             class="h-full w-full rounded-[50%] object-cover [filter:saturate(0.92)_contrast(1.03)]"
-            src="/images/kottbullar-1280.webp"
-            srcset="/images/kottbullar-720.webp 720w, /images/kottbullar-1280.webp 1280w"
+            src={`${base}images/kottbullar-1280.webp`}
+            srcset={`${base}images/kottbullar-720.webp 720w, ${base}images/kottbullar-1280.webp 1280w`}
             sizes="(max-width: 900px) 90vw, 42vw"
             width="1280"
             height="1174"
@@ -170,7 +171,7 @@ const shell = 'mx-auto w-full max-w-shell px-gutter print:w-full print:px-0';
           Rummen är enkla, maten är noggrant lagad och gästen står alltid i centrum.
         </p>
         <div class="mt-[clamp(2rem,4vw,3rem)]">
-          <a class="group inline-flex items-center gap-2 border-b border-gold-pale/60 pb-[0.15rem] pt-[0.4rem] text-[0.95rem] font-semibold text-gold-pale no-underline transition-colors hover:border-gold-pale hover:text-paper-3" href="/meny">
+          <a class="group inline-flex items-center gap-2 border-b border-gold-pale/60 pb-[0.15rem] pt-[0.4rem] text-[0.95rem] font-semibold text-gold-pale no-underline transition-colors hover:border-gold-pale hover:text-paper-3" href={`${base}meny`}>
             Se menyn
             <Arrow class:list={[arrow, 'flex-none text-[1.0625rem] font-normal leading-none']} />
           </a>
