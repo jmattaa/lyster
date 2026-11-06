@@ -3,7 +3,7 @@
     {
       "name": "final-home-desktop",
       "status": 200,
-      "title": "Lyster — modern husmanskost i Stockholm",
+      "title": "Lyster  -  modern husmanskost i Stockholm",
       "lang": "sv",
       "size": {
         "scrollWidth": 1440,
@@ -175,7 +175,7 @@
     {
       "name": "final-home-tablet",
       "status": 200,
-      "title": "Lyster — modern husmanskost i Stockholm",
+      "title": "Lyster  -  modern husmanskost i Stockholm",
       "lang": "sv",
       "size": {
         "scrollWidth": 834,
@@ -329,7 +329,7 @@
     {
       "name": "final-home-mobile",
       "status": 200,
-      "title": "Lyster — modern husmanskost i Stockholm",
+      "title": "Lyster  -  modern husmanskost i Stockholm",
       "lang": "sv",
       "size": {
         "scrollWidth": 390,
@@ -483,7 +483,7 @@
     {
       "name": "final-menu-desktop",
       "status": 200,
-      "title": "Menyn — Lyster",
+      "title": "Menyn  -  Lyster",
       "lang": "sv",
       "size": {
         "scrollWidth": 1440,
@@ -598,7 +598,7 @@
     {
       "name": "final-menu-tablet",
       "status": 200,
-      "title": "Menyn — Lyster",
+      "title": "Menyn  -  Lyster",
       "lang": "sv",
       "size": {
         "scrollWidth": 834,
@@ -695,7 +695,7 @@
     {
       "name": "final-menu-mobile",
       "status": 200,
-      "title": "Menyn — Lyster",
+      "title": "Menyn  -  Lyster",
       "lang": "sv",
       "size": {
         "scrollWidth": 390,

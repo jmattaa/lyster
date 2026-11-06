@@ -1,4 +1,4 @@
-# Finish review — Lyster
+# Finish review  -  Lyster
 
 Review ran inline (no separate reviewer agent). Because this model cannot view images directly, the visual layer was verified through computed geometry, contrast calculations, focus and interaction traces, reduced-motion state, print output, pixel sampling, and the Impeccable detector. Evidence lives in `.impeccable/review/qa-*.png`, `qa-meny.pdf`, and `detector-src.json`.
 
@@ -42,7 +42,7 @@ TYPE: one family, two registers, true italics. MATERIAL: flat planes, two real p
 
 Reached for the chosen world, and deliberately reduced from the lens pass. The signature devices are now the full-bleed cobalt-and-photo hero band, the editorial `Om oss` spread with its two-column definition, the circular proof photograph, the brass rules, the typographic menu rail, the live open/closed line, the live map, and the full-screen mobile dialog. Nothing was replaced by a weaker device; the abstract lens was removed rather than decorated further.
 
-The glyph budget is explicit and enforced in `DESIGN.md`: the Mark, and nothing else drawn. Arrows are characters, photography is real, and the map is an embed. This is the ceiling the user asked for — photographic, intentional, and much less.
+The glyph budget is explicit and enforced in `DESIGN.md`: the Mark, and nothing else drawn. Arrows are characters, photography is real, and the map is an embed. This is the ceiling the user asked for  -  photographic, intentional, and much less.
 
 ## material_fixes
 

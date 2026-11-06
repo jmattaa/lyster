@@ -1,6 +1,6 @@
 ---
 name: Lyster
-description: A warm paper-and-ink world for modern husmanskost — Swedish classics and a European table, flat planes, cobalt fields, brass rules.
+description: A warm paper-and-ink world for modern husmanskost - Swedish classics and a European table, flat planes, cobalt fields, brass rules.
 colors:
   paper: "#f4eddf"
   paper-shade: "#eadfcb"
@@ -97,7 +97,7 @@ Lyster looks like a menu printed on good paper and laid on a plain table: warm b
 
 The about spread carries the restaurant's definition. A side label and a monumental statement sit against a tall standfirst; beneath them, two equal columns on Chalk Paper set the Swedish kitchen beside the European table, and three numbered principles close the spread. It reads as a printed editorial page, not a card grid.
 
-The system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers — paper against cobalt against brass — and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.
+The system is deliberately undecorated. There are no shadows, gradients, rounded cards, or glass. Depth comes from flat tonal layers - paper against cobalt against brass - and from planes meeting on clean edges, like printed sheets laid side by side. Type carries most of the personality: one Swedish grotesk in monumental and whisper sizes, with true italics for emphasis, tight negative tracking on the large end, and generous letterspacing on the small end. Layout is asymmetric and editorial, but always readable as a restaurant site first.
 
 Motion is precise and editorial: the hero photograph wipes into place once, section copy reveals as it enters, and the menu rail marks the current category. Nothing floats, bounces, or loops. If motion cannot clarify a change of state, it is left out.
 
@@ -192,7 +192,7 @@ Breakpoints are coarse and content-led:
 
 ### Named Rules
 
-**The One Object Rule.** Each composition has one dominant object — the photograph, a statement — and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.
+**The One Object Rule.** Each composition has one dominant object - the photograph, a statement - and gives it real space. Do not fill the remaining columns with decoration, and do not repeat the object to create rhythm.
 
 **The One Glyph Rule.** The site authors exactly one glyph: the brand Mark. The photograph is real, not drawn. Arrows are typographic characters, the map is a live embed, and no other hand-drawn illustration is added.
 
@@ -212,7 +212,7 @@ There are no shadows and no gradients. The system is flat by doctrine. Depth is 
 
 Square corners are the default; `border-radius: 0` is the unstated rule for buttons, fields, bands, and cards. The only curves are complete circles: the brand mark, the booking disc, and the circular proof photo crop. Circular forms are always objects, never containers for text.
 
-Borders are thin and purposeful: 1px for rules, dividers, focus outlines, and the brass ring; 2px for the menu category head rule and the cobalt category underline. Thick one-sided accent borders are forbidden — they read as a card template, not a printed page. The clay-colored side tab that once marked the booking note has been replaced by a 1px brass top rule.
+Borders are thin and purposeful: 1px for rules, dividers, focus outlines, and the brass ring; 2px for the menu category head rule and the cobalt category underline. Thick one-sided accent borders are forbidden - they read as a card template, not a printed page. The clay-colored side tab that once marked the booking note has been replaced by a 1px brass top rule.
 
 ### Named Rules
 
@@ -253,7 +253,7 @@ There are no form fields in the product. Booking is an external link; the demo n
 
 ### About Spread
 
-The homepage's `Om oss` section is an editorial spread rather than a card grid. A 1px ink rule opens it; the `Om oss` label sits in column 1 as a side label, the statement runs at 2–8 in the Display register with a cobalt italic close, and the standfirst sits at 9–12 on its own 1px rule, bottom-aligned to the statement. Below, a Chalk Paper block with a 2px brass top rule splits into two equal columns — `Det svenska köket` and `Det europeiska bordet` — separated by a 1px ink-mix vertical rule; each column closes with a `På menyn` example list pushed to the shared baseline. A final 1px rule introduces three numbered principles across the full base. On Chalk Paper, body copy and examples are Soft Ink; labels and numbers are Deep Brass Ink. Below 900px the side label steps out, the statement and standfirst stack full width, the definition becomes one column with a horizontal rule instead of the vertical one, and the principles stack.
+The homepage's `Om oss` section is an editorial spread rather than a card grid. A 1px ink rule opens it; the `Om oss` label sits in column 1 as a side label, the statement runs at 2–8 in the Display register with a cobalt italic close, and the standfirst sits at 9–12 on its own 1px rule, bottom-aligned to the statement. Below, a Chalk Paper block with a 2px brass top rule splits into two equal columns - `Det svenska köket` and `Det europeiska bordet` - separated by a 1px ink-mix vertical rule; each column closes with a `På menyn` example list pushed to the shared baseline. A final 1px rule introduces three numbered principles across the full base. On Chalk Paper, body copy and examples are Soft Ink; labels and numbers are Deep Brass Ink. Below 900px the side label steps out, the statement and standfirst stack full width, the definition becomes one column with a horizontal rule instead of the vertical one, and the principles stack.
 
 ### Dish Row
 

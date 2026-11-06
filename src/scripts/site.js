@@ -1,5 +1,5 @@
 /**
- * Lyster — interaction layer.
+ * Lyster interaction layer.
  * Everything here is optional polish: the page reads and books without it.
  */
 

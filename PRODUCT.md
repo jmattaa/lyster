@@ -38,7 +38,7 @@ Guests arrive from search, Instagram, or word of mouth. The common path is: what
 ## Brand Commitments
 
 - Name: Lyster.
-- Concept: modern husmanskost — Swedish husmanskost plus familiar dishes from other European kitchens.
+- Concept: modern husmanskost: Swedish husmanskost plus familiar dishes from other European kitchens.
 - Voice: warm, grounded, generous. Short sentences, no clichés, no luxury bluster.
 - Palette is fixed: beige, blue, and gold.
 
@@ -48,7 +48,7 @@ No real photography, menu, prices, address, phone number, opening hours, booking
 
 ## Product Principles
 
-1. Familiar food, treated with seriousness and warmth — Swedish first, European alongside.
+1. Familiar food, treated with seriousness and warmth: Swedish first, European alongside.
 2. The menu is the proof; show it plainly and make it easy to read.
 3. Booking is never more than one clear action away.
 4. Speak like a host, not a marketing department.
